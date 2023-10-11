@@ -1,0 +1,53 @@
+.Contione_btn {
+  border: 2px solid;
+  background-color: transparent;
+  color: #000;
+  transition: 0.5s
+}
+
+.Contione_btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.Fadein_animation{
+  animation-duration: 1s;
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+
+
+/* 
+.animate_content {
+  transition-timing-function: ease-in-out;
+  visibility: visible;
+  animation-duration: 600ms;
+  animation-name: fadeInUp;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+} */
+.no_margin{
+  /* margin: 0 !important; */
+  line-height: 2 !important;
+    padding: 0;
+}

@@ -1,0 +1,565 @@
+.contact{
+  font-Weight:600;
+  font-Family:sans-serif;
+  color: black;
+  letter-Spacing: 2px;
+  line-Height: 26px;
+  margin-Top:7%;
+  font-Size: 21px;
+  padding-Left:6%;
+}
+.Line{
+    margin-Left:6%;
+   border: 3px solid #000000;
+    width:3%;
+    margin-Top:2%;
+}
+.Line:hover{
+  margin-Left:6%;
+  border: 3px solid black;
+  width:10%;
+  margin-Top:2%;
+}
+.home{
+  border-right: 1px solid black ;
+  padding-right: 3%;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.contacts{
+  padding-left: 4%;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.background-container {
+    background-image: url('/src/Assets/map.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+  }
+/* .icon{
+  background: url('./Images/icon.jpg');
+  background-repeat: no-repeat;
+height: 10vh;
+width: 80%;
+justify-content: end;
+} */
+.india{
+  font-Weight: 700;
+  margin-Top:25%;
+  font-Size:large;
+  box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 6px;
+  width: 100%;
+  margin-Bottom: 10px;
+  color:black;
+}
+.UAE{
+  font-Weight: 700;
+  margin-Top:25%;
+  font-Size:large;
+  box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 6px;
+  width: 100%;
+  margin-Bottom: 10px;
+  color:black;
+
+}
+.address{
+  text-Align:start;
+  font-Size: 19px;
+  line-Height: 30px;
+  font-family: sans-serif;
+  color: #626262;
+  line-height: 30px;
+}
+  .lines{
+    border-Bottom: .1px solid #626262;
+    width:100%;
+    margin-Top:10%;
+  
+}
+.content{
+  text-Align: center;
+ background-color: black ;
+  color: white;
+   justify-Content: center;
+   align-Items: center;
+
+}
+.Request{
+  background-Color:black;
+  color:white;
+  font-Size:20px;
+  font-Weight:500;
+  letter-Spacing:4px; 
+  margin-Top:3%;
+  border:2px solid white;
+  width:27%;
+  height:8vh;
+  margin-Bottom:5%;
+}
+.message{
+font-Size:20px;
+font-Weight:650;
+text-Align:left;
+}
+.para{
+  font-Size:20px;
+  text-Align:left;
+}
+.placehold{
+  height:60px;
+  font-Size:1.2rem;
+  color:#E6E6E6;
+  padding-Left:3%;
+  padding-Top:1%;
+}
+.area{
+  height:20vh;
+  font-Size:1.2rem;
+  color:#E6E6E6;
+  padding-Left:3%;
+  padding-Top:2%;
+}
+.Send{
+  width:24%;
+  height:6vh;
+  text-Align:center;
+  font-Size:17px;
+  border-Radius:1px;
+  margin-Bottom:2%;
+  margin-Top:3%;
+  background-Color:black;
+  color:white;
+}
+.grayfoot{
+  background: #E6E6E6;
+  height:17vh;
+  padding-Top:4%;
+  margin-Top:3%;
+}
+.footer{
+  height:17vh;
+  background-color: black;
+}
+.PVT{
+  color: gray;
+  padding-Top:6%;
+  text-Align:start;
+  margin-Left:-10%;
+}
+@media (min-width: 280px) and (max-width: 280px) {
+  .home{
+    border-right: 1px solid black ;
+    padding-right: 3%;
+      letter-spacing: 2px;
+      font-size: 1px;
+      color: white;
+  }
+  .contacts{
+    padding-left: 4%;
+    letter-spacing: 2px;
+    font-size: 1px;
+    color: white;
+  }
+  .background-container {
+    background-image: url('/src/Assets/map.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    width: 105%;
+  }
+  .india{
+    font-Weight: 700;
+    margin-Top:13%;
+    font-Size:large;
+    box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 6px;
+    margin-left: 2px;
+    width: 100%;
+    margin-Bottom: 10px;
+    color:black;
+  }
+  .UAE{
+    font-Weight: 700;
+    margin-Top:10%;
+    font-Size:large;
+    box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 6px;
+    /* text-align: center; */
+    width: 100%;
+    height: 10vh;
+    margin-Bottom: 10px;
+    color:black;
+  
+  }
+  .address{
+    text-Align:start;
+    font-Size: 16px;
+    line-Height: 30px;
+    font-family: sans-serif;
+    margin-left: 2%;
+    color: #626262;
+    line-height: 30px;
+  }
+  .address1{
+  text-Align:start;
+  margin-Top:5%;
+  margin-left: 3%;
+  font-Size: 17px;
+  }
+  .lines{
+    border-Bottom: .1px solid #626262;
+    width:90%;
+    margin-Top:10%;
+    margin-left: 3%;
+}
+.content{
+  text-Align: center;
+ background-color: black ;
+  color: white;
+   justify-Content: center;
+   align-Items: center;
+   width: 105%;
+
+}
+.Request{
+  background-Color:black;
+  color:white;
+  font-Size:12px;
+  font-Weight:700;
+  letter-Spacing:4px; 
+  margin-Top:3%;
+  border:2px solid white;
+  width:65%;
+  height:6vh;
+  margin-Bottom:8%;
+}
+.message{
+  font-Size:15px;
+  font-Weight:500;
+  margin-top: 6%;
+  }
+  .para{
+    font-Size:15px;
+    margin-top: -3%;
+  }  
+  .placehold{
+    height:60px;
+    font-Size:1.2rem;
+    color:#E6E6E6;
+    padding-Left:3%;
+   margin-top:4%;
+  }
+  .Send{
+    width:60%;
+    height:6vh;
+    text-Align:center;
+    font-Size:17px;
+    border-Radius:1px;
+    margin-Bottom:2%;
+    margin-Top:3%;
+    background-Color:black;
+    color:white;
+}
+.grayfoot{
+  background: #E6E6E6;
+  height:7vh;
+  padding-Top:4%;
+  margin-Top:3%;
+  width: 104%;
+}
+.footer{
+  height:7vh;
+  background-color: black;
+  width: 104%;
+}
+.PVT{
+  color: gray;
+  padding-Top:4%;
+  text-Align:start;
+  font-size: 10px;
+  margin-Left:8%;
+ 
+}
+}
+@media (min-width: 360px) and (max-width: 540px) {
+  .home{
+    border-right: 1px solid black ;
+    padding-right: 3%;
+      letter-spacing: 2px;
+      font-size: 1px;
+      color: white;
+  }
+  .contacts{
+    padding-left: 4%;
+    letter-spacing: 2px;
+    font-size: 1px;
+    color: white;
+  }
+  .background-container {
+    background-image: url('/src/Assets/map.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    width: 105%;
+  }
+  .india{
+    font-Weight: 700;
+    margin-Top:13%;
+    font-Size:large;
+    box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 6px;
+    margin-left: 2px;
+    width: 100%;
+    margin-Bottom: 10px;
+    color:black;
+  }
+  .UAE{
+    font-Weight: 700;
+    margin-Top:10%;
+    font-Size:large;
+    box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 6px;
+    /* text-align: center; */
+    width: 100%;
+    height: 10vh;
+    margin-Bottom: 10px;
+    color:black;
+  
+  }
+  .address{
+    text-Align:start;
+    font-Size: 16px;
+    line-Height: 30px;
+    font-family: sans-serif;
+    margin-left: 2%;
+    color: #626262;
+    line-height: 30px;
+  }
+  .address1{
+  text-Align:start;
+  margin-Top:5%;
+  margin-left: 3%;
+  font-Size: 17px;
+  }
+  .lines{
+    border-Bottom: .1px solid #626262;
+    width:90%;
+    margin-Top:10%;
+    margin-left: 3%;
+}
+.content{
+  text-Align: center;
+ background-color: black ;
+  color: white;
+   justify-Content: center;
+   align-Items: center;
+   width: 105%;
+
+}
+.Request{
+  background-Color:black;
+  color:white;
+  font-Size:12px;
+  font-Weight:700;
+  letter-Spacing:4px; 
+  margin-Top:3%;
+  border:2px solid white;
+  width:65%;
+  height:6vh;
+  margin-Bottom:8%;
+}
+.message{
+  font-Size:15px;
+  font-Weight:500;
+  margin-top: 6%;
+  }
+  .para{
+    font-Size:15px;
+    margin-top: -3%;
+  }  
+  .placehold{
+    height:60px;
+    font-Size:1.2rem;
+    color:#E6E6E6;
+    padding-Left:3%;
+   margin-top:4%;
+  }
+  .Send{
+    width:50%;
+    height:6vh;
+    text-Align:center;
+    font-Size:17px;
+    border-Radius:1px;
+    margin-Bottom:2%;
+    margin-Top:3%;
+    background-Color:black;
+    color:white;
+}
+.grayfoot{
+  background: #E6E6E6;
+  height:7vh;
+  padding-Top:4%;
+  margin-Top:3%;
+  width: 104%;
+}
+.footer{
+  height:7vh;
+  background-color: black;
+  width: 104%;
+}
+.PVT{
+  color: gray;
+  padding-Top:4%;
+  text-Align:start;
+  font-size: 10px;
+  margin-Left:8%;
+ 
+}
+}
+@media (min-width:768px) and (max-width: 912px) {
+  .home{
+    border-right: 1px solid black ;
+    padding-right: 3%;
+      letter-spacing: 2px;
+      font-size: 1px;
+      color: white;
+  }
+  .contacts{
+    padding-left: 4%;
+    letter-spacing: 2px;
+    font-size: 1px;
+    color: white;
+  }
+  .background-container {
+    background-image: url('/src/Assets/map.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    width: 105%;
+  }
+  .india{
+    font-Weight: 700;
+    margin-Top:15%;
+    font-Size:large;
+    box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 6px;
+    margin-left: 2px;
+    width: 100%;
+    margin-Bottom: 10px;
+    color:black;
+  }
+  .UAE{
+    font-Weight: 700;
+    margin-Top:15%;
+    font-Size:large;
+    box-Shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    height: 25vh;
+    margin-Bottom: 10px;
+    color:black;
+  
+  }
+  .address{
+    text-Align:start;
+    font-Size: 15px;
+    line-Height: 30px;
+    font-family: sans-serif;
+    margin-left: 2%;
+    color: #626262;
+    line-height: 30px;
+  }
+  .address1{
+  text-Align:start;
+  margin-Top:5%;
+  margin-left: 3%;
+  font-Size: 17px;
+  }
+  .lines{
+    border-Bottom: .1px solid #626262;
+    width:90%;
+    margin-Top:10%;
+    margin-left: 3%;
+}
+.content{
+  text-Align: center;
+ background-color: black ;
+  color: white;
+   justify-Content: center;
+   align-Items: center;
+   width: 105%;
+
+}
+.Request{
+  background-Color:black;
+  color:white;
+  font-Size:16px;
+  font-Weight:700;
+  letter-Spacing:4px; 
+  margin-Top:3%;
+  border:2px solid white;
+  width:50%;
+  height:6vh;
+  margin-Bottom:8%;
+}
+.message{
+  font-Size:15px;
+  font-Weight:500;
+  margin-top: 6%;
+  }
+  .para{
+    font-Size:15px;
+    margin-top: -3%;
+  }  
+  .placehold{
+    height:60px;
+    font-Size:1.2rem;
+    color:#E6E6E6;
+    padding-Left:3%;
+   margin-top:4%;
+  }
+  .area{
+    height:10vh;
+    font-Size:1.2rem;
+    color:#E6E6E6;
+    padding-Left:3%;
+    padding-Top:2%;
+  }
+  .Send{
+    width:50%;
+    height:6vh;
+    text-Align:center;
+    font-Size:17px;
+    border-Radius:1px;
+    margin-Bottom:2%;
+    margin-Top:3%;
+    background-Color:black;
+    color:white;
+}
+.grayfoot{
+  background: #E6E6E6;
+  height:7vh;
+  padding-Top:4%;
+  margin-Top:3%;
+  width: 104%;
+}
+.footer{
+  height:7vh;
+  background-color: black;
+  width: 104%;
+ }
+.PVT{
+  color: gray;
+  padding-Top:4%;
+  text-Align:start;
+  font-size: 16px;
+  margin-Left:8%;
+ 
+}
+}
