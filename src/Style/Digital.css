@@ -1,0 +1,367 @@
+
+.Image1{
+    position: relative;
+}
+/* .Top{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    bottom: 15%;
+
+} */
+/* .Backround{
+    background-color: #efefef55;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+} */
+.Topp{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.Top{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* top: 50%;
+    left: 17%;
+    bottom: 15%;
+    right: 10%; */
+    /* background-color: #efefef55; */
+    /* width: 100%;
+    height: 100vh; */
+}
+.Top1{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.Top2{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+.Laptop1{
+    position: relative;
+    width: 50%;
+    /* flex:1; */
+}
+.Laptop{
+    color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 300px;
+}
+.separator-line {
+    height: 2px;
+    margin: 0 auto;
+    width: 30px;
+    margin: 7% auto;
+}
+.Study{
+    width: 50%;
+    border: 3px solid black;
+    font-weight: 900;
+}
+.Study:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.Lerbs:hover{
+    background-color: white;
+    top: 45%;
+    position: absolute;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    width: 100%;
+    cursor:cell;
+}
+  /* ......> */
+  .Listitems li{
+    font-size: 14px;
+    padding-left: 8%;
+    line-height: 27px;
+    display: list-item;
+    list-style-type: square;
+    color: #7e7e7e;
+  }
+  .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    border-radius: 0px;
+    background-color: white;
+    color: #000000;
+    border-bottom: 2px solid grey;
+  }
+  
+  #exTab3 .tab-content {
+    color : rgb(10, 10, 10);
+  
+    padding : 5px 15px;
+  }
+
+
+
+.content{
+    display: none;
+    padding-left: 4%;
+    padding-top: 10%;
+    
+}
+
+.show-content{
+    display: block;
+    
+}
+
+.List1{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+
+.Btn1{
+   
+    background-color: #000000;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 10px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.Btn1:hover{
+    background-color: #FDD947;
+    border: 2px solid black;
+    color: black;
+}
+
+
+.Btn2{
+    font-weight: 700;
+    font-size: 14px;
+    /* padding: 30; */
+    background-color: #FDD947;
+    color: rgb(20, 20, 20);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 10px;
+    border: 2px solid black;
+
+}
+.Btn2:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+.Blog{
+    background-color: #000000;
+    color: white;
+}
+.Blog:hover{
+    background-color: white;
+    color: #000000;
+    border: 2px solid black;
+}
+
+.Adope:hover{
+    opacity: 0.5;
+}
+.Commerce:hover{
+    opacity: 0.5;
+}
+.Shopping:hover{
+    opacity: 0.5;
+}
+.Read{
+    font-size: 12px;
+    background-color: #E75E50;
+    color: white;
+    width: 120px;
+    border-style: none;
+    margin-top: 30px;
+}
+.Read:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.Read1{
+    width: 45%;
+    /* flex: 1; */
+    padding: 5%;
+    border: 5px solid #7e7e7e;
+}
+.ourService{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Phone{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+   background-color: '#F6F6F6';
+}
+
+
+.list{
+    font-size: 16px;
+    font-weight: 300;
+    color: #7e7e7e;
+    line-height: inherit;
+}
+
+
+.Project {
+    position: relative;
+   
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: ease-in-out 300ms;
+    color: black;
+    background-color: #FFFFFF;
+   
+  }
+  
+  .Project:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 12px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.Tablet{
+    width:100%;
+    height:500px;
+}
+  .Digital{
+    width:98%;
+    height: 100%;
+    position:absolute;
+    left:7px;
+    bottom:0px;
+    top:0px;
+    right:0px;
+    background-color:#00000089;
+  }
+.ourserviceWant{
+    height: 100px;
+    background-color: #FDD947; 
+    padding-top: 18px;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .Top1{
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+    .Top2{
+        font-size: 20px;
+        color: white;
+    }
+    .Read{
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .Read1{
+        padding-left: 30px;
+    }
+    .Phone{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .Digital{
+        width:100%;
+        height: 100%;
+        position:absolute;
+        left:15px;
+        bottom:0px;
+        background-color:#00000089;
+      }
+      .ourService{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Tablet{
+        width:100%;
+        height:500px;
+        flex:1
+    }
+    .Read1{
+        width: 100%;
+        flex: 1;
+        padding: 5%;
+        border: 5px solid #7e7e7e;
+        margin-top: 40px;
+    }
+    .Laptop1{
+        position: relative;
+        width: 100%;
+    }
+    .ourserviceWant{
+        height: 150px;
+        background-color: #FDD947; 
+        padding-top: 18px;
+        margin-top: 180px;
+    }
+  }
+  @media only screen and (min-width: 570px)and (max-width:900px){
+    .ourserviceWant{
+        height: 150px;
+        background-color: #FDD947; 
+        padding: 18px;
+        width: 100%;
+    }
+  }

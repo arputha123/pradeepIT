@@ -1,0 +1,38 @@
+.kouchan{
+    text-Align:center;
+    margin-Top:6%;
+    font-Size:70px;
+    font-Weight:700;
+    color:"crimson"
+}
+.building{
+    text-align:center;
+    font-Size:29px;
+}
+@media (min-width: 360px) and (max-width: 500px) {
+    .kouchan{
+        text-Align:center;
+        margin-Top:6%;
+        font-Size:60px;
+        font-Weight:700;
+        color:"crimson"
+    }
+    .building{
+        text-align:center;
+        font-Size:24px;
+    }
+   }
+
+   @media (min-width: 280px) and (max-width: 280px) {
+    .kouchan{
+        text-Align:center;
+        margin-Top:6%;
+        font-Size:40px;
+        font-Weight:700;
+        color:"crimson"
+    }
+    .building{
+        text-align:center;
+        font-Size:18px;
+    }
+   }
