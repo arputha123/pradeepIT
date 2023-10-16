@@ -1,5 +1,4 @@
 import React,{useEffect} from "react";
-import women from "../../Assets/woman.jpg"
 import "./Recruit.css"
 
 
