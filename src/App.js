@@ -16,6 +16,10 @@ import Tarento from "./Component/AboutCompanyComponents/Tarento";
 import ContactAs from "./Component/ContactAs";
 import Task from "./Component/task";
 import"./App.css";
+import Recruit from "./Component/Recruit/Recruit";
+import MainPage from "./Component/Recruit/MainPage";
+import Blogs from "./Component/Recruit/Blogs";
+
 
 function App() {
   return (
@@ -29,6 +33,9 @@ function App() {
     <Route path="/AboutCompany" element={<AboutCompany/>}></Route>
     <Route path="/NewsView" element={<NewsView/>}></Route>
     <Route path="/Contactas" element={<Task/>}></Route>
+    <Route path ="/MainPage" element={<MainPage/>}></Route>
+    <Route path ="/Blogs" element={<Blogs/>}></Route>
+
     {/* <Route path="/ConvistaAg" element={<ConvistaAg/>}></Route>
     <Route path="/EmbiTelTecnnologies" element={<EmbiTelTecnnologies/>}></Route>
     <Route path="/EngineerBabu" element={<EngineerBabu/>}></Route>
@@ -38,6 +45,9 @@ function App() {
     <Route path="/Tarento" element={<Tarento/>}></Route> */}
   </Routes>
   </BrowserRouter>
+  
+  
+  
   </>
   );
 }
