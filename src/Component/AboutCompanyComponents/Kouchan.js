@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Style/Course1.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Head_img from '../../Images/Kou-Chan-logo-1.png';
+import Head_img from '../../Assets/Kou-Chan-logo-1.png';
 
 function Kouchan() {
   return (

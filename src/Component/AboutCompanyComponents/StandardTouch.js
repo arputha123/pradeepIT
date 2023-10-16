@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Head_img from '../../Images/Standardtouch-logo.png'
+import Head_img from '../../Assets/Standardtouch-logo.png'
 
 function StandardTouch() {
 

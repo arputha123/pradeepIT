@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Style/Course3.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Head_img from '../../Images/convista_group_logo.png';
+import Head_img from '../../Assets/convista_group_logo.png';
 
 function ConvistaAg() {
   return (

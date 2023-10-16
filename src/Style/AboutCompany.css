@@ -153,7 +153,7 @@ h5 {
   position: relative;
 }
 
-.nav-link {
+.aboutNav {
   display: block;
   padding: 1px;
   color: #212e43;
@@ -169,7 +169,7 @@ h5 {
   font-weight: 600;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.aboutNav:hover,
+.aboutNav:focus {
   color: #212e43 !important;
 }

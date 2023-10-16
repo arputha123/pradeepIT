@@ -1,28 +1,39 @@
-/* *{
+*{
   margin: 0;
   padding: 0;
+ 
   font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* .topbarhead{
-  border-bottom: 3px solid transparent;
+}
+.navbarColor{
+  color: white;
+  font-weight: 500;
+}
+.navbarColorChange{
   color: black;
- }
-.topbarhead:hover {
-  border-color:black; 
-  color: black;
-} */
-/* .companydropdown {
-  position: relative;
-  display: inline-block;
-} */
-.companymenu{
-  text-decoration: none;
-  background-color:black;
-  color: red;
+  font-weight: 500;
+}
+.main{
+  box-shadow: none;
+  height: 100px;
+color: white;
+margin-top: -20px;
+}
+.main_bgcolor{
+  background-color: #FFFFFF;
+  position: fixed !important;
+  top: 0 !important;
+  border-bottom: 1px solid #e5e5e5;
+  height: 80px;
+  margin-top: -10px;
 }
 
-/* .dropdown-menu {
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.dropdown-menu {
   display: none;
   position: absolute;
   background-color:black;
@@ -30,15 +41,10 @@
  border-radius: 0px;
  
 }
-.me-auto {
 
-  font-size: 12px;
-  font-weight: 500;
-}
 .dropdown-item {
   color:darkgray;
-  padding: 5px 10px;
-
+ 
   display: block;
   font-size: 11px;
 
@@ -46,24 +52,60 @@
 .dropdown-item:hover{
 color: white;
 background-color:black;
-} */
-/* Add this to your CSS file (topbar.css) */
+text-decoration: none;
+}
 
- /* @media only screen and (min-width:0px) and (max-width:900px){
-.main{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color:white;
+@media only screen and (min-width:0px) and (max-width:900px){
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 300px;
+   border-radius: 0px;
+
+   
+  }
+  
+  .dropdown-item {
+    color:darkgray;
+   
+    display: block;
+    font-size: 11px;
+  
+  }
+  .dropdown-item:hover{
   color: white;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-}
-.h3{
-  margin-top: 140px; 
-  padding: 2rem;
- background-color: red;
- 
-}
-} */
+  background-color:black;
+  text-decoration: none;
+  }
+  }
+
+
+  @media (max-width: 950px) {
+    .main {
+      position: relative;
+    }
+  
+    .nav-link {
+      padding: 10px 0;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .dropdown-item {
+      display: block;
+      font-size: 14px;
+      color: white;
+      text-align: start;
+    }
+  }

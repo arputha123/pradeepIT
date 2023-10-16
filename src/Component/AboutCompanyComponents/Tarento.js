@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Style/AboutCompany.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Head_img from '../../Images/logo-h_small.png';
+import Head_img from '../../Assets/logo-h_small.png';
 
 function Tarento() {
 

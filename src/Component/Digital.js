@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import Carrosel1 from '../Assets/development1.jpg'
-import Carrosel2 from '../Assets/business.jpg'
-import Carrosel3 from '../Assets/lap1.jpg'
-import Carrosel4 from '../Assets/iphone.jpg'
+import business from '../Assets/business4.png'
+import mobile3 from '../Assets/mobile3.png'
 import Laptop1 from '../Assets/laptop.jpg';
 import Adope from '../Assets/adobemagento.png'
 import Commerce from '../Assets/ecommerce-2607114_960_720.jpg';
@@ -15,26 +13,135 @@ import Card4 from '../Assets/card4.png';
 import Card5 from '../Assets/card5.png';
 import Card6 from '../Assets/card6.png';
 import Card7 from '../Assets/card7.png';
-import Spy from '../Assets/spy.png'
-import Desktop from '../Assets/desktop.png'
-import Airbaloon from '../Assets/hot-air-balloon.png'
-import Camera from '../Assets/camera.png'
-import Trophy from '../Assets/trophy.png'
-import Cloud from '../Assets/cloud.png'
+// import Spy from '../Assets/spy.png'
+// import Desktop from '../Assets/desktop.png'
+// import Airbaloon from '../Assets/hot-air-balloon.png'
+// import Camera from '../Assets/camera.png'
+// import Trophy from '../Assets/trophy.png'
+// import Cloud from '../Assets/cloud.png'
 import TopBarComponent from './topbar';
 import HomeNumber from "./HomeNumber";
 import OurService from "./HomeOurService";
 import MobileCarosel from "./MobileCarosel";
 import ImageComponent from "./ImageComponent";
+import WhyChooseUs from "./whyChooseUS";
+import Latestworks from "./LatestWork";
+import Message from '../Assets/open-message.png';
+import Laptop from '../Assets/laptop-screen.png';
+import Pencil from '../Assets/stationery-tool.png';
+import Baloon from '../Assets/hot-air-balloon (2).png'
+import Location from '../Assets/map.png';
+import buy from '../Assets/buy5.png';
+import CamaraPNG from '../Assets/camera-6-256.png';
+import targetCircle from '../Assets/targetCircle.png';
+import SpeakerPNG from '../Assets/SpeakerPNG.png';
+import ThumbsUp from '../Assets/thumbsup.png';
+import delhiveryBox from '../Assets/delhiveryBox.png';
+import world from '../Assets/world.png';
+import happyClient from '../Assets/happyClient.jpeg';
+import wethink from '../Assets/weThinkAudience.jpg';
+import seo from '../Assets/seo.jpg'
 import '../Style/Digital.css';
 
-
 const Digital = () => {
+
+    const [count, setCount] = useState(0);
+    const [years, setYears] = useState(0)
+    const [clients, setClients] = useState(0)
+    const [country, setCountry] = useState(0)
+
+    useEffect(() => {
+        const appearOptions = {
+            threshold: 0
+        };
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOnScrool = new IntersectionObserver(function (entries, appearOnScrool) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                else {
+                    entry.target.classList.add('appear');
+                    appearOnScrool.unobserve(entry.target);
+                }
+            })
+        }, appearOptions)
+        faders.forEach(fader => {
+            appearOnScrool.observe(fader);
+        })
+    });
+
+    useEffect(() => {
+        const interval = setInterval(function () {
+
+            if (count < 304) {
+                setCount(prevCount => prevCount + 1);
+            }
+            else {
+                clearInterval(interval);
+            }
+        }, 2)
+
+        return () => {
+            clearInterval(interval);
+        };
+
+    }, [count])
+
+    useEffect(() => {
+        const interval = setInterval(function () {
+
+            if (years < 15) {
+                setYears(prevCount => prevCount + 1);
+            }
+            else {
+                clearInterval(interval);
+            }
+        }, 100)
+
+        return () => {
+            clearInterval(interval);
+        };
+
+    }, [years])
+
+    useEffect(() => {
+        const interval = setInterval(function () {
+
+            if (clients < 16) {
+                setClients(prevCount => prevCount + 1);
+            }
+            else {
+                clearInterval(interval);
+            }
+        }, 100)
+
+        return () => {
+            clearInterval(interval);
+        };
+
+    }, [clients])
+
+    useEffect(() => {
+        const interval = setInterval(function () {
+
+            if (country < 3) {
+                setCountry(prevCount => prevCount + 1);
+            }
+            else {
+                clearInterval(interval);
+            }
+        }, 400)
+
+        return () => {
+            clearInterval(interval);
+        };
+
+    }, [country])
 
     return (
 
         <>
-
             <TopBarComponent />
 
             <div>
@@ -45,50 +152,61 @@ const Digital = () => {
                         <li data-target="#myCarousel" data-slide-to="1" class="me-2 p-0"></li>
                         <li data-target="#myCarousel" data-slide-to="2" class="me-2 p-0"></li>
                         <li data-target="#myCarousel" data-slide-to="3" class="me-2 p-0"></li>
+                        <li data-target="#myCarousel" data-slide-to="4" class="me-2 p-0"></li>
 
                     </ol>
 
                     <div class="carousel-inner" >
                         <div class="item active Image1">
-                            <img src={Carrosel1} class='Carrosel' alt="Los Angeles" style={{ width: '100%', height: '80vh' }} />
-                            <div class="Top">
-                                <h2 class="Top1"  >Outsourcing Service for Sap Hypris</h2>
-                                <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
-                                    one which is why we have set on a miison to bring them all to one place
-                                </p>
+                            <img src={wethink} class='Carrosel' alt="Los Angeles" style={{ width: '100%', height: '100vh' }} />
+                            <div class="Backround">
+                                <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#81858955' }}>
+                                    <h2 class="Top1">Outsourcing Service for Sap Hypris</h2>
+                                    <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
+                                        one which is why we have set on a miison to bring them all to one place
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="item Image1">
-                            <img src={Carrosel2} class='Carrosel' alt="Chicago" style={{ width: '100%', height: '80vh' }} />
-                            <div class="Top">
+                            <img src={seo} class='Carrosel' alt="Chicago" style={{ width: '100%', height: '100vh' }} />
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
                                 <h2 class="Top1">Outsourcing Service for Java Development</h2>
-                                <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
-                                    one which is why we have set on a miison to bring them all to one place
+                                <p class="Top2"> WE WILL PROVIDE JAVA INDUSTRY JAVA PROFESSIONALS TO SOFTWERE INDUSTRY
                                 </p>
                             </div>
 
                         </div>
 
                         <div class="item Image1">
-                            <img src={Carrosel3} class='Carrosel' alt="New york" style={{ width: '100%', height: '80vh' }} />
-                            <div class="Top">
-                                <h2 class="Top1" >Give Wings To Your Business, Develop a Mobile App</h2>
-                                <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
-                                    one which is why we have set on a miison to bring them all to one place
+                            <img src={mobile3} class='Carrosel' alt="New york" style={{ width: '100%', height: '100vh' }} />
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor:'#00000099' }}>
+                                <h2 class="Topp" >Give Wings To Your Business, Develop a Mobile App</h2>
+                                <p class="Top2"> Our Mobile App Solutions will make your business a touch away on iPhone, Android or iPad. We develop creative and customer centric mobile apps to give your users and customers a ceaseless friendly experience.
                                 </p>
                             </div>
 
                         </div>
 
                         <div class="item Image1">
-                            <img src={Carrosel4} class='Carrosel' alt="New york" style={{ width: '100%', height: '80vh' }} />
-                            <div class="Top">
-                                <h2 class="Top1" >We Develop Ideas Into Pioneering Website</h2>
-                                <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
-                                    one which is why we have set on a miison to bring them all to one place
+                            <img src={business} class='Carrosel' alt="New york" style={{ width: '100%', height: '100vh' }} />
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor:'#00000099' }}>
+                                <h2 class="Top1" >We Develop Ideas Into Pioneering Websites</h2>
+                                <p class="Top2">Our services such as corporate Website Design & Development, Search Engine Optimization(SEO), logo design, Magento web development, digital marketing approaches, Google Adwords, WordPress website development at a single place.
                                 </p>
                             </div>
+                        </div>
+
+                        <div class="item Image1">
+                            <img src={buy} class='Carrosel' alt="Chicago" style={{ width: '100%', height: '100vh' }} />
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
+                                <h2 class="Top1">E commerce Development: Sell Your Products in Online Bazar</h2>
+                                <p class="Top2"> PradeepIT delivers efficient <b>custom eCommerce store development services</b>
+                                    <b>eCommerce development solutions </b> along with a huge list of offerings including extensions development, theme customization and maintenance services.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -104,331 +222,54 @@ const Digital = () => {
                     </span>
                 </div>
 
-
-                <div class="container-fluid" style={{ overflow: "hidden", fontSize: 14 }}>
-
-                    <div class="row animated animatedFadeInUp fadeInUp" style={{ marginTop: 60, textAlign: "start", paddingLeft: 100, paddingRight: 100, fontSize: 12 }}>
-                        <div class="col-md-4 col-sm-9" style={{ display: "flex", flexDirection: "row" }}>
-                            <img src={Spy} style={{ height: 50, width: 80, marginTop: 40 }} />
-                            <p>
-
-                                <div class="separator-line bg-yellow no-margin-lr"></div>
-                                <h4 style={{ marginLeft: 35, fontSize: 12 }}>OUTSOURCING SERVICE PROVIDER</h4>
-                                <hr style={{ width: '10%', marginLeft: 35, fontWeight: 900, backgroundColor: '#FBDA44' }} />
-                                <p style={{ fontSize: 14, marginLeft: 35, paddingRight: '15%' }}>We provide the business process outsourcing across India.It serve around 40+ clients in Bangalore, 8+ clients  in Pune, 3+ clients in Delhi & Gurgaon and spreadig across all the states in India. In India, it provide services like</p>
-                                <ul
-                                    style={{ lineHeight: 1 }}
-                                    class="Listitems"
-                                >
-                                    <li>Full stack Java Developer</li>
-                                    <li>SAP CX/hybris Consultants</li>
-                                    <li>Full stack PHP Developer</li>
-                                    <li>Full stack UI/UX Developer</li>
-                                    <li>Freelancer Funtional Consultants</li>
-                                    <li>Freelancer Andriod & IOS Developer</li>
-                                    <li>Freelancer Big Data & Hadoop</li>
-                                </ul>
-
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-sm-9" style={{ display: "flex", flexDirection: "row" }}>
-                            <img src={Desktop} style={{ height: 50, width: 80, marginTop: 40 }} />
-                            <p>
-                                <div class="separator-line bg-yellow no-margin-lr"></div>
-
-                                <h4 style={{ marginLeft: 35, fontSize: 12 }}>WEB DEVELOPMENT</h4>
-                                <hr style={{ width: '10%', marginLeft: 35, fontWeight: 900, backgroundColor: '#FBDA44' }} />
-
-                                <p style={{ fontSize: 14, marginLeft: 35, paddingRight: '15%' }}>
-                                    We provide field expertise and complete support right from the initial requirement design all the way to launch and post-implementation.Our expertise in Web Development involves Creating</p>
-                                <ul class="Listitems">
-                                    <li>Static Website</li>
-                                    <li>CMS Website</li>
-                                    <li>Ecommerce Website</li>
-                                    <li>Website Re-Design</li>
-                                    <li>Web Hosting & Server Maintainance</li>
-                                    <li>WordPress Website</li>
-                                    <li>Responsive Website</li>
-                                </ul>
-
-
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-sm-9" style={{ display: "flex", flexDirection: "row" }}>
-                            <img src={Airbaloon} style={{ height: 50, width: 80, marginTop: 40 }} />
-                            <p>
-
-                                <div class="separator-line bg-yellow no-margin-lr"></div>
-                                <h4 style={{ marginLeft: 35, fontSize: 12 }}>DIGITAL MARKETING</h4>
-                                <hr style={{ width: '10%', marginLeft: 35, fontWeight: 900, backgroundColor: '#FBDA44' }} />
-
-                                <p style={{ fontSize: 14, marginLeft: 35, paddingRight: '15%' }}>
-                                    We believe that the work we do must have a real impact in the online world as well as in the conventional marketplace with help of Our Digital Marketing Experts and we exposed to measure ROI of digital media channels and Our services are</p>
-                                <ul class="Listitems">
-                                    <li>Full stack Java Developer</li>
-                                    <li>SAP CX/hybris Consultants</li>
-                                    <li>Full stack PHP Developer</li>
-                                    <li>Full stack UI/UX Developer</li>
-                                    <li>Freelancer Funtional Consultants</li>
-                                    <li>Freelancer Andriod & IOS Developer</li>
-                                    <li>Freelancer Big Data & Hadoop</li>
-                                </ul>
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row animated animatedFadeInUp fadeInUp" style={{ marginTop: 30, textAlign: "start", paddingLeft: 100, paddingRight: 100, fontSize: 12 }}>
-                        <div class="col-md-4 col-sm-9" style={{ display: "flex", flexDirection: "row" }}>
-                            <img src={Camera} style={{ height: 50, width: 80, marginTop: 40 }} />
-
-                            <p>
-
-                                <div class="separator-line bg-yellow no-margin-lr"></div>
-
-                                <h4 style={{ marginLeft: 35, fontSize: 12 }}>VIEDO PRODUCTION</h4>
-                                <hr style={{ width: '10%', marginLeft: 35, fontWeight: 900, backgroundColor: '#FBDA44' }} />
-
-                                <p style={{ fontSize: '15px', paddingLeft: '15%', paddingRight: '15%' }}>We provide the business process outsourcing across India.It serve around 40+ clients in Bangalore, 8+ clients  in Pune, 3+ clients in Delhi & Gurgaon and spreadig across all the states in India. In India, it provide services like</p>
-                                <ul class="Listitems">
-                                    <li>Full stack Java Developer</li>
-                                    <li>SAP CX/hybris Consultants</li>
-                                    <li>Full stack PHP Developer</li>
-                                    <li>Full stack UI/UX Developer</li>
-                                    <li>Freelancer Funtional Consultants</li>
-                                    <li>Freelancer Andriod & IOS Developer</li>
-                                    <li>Freelancer Big Data & Hadoop</li>
-                                </ul>
-
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-sm-9" style={{ display: "flex", flexDirection: "row" }}>
-                            <img src={Trophy} style={{ height: 50, width: 80, marginTop: 40 }} />
-                            <p>
-
-                                <div class="separator-line bg-yellow no-margin-lr"></div>
-                                <h4 style={{ marginLeft: 35, fontSize: 12 }}>CORPORATE & ONLINE TRANINING</h4>
-                                <hr style={{ width: '10%', marginLeft: 35, fontWeight: 900, backgroundColor: '#FBDA44' }} />
-
-                                <p style={{ fontSize: '15px', paddingLeft: '15%', paddingRight: '15%' }}>We provide the business process outsourcing across India.It serve around 40+ clients in Bangalore, 8+ clients  in Pune, 3+ clients in Delhi & Gurgaon and spreadig across all the states in India. In India, it provide services like</p>
-                                <ul class="Listitems">
-                                    <li>Full stack Java Developer</li>
-                                    <li>SAP CX/hybris Consultants</li>
-                                    <li>Full stack PHP Developer</li>
-                                    <li>Full stack UI/UX Developer</li>
-                                    <li>Freelancer Funtional Consultants</li>
-                                    <li>Freelancer Andriod & IOS Developer</li>
-                                    <li>Freelancer Big Data & Hadoop</li>
-                                </ul>
-
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-sm-9" style={{ display: "flex", flexDirection: "row" }}>
-                            <img src={Cloud} style={{ height: 50, width: 80, marginTop: 40 }} />
-
-                            <p>
-
-                                <div class="separator-line bg-yellow no-margin-lr"></div>
-
-                                <h4 style={{ marginLeft: 35, fontSize: 12 }}>CLOUD APPLICATION DEVELOPMENT</h4>
-                                <hr style={{ width: '10%', marginLeft: 35, fontWeight: 900, backgroundColor: '#FBDA44' }} />
-                                <p style={{ fontSize: '15px', paddingLeft: '15%', paddingRight: '15%' }}>We provide the business process outsourcing across India.It serve around 40+ clients in Bangalore, 8+ clients  in Pune, 3+ clients in Delhi & Gurgaon and spreadig across all the states in India. In India, it provide services like</p>
-                                <ul class="Listitems">
-                                    <li>Full stack Java Developer</li>
-                                    <li>SAP CX/hybris Consultants</li>
-                                    <li>Full stack PHP Developer</li>
-                                    <li>Full stack UI/UX Developer</li>
-                                    <li>Freelancer Funtional Consultants</li>
-                                    <li>Freelancer Andriod & IOS Developer</li>
-                                    <li>Freelancer Big Data & Hadoop</li>
-                                </ul>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<WhyChooseUs/>
+               
 
 
 
                 <div class="container-fluid" style={{ position: 'relative' }}>
-                    <div class="row"
-                    //  style={{position:'relative'}}
-                    >
-
-                        {/* <div class="col-md-12 col-sm-12 col-xs-12"> */}
-                        <img src={Laptop1} class="img-fluid" style={{ width: '100%', height: '40vh' }} />
-                        {/* </div> */}
+                    <div class="row">
+                        <img src={Laptop1} class="img-fluid" style={{ width: '100%', height: '50vh' }} />
 
                     </div>
-                    <div class="row" style={{ position: 'absolute', bottom: 0, backgroundColor: '#00000055', left: 15, width: '98%', height: '40vh', padding: 100, color: '#FFFFFF' }}>
-                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: '20px', fontWeight: 800 }}>
-                            <h1 style={{ marginLeft: 20 }}>15</h1>
+                    <div class="row" style={{ position: 'absolute', bottom: 0, backgroundColor: '#000000C3', left: 15, width: '99%', height: '50vh', padding: 100, color: '#FFFFFF' }}>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: 18 }}>
+                            <img src={delhiveryBox} style={{ height: 50, width: 60, marginLeft: 20, marginBottom: 5 }} />
+                            <h1 style={{ marginLeft: 20 }}>{years}</h1>
                             <p>Years of Experience</p>
                         </div>
-                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: '20px', fontWeight: 800 }}>
-                            <h1 style={{ marginLeft: 20 }}>304</h1>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: 18 }}>
+                            <img src={ThumbsUp} style={{ height: 50, width: 50, marginLeft: 20, marginBottom: 5 }} />
+                            <h1 style={{ marginLeft: 20 }}>{count}</h1>
                             <p>Projects Completed</p>
                         </div>
-                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: '20px', fontWeight: 800 }}>
-                            <h1 style={{ marginLeft: 30 }}>16</h1>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: 18 }}>
+                            <img src={happyClient} style={{ height: 50, width: 50, marginLeft: 20, marginBottom: 5}} />
+                            <h1 style={{ marginLeft: 30 }}>{clients}</h1>
                             <p>Happy Clients</p>
                         </div>
-                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: '20px', fontWeight: 800 }}>
-                            <h1 style={{ marginLeft: 30 }}>3</h1>
+                        <div class="col-md-3 col-sm-3 col-xs-3" style={{ fontSize: 18 }}>
+                            <img src={world} style={{ height: 50, width: 50, marginLeft: 20, marginBottom: 5 }} />
+                            <h1 style={{ marginLeft: 30 }}>{country}</h1>
                             <p>Number of Countries</p>
                         </div>
                     </div>
 
                 </div>
-
                 {/* tab design */}
-
-                <div class="container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}><h2 style={{ marginLeft: '40%', fontWeight: '800', marginTop: '3%', marginBottom: '3%' }}> LATEST WORK</h2>
-                    <p style={{ fontSize: '16px', paddingBottom: '30px', color: '#7F93C1' }}>We are technology leaders and have crafted intuitive and lasting online and mobile experiences for hundreds of associations and non-profits.</p>
-                </div>
-                <div id="exTab3" class="container-fluid">
-                    <ul class="nav nav-pills" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', fontSize: '15px' }}>
-                        <li class="active">
-                            <a href="#1b" data-toggle="tab">ALL</a>
-                        </li>
-                        <li><a href="#2b" data-toggle="tab">SAP</a>
-                        </li>
-                        <li><a href="#3b" data-toggle="tab">WEBSITE DESIGN</a>
-                        </li>
-
-                    </ul>
-
-                    <div class="tab-content clearfix">
-                        <div class="tab-pane active" id="1b">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-4 col-xs-10 CARD">
-                                        <img src={Card1} class="me-2 mb-4 Card1" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>LERBS-GERMANY,HAMBURG</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} />
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card2} class="me-2 mb-4 Card2" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>SAP CD-INDIA,BANGALORE</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card3} class="me-2 mb-4 Card3" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>DIGITAL MEDIA CENTRE- STUTTGART,GERMANY</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card4} class="me-2 mb-4 Card4" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>EPLUS-CGI,GERMANY DUSSELDORF</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container-fluid mt-4">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card5} class="me-2 mb-4 Card5" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>FUTURE GROUP-INDIA, BANGALORE</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card6} class="me-2 mb-4 Card6" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>LANDMARK DOWNSHIPS</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card7} class="me-2 mb-5 Card7" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>KANNADAMASSALA.COM</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-
-                                </div>
-                            </div>
+<Latestworks/>
 
 
+                <HomeNumber/>
+                <OurService/>
+                <MobileCarosel/>
+                <ImageComponent/>
 
-                        </div>
-                        <div class="tab-pane" id="2b">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-4 col-xs-10 CARD">
-                                        <img src={Card1} class="me-2 mb-4 Card1" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>LERBS-GERMANY,HAMBURG</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} />
-                                        </div>
+                <hr style={{ width: '100%', marginBottom: 100, marginTop: 50 }}></hr>
 
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card2} class="me-2 mb-4 Card2" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>SAP CD-INDIA,BANGALORE</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card3} class="me-2 mb-4 Card3" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>DIGITAL MEDIA CENTRE- STUTTGART,GERMANY</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card4} class="me-2 mb-4 Card4" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>EPLUS-CGI,GERMANY DUSSELDORF</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-10">
-                                <img src={Card5} class="me-2 mb-4 Card5" />
-                                <div class="Lerbs">
-                                    <h6 style={{ fontSize: '15px' }}>FUTURE GROUP-INDIA, BANGALORE</h6>
-                                    <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="3b">
-                            <div class="container-fluid mt-4">
-                                <div class="row">
-
-
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card6} class="me-2 mb-4 Card6" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>LANDMARK DOWNSHIPS</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-10">
-                                        <img src={Card7} class="me-2 mb-5 Card7" />
-                                        <div class="Lerbs">
-                                            <h6 style={{ fontSize: '15px' }}>KANNADAMASSALA.COM</h6>
-                                            <hr style={{ width: '15%', marginLeft: '40%', border: '3px solid #FDDA4C' }} /></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <HomeNumber />
-                <OurService />
-                <MobileCarosel />
-                <ImageComponent />
-
-                <div class="container-fluid">
-                    <div class="row">
+                <div class="container-fluid container">
+                    <h2 style={{ textAlign: 'center', marginBottom: 80, fontWeight: 550, letterSpacing: 1 }}>LATEST BLOGS</h2>
+                    <div class="row fade-in">
                         <div class="col-md-4 col-sm-6 col-xs-10">
                             <img src={Adope} class="Adope" style={{ height: 190, width: '80%', marginBottom: 50 }} />
                             <h4>
@@ -460,8 +301,10 @@ const Digital = () => {
                             <p style={{ fontSize: '14px' }}>In the technology revolution, the innovation has no limit in any filed where technology taking forward into next level. As earlier days in the last...</p>
                         </div>
                     </div>
-                    <div class="d-flex row justify-content-center" style={{ alignItems: 'center', width: '10%', marginLeft: '44%', paddingBottom: 30, paddingTop: 20 }}>
-                        <button class="Blog"><b>VIEW ALL BLOG</b></button>
+                    <div class="d-flex row justify-content-center"
+                        style={{ alignItems: 'center', width: '10%', marginLeft: '44%', paddingBottom: 30, paddingTop: 20 }}
+                    >
+                        <button class="Blog fade-in" style={{ fontSize: 12 }}>VIEW ALL BLOG</button>
                     </div>
 
                 </div>
@@ -478,34 +321,34 @@ const Digital = () => {
 
                     </ol>
 
-                    <div class="carousel-inner" >
+                    <div class="carousel-inner" style={{ backgroundColor: '#000000', color: 'white',paddingLeft:"10%"}}>
                         <div class="item active">
                             <div class="container-fluid">
-                                <div class="row d-flex align-items-center ps-5" style={{ backgroundColor: '#000000', color: 'white', height: '50vh' }}>
+                                <div class="row d-flex align-items-center justify-content-center" style={{ backgroundColor: '#000000', color: 'white', height: '70vh' }}>
                                     <div class="col-md-4 col-sm-6 col-xs-10">
                                         <div style={{ paddingLeft: '70px' }}>
-                                            <h1 ><i class="bi bi-camera-fill"></i></h1>
+                                            <img src={CamaraPNG} style={{ height: 50, width: 60}} />
                                         </div>
 
-                                        <h5 class="ps-4">CONSIDERED DESIGN</h5>
+                                        <h5 class="ps-4" style={{ color: '#FFFFFF' }}>CONSIDERED DESIGN</h5>
                                         <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE RESPOND DIRECTLY TO A<br></br>
                                             PROJECT’S OBJECTIVES.</p>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-10">
                                         <div style={{ paddingLeft: '70px' }} >
-                                            <h1 class="ps-5"><i class="bi bi-bullseye"></i></h1>
+                                            <img src={targetCircle} style={{ height: 50, width: 60}} />
                                         </div>
 
-                                        <h5 class="ps-4">CREATIVE COLLABORATION</h5>
+                                        <h5 class="ps-4" style={{ color: '#FFFFFF' }}>CREATIVE COLLABORATION</h5>
                                         <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE LOVE WORKING WITH PEOPLE<br></br>
                                             WHO EMBRACE THE DESIGN
                                         </p>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-10">
                                         <div style={{ paddingLeft: '70px' }} >
-                                            <h1 class="ps-5"><i class="bi bi-megaphone"></i></h1>
+                                            <img src={SpeakerPNG} style={{ height: 50, width: 60}} />
                                         </div>
-                                        <h5 class="ps-4">IMPECCABLE SERVICE</h5>
+                                        <h5 class="ps-4" style={{ color: '#FFFFFF' }}>IMPECCABLE SERVICE</h5>
                                         <p style={{ fontSize: '14px', color: '#5E5E5E' }}>GREAT SERVICE IS ACHIEVED<br></br>
                                             THROUGH PROFESSIONALISM
                                         </p>
@@ -517,31 +360,31 @@ const Digital = () => {
 
                         <div class="item">
                             <div class="container-fluid">
-                                <div class="row d-flex align-items-center ps-5" style={{ backgroundColor: '#000000', color: 'white', height: '50vh' }}>
+                                <div class="row d-flex align-items-center ps-5" style={{ backgroundColor: '#000000', color: 'white', height: '70vh' }}>
                                     <div class="col-md-4 col-sm-6 col-xs-10 ps-5">
                                         <div style={{ paddingLeft: '40px' }} >
-                                            <h1 ><i class="bi bi-geo-alt"></i></h1>
+                                            <img src={Message} style={{ height: 50, width: 60}} />
                                         </div>
-                                        <h5 class="ps-4">ALL DESIGN</h5>
-                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE RESPOND DIRECTLY TO A<br></br>
-                                            PROJECT’S OBJECTIVES.</p>
+                                        <h5 class="ps-4 text-white">ENHANCE AMPLIFY</h5>
+                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WORKING WITH THE LATEST<br></br>
+                                            TECHNOLOGY WE DESIGN .</p>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-10">
                                         <div style={{ paddingLeft: '50px' }} >
-                                            <h1 ><i class="bi bi-balloon-fill"></i></h1>
+                                            <img src={Laptop} style={{ height: 50, width: 60}} />
                                         </div>
-                                        <h5 class="ps-4">CREATIVE COLLABORATION</h5>
-                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE LOVE WORKING WITH PEOPLE<br></br>
-                                            WHO EMBRACE THE DESIGN
+                                        <h5 class="ps-4 text-white">CONSIDERED DESIGN</h5>
+                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE RESPOND DIRECTLY TO A<br></br>
+                                            PROJECT’S OBJECTIVES.
                                         </p>
                                     </div>
                                     <div class="col-md-4 col-sm-6 col-xs-10">
                                         <div style={{ paddingLeft: '50px' }} >
-                                            <h1 ><i class="bi bi-pencil-fill"></i></h1>
+                                            <img src={Pencil} style={{ height: 50, width: 60}} />
                                         </div>
-                                        <h5 class="ps-4">IMPECCABLE SERVICE</h5>
-                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>GREAT SERVICE IS ACHIEVED<br></br>
-                                            THROUGH PROFESSIONALISM
+                                        <h5 class="ps-4 text-white">CREATIVE COLLABORATION</h5>
+                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE LOVE WORKING WITH PEOPLE<br></br>
+                                            WHO EMBRACE THE DESIGN
                                         </p>
                                     </div>
                                 </div>
@@ -551,32 +394,34 @@ const Digital = () => {
 
                         <div class="item">
                             <div class="container-fluid">
-                                <div class="row d-flex align-items-center ps-5" style={{ backgroundColor: '#000000', color: 'white', height: '50vh' }}>
-                                    <div class="col-md-4 col-sm-6 col-xs-10">
+                                <div class="row d-flex align-items-center justify-content-center" style={{ backgroundColor: '#000000', color: 'white', height: '70vh'}}>
+                                    <div class="col-md-3 col-sm-6 col-xs-10">
                                         <div style={{ paddingLeft: '70px' }} >
-                                            <h1 ><i class="bi bi-envelope"></i></h1>
+                                            <img src={Pencil} style={{ height: 50, width: 60}} />
                                         </div>
-                                        <h5 class="ps-4">ALL DESIGN</h5>
-                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE RESPOND DIRECTLY TO A<br></br>
-                                            PROJECT’S OBJECTIVES.</p>
-                                    </div>
-                                    <div class="col-md-4 col-sm-6 col-xs-10">
-                                        <div style={{ paddingLeft: '70px' }} >
-                                            <h1 ><i class="bi bi-laptop"></i></h1>
-                                        </div>
-                                        <h5 class="ps-4">CREATIVE COLLABORATION</h5>
+                                        <h5 class="ps-4 text-white">CREATIVE COLLABORATION</h5>
                                         <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WE LOVE WORKING WITH PEOPLE<br></br>
                                             WHO EMBRACE THE DESIGN
                                         </p>
                                     </div>
-                                    <div class="col-md-4 col-sm-6 col-xs-10">
-                                        <div style={{ paddingLeft: '70px' }} >
-                                            <h1><i class="bi bi-pencil-fill"></i></h1>
+                                    <div class="col-md-3 col-sm-6 col-xs-10" style={{marginLeft:50}}>
+                                        <div style={{ paddingLeft: '70px'}} >
+                                            <img src={Baloon} style={{ height: 50, width: 60}} />
+
                                         </div>
-                                        <h5 class="ps-4">IMPECCABLE SERVICE</h5>
+                                        <h5 class="ps-4 text-white">IMPECCABLE SERVICE</h5>
                                         <p style={{ fontSize: '14px', color: '#5E5E5E' }}>GREAT SERVICE IS ACHIEVED<br></br>
                                             THROUGH PROFESSIONALISM
                                         </p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-10" style={{marginLeft:50}}>
+                                        <div style={{ paddingLeft: '70px' }} >
+                                            <img src={Location} style={{ height: 50, width: 60}} />
+
+                                        </div>
+                                        <h5 class="ps-4 text-white">UNDERSTAND SITUATION</h5>
+                                        <p style={{ fontSize: '14px', color: '#5E5E5E' }}>WORKING WITH THE LATEST<br></br>
+                                            TECHNOLOGY WE DESIGN .</p>
                                     </div>
                                 </div>
                             </div>
@@ -590,7 +435,7 @@ const Digital = () => {
                 <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%' }}>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-10">
-                            <h1 class="text-white" style={{ paddingLeft: '190px', paddingTop: '90px', fontSize: '32px' }}>WE PROVIDE INNOVATIVE IT <br></br>
+                            <h1 class="text-white" style={{ paddingLeft: 100, paddingTop: 50, fontSize: 40, textAlign: 'center' }}>WE PROVIDE INNOVATIVE IT <br></br>
                                 SOLUTIONS FOR YOUR <br></br>
                                 BUSINESS GROWTH</h1>
                         </div>
@@ -638,9 +483,6 @@ const Digital = () => {
                         </div>
                     </div>
                 </div>
-
-
-
 
                 <div style={{ height: '20vh' }}>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Style/AboutCompany.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Head_img from '../../Images/embitel-logo2.jpg';
+import Head_img from '../../Assets/embitel-logo2.jpg';
 
 function EmbiTelTecnnologies() {
   return (

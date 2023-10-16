@@ -1,11 +1,12 @@
 import { React, useEffect, useState } from 'react';
-import TopBarComponent from './topbar';
-import img from '../Images/news1.jpg'
-import fund from '../Images/investment.jpg';
-import line from '../Images/line2.png'
+// import TopBarComponent from './topbar';
+import img from '../Assets/news1.jpg'
+import fund from '../Assets/investment.jpg';
+import line from '../Assets/line2.png'
 import { CiHeart } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom";
+import TopBarCommon from "./Topbarcommon";
 import '../Style/newsview.css'
 
 
@@ -45,7 +46,7 @@ const ViewNews = () => {
     console.log("dataIndex",dataIndex);
     return (
         <>
-            <TopBarComponent />
+            <TopBarCommon/>
             <div className='container col2-layout mt-5'>
                 <div className='row'>
                     <div className='col-md-8 col-sm-12 col-xs-12'>

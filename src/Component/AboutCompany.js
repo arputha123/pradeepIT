@@ -15,7 +15,8 @@ import Course4 from './AboutCompanyComponents/Tarento';
 import Course5 from './AboutCompanyComponents/EngineerBabu';
 import Course6 from './AboutCompanyComponents/PogeyanTechnologies';
 import Course7 from './AboutCompanyComponents/EmbiTelTecnnologies';
-import TopBarComponent from './topbar';
+// import TopBarComponent from './topbar';
+import TopBarCommon from "./Topbarcommon";
 
 function AboutCompany() {
   const [shoeTabs, setShowTabs] = useState("KOU CHAN")
@@ -26,7 +27,7 @@ function AboutCompany() {
   }
   return (
     <>
-      <TopBarComponent />
+      <TopBarCommon/>
       <div style={{ borderTop: "1px solid #e5e5e5" }} />
       <div className="container col2-layout">
         <div style={{ paddingTop: 40, paddingLeft: 13, paddingRight: 13 }} className="row Fadein_animation">
@@ -59,25 +60,25 @@ function AboutCompany() {
       <Container>
         <Nav fill variant="tabs" >
           <Nav.Item className='tab'>
-            <Nav.Link name="KOU CHAN" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "KOU CHAN" ? true : false}> KOU CHAN</Nav.Link>
+            <Nav.Link name="KOU CHAN" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "KOU CHAN" ? true : false}> KOU CHAN</Nav.Link>
           </Nav.Item>
           <Nav.Item className='tab' >
-            <Nav.Link name="STANDARD TOUCH" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "STANDARD TOUCH" ? true : false}>STANDARD TOUCH</Nav.Link>
+            <Nav.Link name="STANDARD TOUCH" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "STANDARD TOUCH" ? true : false}>STANDARD TOUCH</Nav.Link>
           </Nav.Item>
           <Nav.Item className='tab' >
-            <Nav.Link name="CONVISTA AG" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "CONVISTA AG" ? true : false}>CONVISTA AG</Nav.Link>
+            <Nav.Link name="CONVISTA AG" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "CONVISTA AG" ? true : false}>CONVISTA AG</Nav.Link>
           </Nav.Item>
           <Nav.Item className='tab' >
-            <Nav.Link name="TARENTO" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "TARENTO" ? true : false}>TARENTO</Nav.Link>
+            <Nav.Link name="TARENTO" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "TARENTO" ? true : false}>TARENTO</Nav.Link>
           </Nav.Item>
           <Nav.Item className='tab' >
-            <Nav.Link name="ENGINEER BABU" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "ENGINEER BABU" ? true : false}>ENGINEER BABU</Nav.Link>
+            <Nav.Link name="ENGINEER BABU" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "ENGINEER BABU" ? true : false}>ENGINEER BABU</Nav.Link>
           </Nav.Item>
           <Nav.Item className='tab' >
-            <Nav.Link name="POGEYAN TECHNOLOGIES" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "POGEYAN TECHNOLOGIES" ? true : false}>POGEYAN TECHNOLOGIES</Nav.Link>
+            <Nav.Link name="POGEYAN TECHNOLOGIES" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "POGEYAN TECHNOLOGIES" ? true : false}>POGEYAN TECHNOLOGIES</Nav.Link>
           </Nav.Item>
           <Nav.Item className='tab' >
-            <Nav.Link name="EMBITEL TECHNOLOGIES" style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "EMBITEL TECHNOLOGIES" ? true : false}>EMBITEL TECHNOLOGIES</Nav.Link>
+            <Nav.Link name="EMBITEL TECHNOLOGIES" className='aboutNav' style={{ textDecoration: 'none' }} onClick={(e) => Tabonclick(e)} active={shoeTabs == "EMBITEL TECHNOLOGIES" ? true : false}>EMBITEL TECHNOLOGIES</Nav.Link>
           </Nav.Item>
 
         </Nav>
@@ -123,7 +124,7 @@ function AboutCompany() {
           <Col md={3} sm={6} lg={3}>
             <Container>
               <div className='icon1' >
-                <GiArcheryTarget />
+                <GiArcheryTarget/>
               </div>
               <h5>SOLUTIONS</h5><br></br>
               <p className='body_text'>We endeavor to offer you best solutions in order to acquire your maximum satisfaction. We are the masters in offering effective software development solutions.</p>

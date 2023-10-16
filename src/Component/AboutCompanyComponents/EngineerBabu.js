@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Style/AboutCompany.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Head_img from '../../Images/logo_purple_80.png';
+import Head_img from '../../Assets/logo_purple_80.png';
 
 function EngineerBabu() {
 

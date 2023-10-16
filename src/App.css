@@ -18,6 +18,14 @@
   animation-duration: 1s;
   animation-name: fadeInBottom;
 }
+.fade-in{
+  opacity: 0;
+}
+.fade-in.appear{
+  opacity: 1;
+  animation-duration: 750ms;
+  animation-name: fadeInBottom;
+}
 @keyframes fadeInBottom {
   from {
       opacity: 0;
@@ -25,6 +33,7 @@
   }
   to { opacity: 1 }
 }
+
 
 
 /* 

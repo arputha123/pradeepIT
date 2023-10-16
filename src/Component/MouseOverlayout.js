@@ -13,7 +13,7 @@ function MouseOverLayout(props) {
             <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <div style={{ position: 'relative', flex: 1, display: 'flex' }}>
                     <img src={Profile} style={{ width: "100%" }}></img>
-                    <div style={{ position: 'absolute', backgroundColor: '#000000', color: '#FFFFFF', height: show ? '50%' : 0, bottom: 0, transition: 'ease-in 300ms', width: '100%', overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', backgroundColor: '#000000', color: '#FFFFFF', height: show ? '50%' : 0, bottom: 0, transition: 'ease-in 300ms', width: '100%', overflow: 'hidden' ,fontSize:12}}>
                         {
 
                             <div style={{ padding: 15 }}>
