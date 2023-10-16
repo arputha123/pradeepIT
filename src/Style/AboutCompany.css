@@ -8,12 +8,12 @@
 }
 
 .contentColumn,
-ul,
+/* ul,
 li {
   display: flex;
   padding-right: 15%;
   font-size: 20px;
-}
+} */
 
 .container1 {
   margin-top: 3%;
