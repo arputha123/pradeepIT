@@ -7,9 +7,9 @@
 
 }
 
-.contentColumn,
-ul,
-li {
+.contentColumn
+
+ {
   display: flex;
   padding-right: 15%;
   font-size: 20px;

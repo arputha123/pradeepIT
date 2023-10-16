@@ -307,7 +307,7 @@ i, cite, em, var, address, dfn {
     margin-bottom: 8px;
     line-height: 16px !important;
 }
-ul, li {
+.orun {
     display: flex;
     flex-direction: column;
     padding-right: 0 !important;

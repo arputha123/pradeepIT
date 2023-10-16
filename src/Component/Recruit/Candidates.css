@@ -68,6 +68,9 @@ color: black;
 }
 .candi{
     height: auto;
+    padding-right: 70px;
+    padding-left: 70px;
+
 }
 .no-margin-lr {
     margin-left: 0 !important;
@@ -175,10 +178,10 @@ strong {
     margin-top: 10% !important;
     margin-bottom: 3% !important;
 }
-ul {
+.orun {
     list-style-type: square;
 }
-ul, ol {
+.orun {
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -199,7 +202,7 @@ ul, ol {
     clear: both;
     box-sizing: border-box;
 }
-.row{
+.rowererer{
     display: flex;
     flex-direction: row;
 }
@@ -221,14 +224,16 @@ ul, ol {
 
 
 @media only screen and (max-width: 900px)  {
-.row{
+.rowererer{
     display: flex;
     flex-direction: column;
 }
-.container{
+
+.containers{
     display: flex;
     flex-direction: column;
 }
+
 .text-large1 {
     font-size: 15px;
     text-transform: uppercase;
@@ -245,12 +250,20 @@ ul, ol {
         margin-top: 50px;
       
     }
+    .candi{
+        height: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+    
+    }
     
 
 }
 @media only screen and (max-width: 767px) and  (min-width: 100px)  {
     .candi{
         padding-top: 550px;
+        padding-right: 0px;
+        padding-left: 0px;
     
 
 }
@@ -259,6 +272,8 @@ ul, ol {
 @media only screen and (max-width: 326px) and  (min-width: 150px)  {
     .candi{
         margin-top: 100px;
+        padding-right: 0px;
+        padding-left: 0px;
     
 
 }
@@ -266,6 +281,8 @@ ul, ol {
 @media only screen and (max-width: 326px) and  (min-width: 100px)  {
     .candi{
         margin-top: 150px;
+        padding-right: 0px;
+        padding-left: 0px;
     
 
 }
