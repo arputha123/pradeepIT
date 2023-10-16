@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { Navbar, Nav, NavDropdown ,NavLink,Dropdown,Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import logo2 from '../Images/download.png'
+import logo2 from '../Assets/download.png'
 // import logo1 from '../Images/pradeepitwhite.jpg'
 import { DropdownSubmenu} from "react-bootstrap-submenu";
 import "react-bootstrap-submenu/dist/index.css"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img from '../Images/news1.jpg'
-import line from '../Images/line2.png'
-import fund from '../Images/investment.jpg';
+import img from '../Assets/news1.jpg'
+import line from '../Assets/line2.png'
+import fund from '../Assets/investment.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiHeart } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
