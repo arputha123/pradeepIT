@@ -3,6 +3,8 @@ import Announce from '../Assets/marketing.png'
 import Cart from '../Assets/trolley.png'
 import Tablet from '../Assets/tablet.jpg';
 import Mobile from '../Assets/smartphone.png';
+import "./HomeOurService.css";
+
 
 function OurService() {
     return (
