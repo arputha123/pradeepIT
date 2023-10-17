@@ -1,0 +1,553 @@
+.Laptop1 {
+    position: relative;
+    width: 50%;
+    /* flex:1; */
+}
+.imgour{
+    width: 50px;
+    height: 45px;
+}
+
+.iconsmark{
+    display: flex;
+    flex-direction: row;
+}
+.vlccode{
+    border-right: 1px solid #d7d7d7 ;
+    height: 70px;
+
+}
+.vlccode1{
+    border-right: 1px solid #d7d7d7 ;
+    height: 70px;
+    margin-left: -100px;
+    
+}
+.annou{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+.cartt{
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    
+    
+}
+.carrrrrt{
+    margin-left: 120px;
+}
+.mobbi{
+    width: 50px;
+    height: 50px;
+    
+}
+.mobiii{
+    margin-left: 100px;
+}
+
+
+.Laptop {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.Tablet {
+    width: 50%;
+    height: 500px;
+}
+
+.Digital {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 7px;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: #00000089;
+}
+
+.ourserviceWant {
+    height: 20vh;
+    background-color: #FDD947;
+}
+
+.Btn1 {
+    background-color: #000000;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 10px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    font-size: 14px;
+}
+.Btn1:hover {
+    background-color: #FDD947;
+    border: 2px solid black;
+    color: black;
+}
+
+
+.Btn2 {
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #FDD947;
+    color: rgb(20, 20, 20);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+
+.Btn2:hover {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+.Read {
+    font-size: 12px;
+    background-color: #E75E50;
+    color: white;
+    width: 120px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+.Read:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.Read1 {
+    width: 45%;
+    /* flex: 1; */
+    padding: 5%;
+    border: 5px solid #7e7e7e;
+   margin-left: -700px;
+}
+
+.ourService {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.ourserviceWant {
+    align-items: center;
+}
+@media only screen and (max-width: 570px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .iconsmark{
+        display: flex;
+        flex-direction: row;
+        margin-left: -50px;
+    }
+    .annou{
+        width: 30px;
+        height: 30px;
+       
+    }
+    .cartt{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .mobbi{
+        width: 30px;
+        height: 30px;
+       
+    }
+    .ppann{
+       
+        display: none;
+    }
+
+
+    .Read {
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .Read1 {
+        padding-left: 30px;
+    }
+
+    .Phone {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .Digital {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 15px;
+        bottom: 0px;
+        background-color: #00000089;
+    }
+
+    .ourService {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Tablet {
+        width: 100%;
+        height: 500px;
+        flex: 1
+    }
+
+    .Read1 {
+        width: 100%;
+        flex: 1;
+        padding: 5%;
+        border: 5px solid #7e7e7e;
+        margin-top: 40px;
+    }
+
+    .Laptop1 {
+        position: relative;
+        width: 100%;
+    }
+
+    .ourserviceWant {
+        height: fit-content;
+        background-color: #FDD947;
+        padding-top: 18px;
+        margin-top: 180px;
+    }
+
+    .Btn1 {
+        background-color: #000000;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        margin-left: 2%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .Btn2 {
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #FDD947;
+        color: rgb(20, 20, 20);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        /* margin-right: 10px; */
+        border: 2px solid black;
+
+    }
+}
+@media only screen and (min-width: 570px)and (max-width:900px) {
+    .ourserviceWant {
+       
+        background-color: #FDD947;
+        padding: 18px;
+        width: 100%;
+    }
+
+    .Btn1 {
+
+        background-color: #000000;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 10px;
+        margin-left: 2%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .Btn2 {
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #FDD947;
+        color: rgb(20, 20, 20);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 2px solid black;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .Read{
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .Read1{
+        padding-left: 30px;
+    }
+    .Phone{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .Digital{
+        width:90%;
+        height: 100%;
+        position:absolute;
+        left:15px;
+        bottom:0px;
+        background-color:#00000089;
+      }
+      .ourService{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Tablet{
+        width:90%;
+        height:500px;
+        flex:1
+    }
+    .Read1{
+        width: 90%;
+        flex: 1;
+        padding: 5%;
+        border: 5px solid #7e7e7e;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .Laptop1{
+        position: relative;
+        width: 100%;
+    }
+    .ourserviceWant{
+        height: 150px;
+        background-color: #FDD947; 
+        padding-top: 18px;
+        margin-top: 180px;
+    }
+    .iconsmark{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .annou{
+        width: 30px;
+        height: 30px;
+        margin-left: 0px;
+       
+    }
+    .cartt{
+        width: 30px;
+        height: 30px;
+        margin-left: -70px;
+        
+    }
+    .mobbi{
+        width: 30px;
+        height: 30px;
+        margin-left:-100px;
+       
+    }
+    .ppann{
+       
+        display: none;
+    }
+    .vlccode{
+        display: none;
+    }
+    .vlccode1{
+        display: none;
+    }
+  }
+  @media only screen and (min-width: 570px)and (max-width:900px){
+    .ourserviceWant{
+        height: 250px;
+        background-color: #FDD947; 
+        padding: 18px;
+        width: 100%;
+    }
+  }
+  @media only screen and (min-width: 600px)and (max-width:991px){
+    .Read1 {
+        width: 80%;
+        flex: 1 1;
+        padding: 5%;
+        border: 5px solid #7e7e7e;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .Digital{
+        width:95%;
+        height: 100%;
+        position:absolute;
+        bottom:0px;
+        background-color:#00000089;
+       margin-left: 10px;
+      }
+      .ourService{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .Laptop1{
+        position: relative;
+        width: 95%;
+        
+
+        /* flex:1; */
+    }
+    .Tablet{
+        width:95%;
+        height:500px;
+        flex:1
+    }
+   
+  }
+  @media only screen and (min-width: 100px)and (max-width:431px){
+    .ourserviceWant{
+        height: 250px;
+        background-color: #FDD947; 
+        padding: 18px;
+        width: 100%;
+    }
+    .Btn1{
+   
+        background-color: #000000;
+        color: white;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-right: 10px;
+        margin-left: 20%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    .Btn1:hover{
+        background-color: #FDD947;
+        border: 2px solid black;
+    }
+    
+    
+    .Btn2{
+        font-weight: 700;
+        font-size: 14px;
+        /* padding: 30; */
+        background-color: #FDD947;
+        color: rgb(20, 20, 20);
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: 20%;
+        border: 2px solid black;
+    
+    }
+    .Btn2:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    }
+
+  }
+  @media only screen and (min-width: 100px)and (max-width:280px){
+
+    .ourserviceWant{
+        height: 300px;
+        background-color: #FDD947;
+        padding: 18px;
+        width: 75%;
+       
+    }
+    .imgour{
+        width: 120px;
+        height: 45px;
+        padding-left: 50px;
+    }
+    .Btn1{
+   
+        background-color: #000000;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-right: 10px;
+        margin-left: 20%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    
+    .Btn1:hover{
+        background-color: #FDD947;
+        border: 2px solid black;
+    }
+    
+    
+    .Btn2{
+        font-weight: 700;
+        font-size: 10px;
+        /* padding: 30; */
+        background-color: #FDD947;
+        color: rgb(20, 20, 20);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: 20%;
+        border: 2px solid black;
+    
+    }
+    .Btn2:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    }
+
+  }
+  @media only screen and (min-width: 280px)and (max-width:450px){
+    .ourserviceWant{
+        height: 250px;
+        background-color: #FDD947;
+        padding: 18px;
+       
+        margin-left: 0px;
+    }
+    .imgour{
+        width: 120px;
+        height: 45px;
+        padding-left: 70px;
+    }
+}
+.Laptop1{
+    position: relative;
+    width: 100%;
+}
+  

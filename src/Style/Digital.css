@@ -34,19 +34,7 @@
     font-size: 30px;
     color: white;
 }
-.Laptop1{
-    position: relative;
-    width: 50%;
-    /* flex:1; */
-}
-.Laptop{
-    color: white;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   margin-top: 300px;
-}
+
 .separator-line {
     height: 2px;
     margin: 0 auto;
@@ -94,46 +82,7 @@
 }
 
 
-.Btn1{
-   
-    background-color: #000000;
-    color: white;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-right: 10px;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    font-weight: 700;
-    font-size: 14px;
-}
 
-.Btn1:hover{
-    background-color: #FDD947;
-    border: 2px solid black;
-}
-
-
-.Btn2{
-    font-weight: 700;
-    font-size: 14px;
-    /* padding: 30; */
-    background-color: #FDD947;
-    color: rgb(20, 20, 20);
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-right: 10px;
-    border: 2px solid black;
-
-}
-.Btn2:hover{
-    background-color: black;
-    border: 2px solid black;
-    color: white;
-}
 .Blog{
     background-color: #000000;
     color: white;
@@ -157,31 +106,7 @@
 .Shopping:hover{
     opacity: 0.5;
 }
-.Read{
-    font-size: 12px;
-    background-color: #E75E50;
-    color: white;
-    width: 120px;
-    border-style: none;
-    margin-top: 30px;
-}
-.Read:hover{
-    background-color: #000000;
-    color: white;
-}
 
-.Read1{
-    width: 45%;
-    /* flex: 1; */
-    padding: 5%;
-    border: 5px solid #7e7e7e;
-}
-.ourService{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
 
 .Phone{
     display: flex;
@@ -237,25 +162,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-.Tablet{
-    width:100%;
-    height:100%;
-}
-  .Digital{
-    width:95.5%;
-    height: 100%;
-    position:absolute;
-    left:15px;
-    bottom:0px;
-    top:0px;
-    right:0px;
-    background-color:#00000089;
-  }
-.ourserviceWant{
-    height: 100px;
-    background-color: #FDD947; 
-    padding-top: 18px;
-}
+
 @media only screen and (max-width: 600px) {
     .container{
         display: flex;
@@ -271,193 +178,13 @@
         font-size: 20px;
         color: white;
     }
-    .Read{
-        margin-left: 10px;
-        margin-bottom: 30px;
-    }
-    .Read1{
-        padding-left: 30px;
-    }
+   
     .Phone{
         display: flex;
         flex-direction: column;
         height: 100vh;
     }
-    .Digital{
-        width:100%;
-        height: 100%;
-        position:absolute;
-        left:15px;
-        bottom:0px;
-        background-color:#00000089;
-      }
-      .ourService{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .Tablet{
-        width:100%;
-        height:500px;
-        flex:1
-    }
-    .Read1{
-        width: 100%;
-        flex: 1;
-        padding: 5%;
-        border: 5px solid #7e7e7e;
-        margin-top: 40px;
-        margin-left: 10px;
-    }
-    .Laptop1{
-        position: relative;
-        width: 100%;
-    }
-    .ourserviceWant{
-        height: 150px;
-        background-color: #FDD947; 
-        padding-top: 18px;
-        margin-top: 180px;
-    }
+    
+    
   }
-  @media only screen and (min-width: 570px)and (max-width:900px){
-    .ourserviceWant{
-        height: 250px;
-        background-color: #FDD947; 
-        padding: 18px;
-        width: 100%;
-    }
-  }
-  @media only screen and (min-width: 600px)and (max-width:991px){
-    .Read1{
-        width: 100%;
-        flex: 1;
-        padding: 5%;
-        border: 5px solid #7e7e7e;
-        margin-top: 40px;
-        
-       
-    }
-    .Digital{
-        width:95%;
-        height: 100%;
-        position:absolute;
-        bottom:0px;
-        background-color:#00000089;
-       margin-left: 10px;
-      }
-      .ourService{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .Laptop1{
-        position: relative;
-        width: 100%;
-        
-
-        /* flex:1; */
-    }
-   
-  }
-  @media only screen and (min-width: 100px)and (max-width:431px){
-    .ourserviceWant{
-        height: 250px;
-        background-color: #FDD947; 
-        padding: 18px;
-        width: 100%;
-    }
-    .Btn1{
-   
-        background-color: #000000;
-        color: white;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-right: 10px;
-        margin-left: 20%;
-        margin-bottom: 2%;
-        font-weight: 700;
-        font-size: 14px;
-    }
-    
-    .Btn1:hover{
-        background-color: #FDD947;
-        border: 2px solid black;
-    }
-    
-    
-    .Btn2{
-        font-weight: 700;
-        font-size: 14px;
-        /* padding: 30; */
-        background-color: #FDD947;
-        color: rgb(20, 20, 20);
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-left: 20%;
-        border: 2px solid black;
-    
-    }
-    .Btn2:hover{
-        background-color: black;
-        border: 2px solid black;
-        color: white;
-    }
-
-  }
-  @media only screen and (min-width: 100px)and (max-width:281px){
-
-    .ourserviceWant{
-        height: 250px;
-        background-color: #FDD947; 
-        padding: 18px;
-        width: 100% !important;
-    }
-    .Btn1{
-   
-        background-color: #000000;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-right: 10px;
-        margin-left: 20%;
-        margin-bottom: 2%;
-        font-weight: 700;
-        font-size: 10px;
-    }
-    
-    .Btn1:hover{
-        background-color: #FDD947;
-        border: 2px solid black;
-    }
-    
-    
-    .Btn2{
-        font-weight: 700;
-        font-size: 10px;
-        /* padding: 30; */
-        background-color: #FDD947;
-        color: rgb(20, 20, 20);
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin-left: 20%;
-        border: 2px solid black;
-    
-    }
-    .Btn2:hover{
-        background-color: black;
-        border: 2px solid black;
-        color: white;
-    }
-
-  }
-  
+ 
