@@ -1,0 +1,121 @@
+.Content{
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.icons-icons {
+    color: black; 
+    transition: color 0.3s ease; 
+   
+    cursor: pointer;
+}
+
+.icons-icons:hover {
+    color:#949090; 
+  
+}
+
+
+.parallax-container {
+    position: relative;
+    background: url('../../Assets/Reading.jpg') center/cover fixed no-repeat;
+
+}
+
+.services-button {
+    color: white; 
+    background-color: black; 
+    border: 2px solid black; 
+    border-radius: 0; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+.services-button:hover {
+    background-color:#e6af2a;; 
+    color: black;
+    border: 2px solid black; 
+
+}
+
+#custom-button {
+    cursor: pointer;
+    color: black; 
+    background-color: transparent; 
+    border: 2px solid black; 
+    border-radius: 0; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px !important;
+    font-weight: 700;
+    margin-top: 8vh;
+  
+    padding: 20px 30px;
+
+}
+
+#custom-button:hover {
+    background-color: black; 
+    color: white; 
+}
+
+.fade-in{
+    opacity: 0;
+  }
+  .fade-in.appear{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-name: fadeInBottom;
+  }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }
+
+
+  @media(max-width:887px){
+    .Name{
+text-align: start;
+    }
+    .Content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
