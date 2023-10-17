@@ -1,0 +1,86 @@
+.custom-owl-carousel .owl-prev,
+.custom-owl-carousel .owl-next {
+  font-size: 1rem;
+  width: 2rem;
+  height: 85px;
+  background-color: #dcdcdc;
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center;
+  color: white !important;
+  border: none;
+  border-radius: 1px; 
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+ 
+}
+
+.custom-owl-carousel .owl-prev {
+  left: 0;
+  color: white !important;
+}
+
+.custom-owl-carousel .owl-next {
+  right: 0;
+  color: white !important;
+}
+
+
+
+
+
+
+.owl-prev-icon,
+.owl-next-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+ 
+}
+
+.owl-prev-icon {
+  background-image: url('../../Assets/left-arrow.png');
+
+  }
+
+.owl-next-icon {
+  background-image: url('../../Assets/right-arrow.png');
+}
+
+
+.animated-text {
+    font-size: 24px;
+    animation: slide-in 1s ease forwards; 
+    opacity: 0; 
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  .fade-in{
+    opacity: 0;
+  }
+  .fade-in.appear{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-name: fadeInBottom;
+  }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }
