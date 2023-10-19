@@ -5,7 +5,6 @@ import fund from '../Assets/investment.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiHeart } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
-// import TopBarComponent from './topbar';
 import { useNavigate, Link } from 'react-router-dom';
 import TopBarCommon from "./Topbarcommon";
 
