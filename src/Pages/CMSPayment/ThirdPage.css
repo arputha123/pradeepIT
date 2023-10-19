@@ -1,0 +1,14 @@
+.View-videos:hover{
+    background-color: black !important;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .verical-line{
+        display:none;
+    }
+    .e-commerce{
+        display:none;
+    }
+}
+
+

@@ -1,0 +1,53 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  }
+.Form{
+  height:auto !important;
+  width:100% !important;
+ }
+#background-image{
+  background-image: url('https://pradeepit.com/wp-content/uploads/2018/05/slider-img45.jpg?id=19139');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  margin: 0;
+}
+.Start-Now:hover{
+color:white !important;
+background-color: black;
+
+}
+
+.formControl::placeholder {
+  color: #999; 
+  font-size: 13px !important;
+  
+}
+.option::placeholder{
+  color: #999 !important; 
+  font-size: 10px !important; 
+}
+#Submit:hover{
+  
+  background-color: #139513 !important;
+}
+
+#animated-text {
+  font-size: 24px;
+  animation: slide-in 1s ease forwards; 
+  opacity: 0; 
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

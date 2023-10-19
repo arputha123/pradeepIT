@@ -1,0 +1,33 @@
+.animated-text {
+    font-size: 24px;
+    animation: slide-in 1s ease forwards; 
+    opacity: 0; 
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  .fade-in{
+    opacity: 0;
+  }
+  .fade-in.appear{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-name: fadeInBottom;
+  }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }

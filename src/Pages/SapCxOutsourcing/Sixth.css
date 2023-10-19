@@ -1,0 +1,58 @@
+#navLink {
+  color: #000000;
+  font-size: 14px;
+}
+
+#navLink:hover {
+  text-decoration: underline;
+  color: #000000;
+
+}
+a:hover {
+  --bs-link-color-rgb: unset;
+}
+
+a:focus {
+  outline: unset;
+  outline-offset: unset;
+}
+#navLink:active {
+  text-decoration: underline;
+  color: #000000;
+  border: unset !important;
+}
+
+#team-screen:hover {
+  text-decoration: line-through;
+}
+
+#Number:hover {
+  color: #626262;
+}
+
+@media(max-width:820px) {
+
+  .verical-line {
+    display: none;
+  }
+
+
+}
+
+@media(max-width:390px) {
+
+  .verical-line {
+    display: none;
+  }
+
+
+}
+
+@media(max-width:768px) {
+
+  .verical-line {
+    display: none;
+  }
+
+
+}
