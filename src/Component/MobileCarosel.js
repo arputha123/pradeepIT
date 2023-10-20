@@ -2,7 +2,7 @@ import Phone from '../Assets/phone.png';
 function MobileCarosel () {
     return(
 
-      <div style={{ marginTop: 50, backgroundColor: '#EFEFEF' }}>
+      <div style={{ marginTop: 50, backgroundColor: '#EFEFEF',height:"auto" }}>
            
 <div id="portfolioslides" class="carousel slide center-block" data-ride="carousel">
     <ol class="carousel-indicators">
