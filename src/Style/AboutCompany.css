@@ -69,14 +69,14 @@
   border-right: 1px solid #e5e5e5;
 }
 
-li,
+/* li,
 a {
   border: none;
   color: #575757;
   line-height: 44px;
   padding: 0 20px;
   color: black;
-}
+} */
 
 .head1 {
   text-align: center;
