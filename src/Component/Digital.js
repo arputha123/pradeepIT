@@ -24,6 +24,7 @@ import HomeNumber from "./HomeNumber";
 import OurService from "./HomeOurService";
 import MobileCarosel from "./MobileCarosel";
 import ImageComponent from "./ImageComponent";
+import KeyPerson from "./KeyPerson";
 import WhyChooseUs from "./whyChooseUS";
 import Latestworks from "./LatestWork";
 import Message from '../Assets/open-message.png';
@@ -266,6 +267,8 @@ const Digital = () => {
 
                 <HomeNumber/>
                 <OurService/>
+                <KeyPerson />
+
                 <MobileCarosel/>
                 <ImageComponent/>
 
