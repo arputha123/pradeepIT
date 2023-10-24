@@ -25,7 +25,7 @@ const ViewNews = () => {
     }
     console.log("dataIndex",dataIndex);
     return (
-        <>
+        <div style={{paddingTop:'17vh'}}>
             <TopBarCommon/>
             <div className='container col2-layout mt-5'>
                 <div className='row'>
@@ -241,7 +241,7 @@ const ViewNews = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 export default ViewNews;

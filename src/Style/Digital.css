@@ -1,3 +1,186 @@
+/* form */
+.Growth{
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+.Check{
+    display: flex;
+    flex-direction: row;
+}
+.Check2{
+    display: flex;
+    flex-direction: row;
+}
+.Check1{
+    display: flex;
+    flex-direction: row;
+}
+.Check3{
+    display: flex;
+    flex-direction: row;
+}
+.Input2{
+    margin-left: 10px;
+}
+.Input3{
+    margin-left: 10px;
+}
+.Input4{
+    margin-left: 10px;
+}
+.submit{
+    width: 20%;
+    background-color: #5CB85C;
+    color: white;
+    padding: 6px;
+    border: 1px solid #DFDFDF;
+}
+
+
+
+
+@media only screen and (max-width: 570px) {
+    .ImageMove {
+        position: relative;
+        background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ImageMoveContent {
+        position: absolute;
+        bottom: 0px;
+        background-color: #00000099;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .Top1 {
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .Top2 {
+        font-size: 20px;
+        color: white;
+    }
+
+   
+    .Phone {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .Growth{
+        padding-left: 0;
+        padding-top: 10;
+        font-size: 25;
+        text-align: center;
+    }
+    .Check{
+        font-size: 6;
+    }
+    .Check2{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 6;
+        flex-wrap: wrap;
+    }
+    .Check1{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 6;
+        flex-wrap: wrap;
+    }
+    .Check3{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 6;
+        flex-wrap: wrap;
+    }
+    .Input2{
+        margin-left: 0;
+    }
+    .Input3{
+        margin-left: 0;
+    }
+    .Input4{
+        margin-left: 0;
+    }
+    .submit{
+        width: 35%;
+        background-color: #5CB85C;
+        color: white;
+        padding: 3px;
+        border: 1px solid #DFDFDF;
+    }
+   
+
+}
+@media only screen and (max-width: 900px) {
+
+    .Growth{
+        padding-left: 0;
+        padding-top: 10;
+        font-size: 25;
+        text-align: center;
+    }
+    .Check{
+        font-size: 10;
+    }
+    .Check2{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 10;
+        flex-wrap: wrap;
+    }
+    .Check1{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 10;
+        flex-wrap: wrap;
+    }
+   
+    .Input2{
+        margin-left: 0;
+    }
+    .Input3{
+        margin-left: 0;
+    }
+    .Input4{
+        margin-left: 0;
+    }
+  
+}
+@media only screen and (min-width:900px) and (max-width: 1100px) {
+
+    .Check{
+        font-size: 9px;
+    }
+    .Check2{
+       
+        font-size: 9px;
+        flex-wrap: wrap;
+    }
+    .Check1{
+        
+        font-size: 9px;
+        flex-wrap: wrap;
+    }
+    .Check3{
+        font-size: 9px;
+    }
+
+}
+
+/* form */
 .Image1 {
     position: relative;
 }
@@ -250,6 +433,7 @@ img.hover-zoom:hover {
 .overlay {
     position: absolute;
     bottom: 0;
+    left: 30%;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -291,7 +475,7 @@ img.hover-zoom:hover {
 
 /* Lateast Work */
 
-@media only screen and (max-width: 570px) {
+/* @media only screen and (max-width: 570px) {
     .ImageMove {
         position: relative;
         background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
@@ -330,4 +514,4 @@ img.hover-zoom:hover {
     }
 
 
-}
+} */

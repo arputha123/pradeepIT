@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown,  Dropdown, } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown,  Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-
-import "react-bootstrap-submenu/dist/index.css"
+import "react-bootstrap-submenu/dist/index.css";
 import '../Style/topbar.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import 'bootstrap-icons/font/bootstrap-icons.css'
 function TopBarComponent() {
+
   const [isCompanyDropdownOpen, setIsCompanyDropdownOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [fix, setFix] = useState(false);
-  
+  const [isOutsourcingMenuOpen, setIsOutsourcingMenuOpen] = useState(false);
+  const [isWebdevelopmentMenuOpen, setIsWebdevelopmentMenuOpen] = useState(false);
+  const [isTraningMenuOpen, setIsTraningMenuOpen] = useState(false);
+  const [isDigitalMenuOpen, setIsDigitalMenuOpen] = useState(false);
 
   const setFixed = () => {
     if (window.scrollY >= 1) {
@@ -22,31 +25,11 @@ function TopBarComponent() {
     }
   }
   window.addEventListener("scroll", setFixed);
-
-  const [isOutsourcingMenuOpen, setIsOutsourcingMenuOpen] = useState(false);
-  const [isWebdevelopmentMenuOpen, setIsWebdevelopmentMenuOpen] = useState(false);
-  const [isTraningMenuOpen, setIsTraningMenuOpen] = useState(false);
-  const [isDigitalMenuOpen, setIsDigitalMenuOpen] = useState(false);
-
-
-  const handleMouseEnterOutsourcing = () => {
-    setIsOutsourcingMenuOpen(true);
-    setIsWebdevelopmentMenuOpen(true);
-    setIsTraningMenuOpen(true);
-    setIsDigitalMenuOpen(true);
-  };
-
-  const handleMouseLeaveOutsourcing = () => {
-    setIsOutsourcingMenuOpen(false);
-    setIsWebdevelopmentMenuOpen(false);
-    setIsTraningMenuOpen(false);
-    setIsDigitalMenuOpen(false);
-  };
-
-
+ 
+  console.log('fix',fix);
   return (
     <>
-      <div className='topbarall'>
+      <div>
         <Navbar expand="lg" variant=""
           className={fix ? 'main_bgcolor ' : 'main'}
           fixed='top'>
@@ -69,14 +52,16 @@ function TopBarComponent() {
             <Navbar.Collapse className='navbar-collapse collapse active' id="basic-navbar-nav">
 
 
-              <Nav className="topbarnav mx-auto gap-4 " >
+              <Nav className="topbarnav mx-auto gap-4">
                
                 <NavDropdown show={isCompanyDropdownOpen}
                   onMouseEnter={() => setIsCompanyDropdownOpen(true)}
                   onMouseLeave={() => setIsCompanyDropdownOpen(false)}
-                  title={<label className={fix ? 'navbarColorChange ' : 'navbarColor'} >COMPANY</label>}
-                  menuVariant="dark"
-                  className={fix ? 'navbarColorChange ' : 'navbarColor'}
+                  title={<label
+                    //  style={{zIndex:2}} 
+                    className={fix ? 'navbarColorChange ' : 'navbarColor'}
+                    >COMPANY</label>}
+                  // menuVariant="dark"
                 >
                   <NavDropdown.Item href="/AboutCompany">ABOUT COMPANY</NavDropdown.Item>
                   <NavDropdown.Item href="/AdvisoryBoard">ADVISORY BOARD</NavDropdown.Item>
@@ -104,7 +89,7 @@ function TopBarComponent() {
                     >
                       <Nav.Link 
                       style={{backgroundColor:"black",fontSize:11,border:"none",color:"#595959"}}
-                       class=" ms-0 ps-0"> <label className='menu'  >OUTSOURCING</label><span style={{color:"white",fontSize:'11px',paddingLeft:108}} class="arrow-right">❯</span></Nav.Link>
+                       class=" ms-0 ps-0"> <label className='menu'>OUTSOURCING</label><span style={{color:"white",fontSize:'11px',paddingLeft:108}} class="arrow-right">❯</span></Nav.Link>
                       {isOutsourcingMenuOpen && (
                         <ul
                           className='submenu'
@@ -137,7 +122,9 @@ function TopBarComponent() {
                       onMouseLeave={() => setIsWebdevelopmentMenuOpen(false)}
                       className='submenu-item' style={{padding:"5px 5px"}}
                     >
-                      <Nav.Link style={{backgroundColor:"black",color:"white",fontSize:11,border:"none"}} class="ms-0 ps-0"> <label className='menu' >WEB DEVELOPMENT</label><span style={{color:"white",fontSize:'11px',paddingLeft:70}} class="arrow-right">❯</span> </Nav.Link>
+                      <Nav.Link
+                       style={{backgroundColor:"black",color:"white",fontSize:11,border:"none"}} 
+                       class="ms-0 ps-0"> <label className='menu' >WEB DEVELOPMENT</label><span style={{color:"white",fontSize:'11px',paddingLeft:70}} class="arrow-right">❯</span> </Nav.Link>
                       {isWebdevelopmentMenuOpen && (
                         <ul
                           className='submenu'

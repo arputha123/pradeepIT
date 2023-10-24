@@ -12,7 +12,7 @@ function HomeNumber() {
 
 
 
-            <div class="container" style={{ height: '50vh', paddingTop: "8%" }}>
+            <div class="container" style={{ height: 'auto', paddingTop: "8%" }}>
 
                 <div class="row d-flex justify-content-center" style={{ textAlign: "center" }}>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12  Project">

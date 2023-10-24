@@ -590,8 +590,60 @@ const Digital = () => {
                     </div>
                 </div>
 
-
                 <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%' }}>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-sm-10 col-xs-10">
+                            <h1 class="text-white Growth">WE PROVIDE INNOVATIVE IT <br></br>
+                                SOLUTIONS FOR YOUR <br></br>
+                                BUSINESS GROWTH</h1>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10 Form" style={{ padding: 50 }}>
+                            <div class="d-flex  justify-content-center flex-column" style={{ padding: 20, border: '1px solid white', backgroundColor: '#F6F6F6' }} >
+                                <h3 style={{ fontSize: '22px' }}>Reach us for all web design service you need</h3><br></br>
+
+
+                                <input type="text" placeholder="YOUR NAME" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
+                                <input type="text" placeholder="YOUR EMAIL" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
+                                <input type="text" placeholder="YOUR PHONE" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
+                                <label>I'M LOOKING FOR</label>
+
+                                <div class="Check1">
+                                    <input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Web Designing</label>
+                                 <div class="Input2"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2 me-1">Search Engine Optimization</label></div>
+                                  <div class="Input3"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2">Digital Marketing</label></div>
+                                </div>
+                                <div class="Check2">
+                                    <input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Corporate Training</label>
+                                   <div class="Input2"> <input class="me-2  mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Outsourcing</label></div>
+                                   <div class="Input3"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1">Video Production</label></div>
+                                </div>
+                                <div class="Check3">
+
+                                  <div><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1">E-Commerce Web Design</label></div>
+                                <div class="Input4"><input class="me-2  mb-1 mt-2" type="checkbox" /><label class="mb-1">CMS Website</label></div>
+                                </div>
+                                <div Class="Check">
+                                    <input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2">Payment Gateway Integration </label></div>
+                                <h3 class="mt-3 mb-3">HOW DID YOU FIND US</h3>
+
+                                <select style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }}>
+                                    <option>Select</option>
+                                    <option>Friend or Business Refferel</option>
+                                    <option>Google</option>
+                                    <option>Facebook</option>
+                                    <option>Press Article</option>
+                                    <option>Advertisement</option>
+                                </select>
+
+                                <input type="text" placeholder="YOUR MESSAGE" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
+
+                                <button class="submit" >SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%' }}>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-10">
                             <h1 class="text-white" style={{ paddingLeft: 100, paddingTop: 50, fontSize: 40, textAlign: 'center' }}>WE PROVIDE INNOVATIVE IT <br></br>
@@ -641,7 +693,7 @@ const Digital = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div style={{ height: '20vh' }}>
 
