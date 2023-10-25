@@ -19,7 +19,7 @@ import CorporateTraining from './Component/CorporateTraining';
 import DigitalMarketing from "./Component/DigitalMarketting";
 import VideoProduction from './Component/VideoProduction';
 import TeamMembers from './Component/TeamMembers/TeamMembers';
-
+import LatestWorkCarousel from './Component/LatestWorkCarousel';
 
 
 
@@ -46,6 +46,7 @@ function App() {
           <Route path="/DigitalMarketing" element={<DigitalMarketing />}></Route>
           <Route path="/VideoProduction" element={<VideoProduction />}></Route>
           <Route path="/TeamMembers" element={<TeamMembers />}></Route>
+          <Route path="/LatestWorkCarousel" element={<LatestWorkCarousel />}></Route>
 
         </Routes>
       </BrowserRouter>
