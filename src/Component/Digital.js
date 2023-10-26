@@ -599,14 +599,14 @@ const Digital = () => {
                     </div>
                 </div>
 
-                <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%' }}>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-4 col-sm-10 col-xs-10">
+                <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%',width:'100%' }}>
+                    <div class="flex-row d-flex">
+                        <div class="col-md-6 col-sm-10 col-xs-10">
                             <h1 class="text-white Growth">WE PROVIDE INNOVATIVE IT <br></br>
                                 SOLUTIONS FOR YOUR <br></br>
                                 BUSINESS GROWTH</h1>
                         </div>
-                        <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10 Form" style={{ padding: 50 }}>
+                        <div class="col-md-6 col-sm-10 col-xs-10" style={{ padding: 50 }}>
                             <div class="d-flex  justify-content-center flex-column" style={{ padding: 20, border: '1px solid white', backgroundColor: '#F6F6F6' }} >
                                 <h3 style={{ fontSize: '22px' }}>Reach us for all web design service you need</h3><br></br>
 
