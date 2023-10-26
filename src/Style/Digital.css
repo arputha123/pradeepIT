@@ -42,6 +42,10 @@
 
 
 @media only screen and (max-width: 570px) {
+    .CardContent{
+        display: flex;
+        flex-direction: column;
+    }
     .ImageMove {
         position: relative;
         background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
@@ -583,14 +587,11 @@ img.hover-zoom:hover {
         padding-left: 5px;
         padding-right: 5px;
         /* margin-right: 10px; */
-        border: 2px solid black;
+        /* border: 2px solid black; */
 
-    }
-    .CardContent{
-        display: flex;
-        flex-direction: column;
-    }
-}
+    /* } */
+   
+/* } */
 
 @media only screen and (min-width: 570px)and (max-width:900px) {
     .ourserviceWant {
