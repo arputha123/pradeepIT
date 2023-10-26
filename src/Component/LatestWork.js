@@ -62,8 +62,6 @@ const handleMouseLeave7 = () =>{
     setCard7(false)
 }
 
-
-
     return(
         <>
         <div class="container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}><h2 style={{ marginLeft: '40%', fontWeight: '800', marginTop: '3%', marginBottom: '3%' }}> LATEST WORK</h2>

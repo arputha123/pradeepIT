@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../Recruit/Blogs.css"
+import "../Recruit/Blogs.css";
+import TopBarCommon from "../Topbarcommon";
 
 
 function Blogs() {
@@ -33,6 +34,9 @@ function Blogs() {
 
   }
   return (
+    <div style={{paddingTop:'17vh'}}>
+      <TopBarCommon/>
+    
     <div className="home   animate-bottom"  >
       <div className="row" style={{ padding: "30px 100px", backgroundColor: "#f6f6f6" }} >
         <div class="col-lg-3">
@@ -63,6 +67,7 @@ function Blogs() {
       <div style={{ height: 70, backgroundColor: "#f6f6f6" }} >
 
       </div>
+    </div>
     </div>
   )
 }

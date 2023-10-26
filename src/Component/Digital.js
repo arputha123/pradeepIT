@@ -43,14 +43,14 @@ const Digital = () => {
 
     const settings = {
         dots: true,
-     infinite: true,
-     speed: 1000,
-     slidesToShow: 1,
-     slidesToScroll: 1,
-     autoplay: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
         autoplaySpeed: 1200, // Autoplay speed in milliseconds
-   };
- 
+    };
+
     useEffect(() => {
         const appearOptions = {
             threshold: 0
@@ -145,63 +145,7 @@ const Digital = () => {
         <>
             <TopBarComponent />
 
-            <div>
-
-            {/* <div className="carousel-container">
-      <Slider {...settings}>
-      <div class="Image1">
-                            <img src={wethink} alt="Los Angeles" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Backround">
-                                <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#81858955' }}>
-                                    <h2 class="Top1">Outsourcing Service for Sap Hypris</h2>
-                                    <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
-                                        one which is why we have set on a miison to bring them all to one place
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="Image1">
-                            <img src={seo} alt="Chicago" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
-                                <h2 class="Top1">Outsourcing Service for Java Development</h2>
-                                <p class="Top2"> WE WILL PROVIDE JAVA INDUSTRY JAVA PROFESSIONALS TO SOFTWERE INDUSTRY
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div class="Image1">
-                            <img src={mobile3} alt="New york" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
-                                <h2 class="Topp" >Give Wings To Your Business, Develop a Mobile App</h2>
-                                <p class="Top2"> Our Mobile App Solutions will make your business a touch away on iPhone, Android or iPad. We develop creative and customer centric mobile apps to give your users and customers a ceaseless friendly experience.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div class="Image1">
-                            <img src={business} alt="New york" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
-                                <h2 class="Top1" >We Develop Ideas Into Pioneering Websites</h2>
-                                <p class="Top2">Our services such as corporate Website Design & Development, Search Engine Optimization(SEO), logo design, Magento web development, digital marketing approaches, Google Adwords, WordPress website development at a single place.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="Image1">
-                            <img src={buy} alt="Chicago" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
-                                <h2 class="Top1">E commerce Development: Sell Your Products in Online Bazar</h2>
-                                <p class="Top2"> PradeepIT delivers efficient <b>custom eCommerce store development services</b>
-                                    <b>eCommerce development solutions </b> along with a huge list of offerings including extensions development, theme customization and maintenance services.
-                                </p>
-                            </div>
-
-                        </div>
-        </Slider>
-        </div> */}
+            <div> 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active me-2 p-0"></li>
@@ -215,9 +159,9 @@ const Digital = () => {
                     <div class="carousel-inner" >
                         <div class="item active Image1">
                             <img src={wethink} class='Carrosel' alt="Los Angeles" style={{ width: '100%', height: '100vh', position: 'relative' }} />
-                            
+
                             <div class="Backround">
-                                <div class="Top" style={{ width: '100%', height: '100vh',  backgroundColor: '#00000032' }}>
+                                <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000032' }}>
                                     <h2 class="Top1">Outsourcing Service for Sap Hypris</h2>
                                     <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
                                         one which is why we have set on a miison to bring them all to one place
@@ -237,21 +181,21 @@ const Digital = () => {
                         </div>
 
                         <div class="item Image1">
-                            <div className="Carrosel" style={{width: '100%', height: '100vh'}}>
-                            <img src={mobile3} style={{width: '100%'}}  />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor:'#0000001A' }}>
-                                <h2 class="Topp" >Give Wings To Your Business, Develop a Mobile App</h2>
-                                <p class="Top2"> Our Mobile App Solutions will make your business a touch away on iPhone, Android or iPad. We develop creative and customer centric mobile apps to give your users and customers a ceaseless friendly experience.
-                                </p>
+                            <div className="Carrosel" style={{ width: '100%', height: '100vh' }}>
+                                <img src={mobile3} style={{ width: '100%' }} />
+                                <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#0000001A' }}>
+                                    <h2 class="Topp" >Give Wings To Your Business, Develop a Mobile App</h2>
+                                    <p class="Top2"> Our Mobile App Solutions will make your business a touch away on iPhone, Android or iPad. We develop creative and customer centric mobile apps to give your users and customers a ceaseless friendly experience.
+                                    </p>
+                                </div>
                             </div>
-                            </div>
-                           
+
 
                         </div>
 
                         <div class="item Image1">
                             <img src={business} class='Carrosel' alt="New york" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor:'#00000032' }}>
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000032' }}>
                                 <h2 class="Top1" >We Develop Ideas Into Pioneering Websites</h2>
                                 <p class="Top2">Our services such as corporate Website Design & Development, Search Engine Optimization(SEO), logo design, Magento web development, digital marketing approaches, Google Adwords, WordPress website development at a single place.
                                 </p>
@@ -281,7 +225,7 @@ const Digital = () => {
                     </b>
                     </span>
                 </div>
-                
+
                 <WhyChooseUs />
 
                 <div class="container-fluid">
@@ -311,15 +255,15 @@ const Digital = () => {
                     </div>
                 </div>
                 {/* tab design */}
-<Latestworks/>
+                <Latestworks />
 
 
-                <HomeNumber/>
-                <OurService/>
+                <HomeNumber />
+                <OurService />
                 <KeyPerson />
 
-                <MobileCarosel/>
-                <ImageComponent/>
+                <MobileCarosel />
+                <ImageComponent />
 
                 <hr style={{ width: '100%', marginBottom: 100, marginTop: 50 }}></hr>
 
@@ -328,9 +272,9 @@ const Digital = () => {
                     <div class="row fade-in">
                         <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 " >
 
-                           
-                               <div className="img-wrapper">
-                               
+
+                            <div className="img-wrapper">
+
                                 <img src={Adope} alt="" className="hover-zoom" />
                                 <div className="image-overlay"></div>
                             </div>
@@ -351,7 +295,7 @@ const Digital = () => {
                                 <img src={Commerce} alt="" className="hover-zoom" />
                                 <div className="image-overlay"></div>
                             </div>
-                           
+
 
                             <p style={{ margin: "40px 0px 0px", color: "#000000", fontFamily: "12px" }}>WILL ECOMMERCE OVERCOME TOMORROWS
                                 RETAIL CHALLENGES…?</p>
@@ -362,8 +306,8 @@ const Digital = () => {
 
                         <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
 
-                           
-                               <div className="img-wrapper">
+
+                            <div className="img-wrapper">
                                 <img src={Shopping} alt="" className="hover-zoom" />
                                 <div className="image-overlay"></div>
                             </div>
@@ -382,104 +326,6 @@ const Digital = () => {
                         <button class="Blog fade-in" style={{ fontSize: 12 }}>VIEW ALL BLOG</button>
                     </div>
                 </div>
-
-                {/* <div class="container-fluid container" >
-                    <h2 style={{ textAlign: 'center', marginBottom: 80, fontWeight: 550, letterSpacing: 1 }}>LATEST BLOGS</h2>
-                    <div class="row fade-in">
-                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 " >
-
-                           
-                               <div className="img-wrapper">
-                                <img src={Adope} alt="" className="hover-zoom" />
-                            </div>
-
-
-                            <p style={{ margin: "40px 0px 0px", color: "#000000", fontFamily: "12px", fontFamily: "Open Sans, sans-serif" }}>
-
-                                MAGENTO ACQUISITION: WILL IT TAKES MAGENTO COMMERCE INTO NEW HEIGHT</p>
-
-                            <h6 style={{ margin: "10px 0px 0px", fontFamily: "Open Sans, sans-serif" }}>POSTED BY ADMIN | 24 FEBRUARY 2016</h6>
-                            <p style={{ fontSize: '14px', margin: "40px 0px 0px", fontFamily: "Open Sans, sans-serif" }}>Last month, IT industry had got big surprise about <br />
-                                magento acquisition by adobe industry. This made<br /> not only a surprise
-                                but shocked to leading ecommerce...</p>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-
-                            <div className="img-wrapper">
-                                <img src={Commerce} alt="" className="hover-zoom" />
-                            </div>
-                           
-
-                            <p style={{ margin: "40px 0px 0px", color: "#000000", fontFamily: "12px" }}>WILL ECOMMERCE OVERCOME TOMORROWS
-                                RETAIL CHALLENGES…?</p>
-
-                            <h6 style={{ margin: "10px 0px 0px" }}>POSTED BY ADMIN | 24 FEBRUARY 2016</h6>
-                            <p style={{ fontSize: '14px', margin: "40px 0px 0px" }}>After discovering new way of supply chain<br /> into market and distribution of products to customers,<br /> which has made remarkable industry growth<br /> into so called retail...</p>
-                        </div>
-
-                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-
-                           
-                               <div className="img-wrapper">
-                                <img src={Shopping} alt="" className="hover-zoom" />
-                            </div>
-                            <p style={{ margin: "40px 0px 0px", color: "#000000", fontFamily: "12px" }}>
-
-                                VOICE BASED SHOPPING:
-                                NEXT GENERATION OF ECOMMERCE</p>
-
-                            <h6 style={{ margin: "10px 0px 0px" }}>POSTED BY ADMIN | 24 FEBRUARY 2016</h6>
-                            <p style={{ fontSize: '14px', margin: "40px 0px 0px" }}>In the technology revolution, the innovation has no limit in any filed where technology taking forward into next level. As earlier days in the last...</p>
-                        </div>
-                    </div>
-                    <div class="d-flex row justify-content-center"
-                        style={{ alignItems: 'center', width: '10%', marginLeft: '44%', paddingBottom: 30, paddingTop: 20 }}
-                    >
-                        <button class="Blog fade-in" style={{ fontSize: 12 }}>VIEW ALL BLOG</button>
-                    </div>
-                </div> */}
-
-
-                {/* <div class="container-fluid container">
-                    <h2 style={{ textAlign: 'center', marginBottom: 80, fontWeight: 550, letterSpacing: 1 }}>LATEST BLOGS</h2>
-                    <div class="row fade-in">
-                        <div class="col-md-4 col-sm-6 col-xs-10">
-                            <img src={Adope} class="Adope" style={{ height: 190, width: '80%', marginBottom: 50 }} />
-                            <h4>
-
-                                MAGENTO ACQUISITION: WILL IT TAKES MAGENTO COMMERCE INTO NEW HEIGHT</h4>
-
-                            <h6 style={{ marginTop: 20, marginBottom: 10 }}>POSTED BY ADMIN | 24 FEBRUARY 2016</h6>
-                            <p style={{ fontSize: '14px' }}>Last month, IT industry had got big surprise about <br />
-                                magento acquisition by adobe industry. This made<br /> not only a surprise
-                                but shocked to leading ecommerce...</p>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-10">
-                            <img src={Commerce} class="Commerce" style={{ height: 240, width: "80%", marginBottom: 50 }} />
-                            <h4>WILL ECOMMERCE OVERCOME TOMORROWS
-                                RETAIL CHALLENGES…?</h4>
-
-                            <h6 style={{ marginTop: 20, marginBottom: 10 }}>POSTED BY ADMIN | 24 FEBRUARY 2016</h6>
-                            <p style={{ fontSize: '14px' }}>After discovering new way of supply chain<br /> into market and distribution of products to customers,<br /> which has made remarkable industry growth<br /> into so called retail...</p>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-10">
-                            <img src={Shopping} class="Shopping" style={{ height: 240, width: 400, marginBottom: 50 }} />
-                            <h4>
-
-                                VOICE BASED SHOPPING:
-                                NEXT GENERATION OF ECOMMERCE</h4>
-
-                            <h6 style={{ marginTop: 20, marginBottom: 10 }}>POSTED BY ADMIN | 24 FEBRUARY 2016</h6>
-                            <p style={{ fontSize: '14px' }}>In the technology revolution, the innovation has no limit in any filed where technology taking forward into next level. As earlier days in the last...</p>
-                        </div>
-                    </div>
-                    <div class="d-flex row justify-content-center"
-                        style={{ alignItems: 'center', width: '10%', marginLeft: '44%', paddingBottom: 30, paddingTop: 20 }}
-                    >
-                        <button class="Blog fade-in" style={{ fontSize: 12 }}>VIEW ALL BLOG</button>
-                    </div>
-                </div> */}
 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -599,8 +445,10 @@ const Digital = () => {
                     </div>
                 </div>
 
-                <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%',width:'100%' }}>
-                    <div class="flex-row d-flex">
+                <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%', width: '100%' }}>
+                    <div
+                    //  class="flex-row d-flex"
+                    >
                         <div class="col-md-6 col-sm-10 col-xs-10">
                             <h1 class="text-white Growth">WE PROVIDE INNOVATIVE IT <br></br>
                                 SOLUTIONS FOR YOUR <br></br>
@@ -618,18 +466,18 @@ const Digital = () => {
 
                                 <div class="Check1">
                                     <input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Web Designing</label>
-                                 <div class="Input2"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2 me-1">Search Engine Optimization</label></div>
-                                  <div class="Input3"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2">Digital Marketing</label></div>
+                                    <div class="Input2"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2 me-1">Search Engine Optimization</label></div>
+                                    <div class="Input3"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2">Digital Marketing</label></div>
                                 </div>
                                 <div class="Check2">
                                     <input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Corporate Training</label>
-                                   <div class="Input2"> <input class="me-2  mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Outsourcing</label></div>
-                                   <div class="Input3"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1">Video Production</label></div>
+                                    <div class="Input2"> <input class="me-2  mt-2 mb-3" type="checkbox" /><label class="mb-1 me-1">Outsourcing</label></div>
+                                    <div class="Input3"><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1">Video Production</label></div>
                                 </div>
                                 <div class="Check3">
 
-                                  <div><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1">E-Commerce Web Design</label></div>
-                                <div class="Input4"><input class="me-2  mb-1 mt-2" type="checkbox" /><label class="mb-1">CMS Website</label></div>
+                                    <div><input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-1">E-Commerce Web Design</label></div>
+                                    <div class="Input4"><input class="me-2  mb-1 mt-2" type="checkbox" /><label class="mb-1">CMS Website</label></div>
                                 </div>
                                 <div Class="Check">
                                     <input class="me-2 mt-2 mb-3" type="checkbox" /><label class="mb-2">Payment Gateway Integration </label></div>
@@ -651,59 +499,6 @@ const Digital = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* <div class="container-fluid" style={{ backgroundColor: '#B7B3B2', paddingTop: '5%' }}>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-10">
-                            <h1 class="text-white" style={{ paddingLeft: 100, paddingTop: 50, fontSize: 40, textAlign: 'center' }}>WE PROVIDE INNOVATIVE IT <br></br>
-                                SOLUTIONS FOR YOUR <br></br>
-                                BUSINESS GROWTH</h1>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-10" style={{ padding: 50 }}>
-                            <div class="d-flex  justify-content-center flex-column" style={{ padding: 20, border: '1px solid white', backgroundColor: '#F6F6F6' }} >
-                                <h3 style={{ fontSize: '22px' }}>Reach us for all web design service you need</h3><br></br>
-
-
-                                <input type="text" placeholder="YOUR NAME" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
-                                <input type="text" placeholder="YOUR EMAIL" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
-                                <input type="text" placeholder="YOUR PHONE" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
-                                <label>I'M LOOKING FOR</label>
-
-                                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <input class="me-2 mb-3" type="checkbox" /><label class="mt-1">Web Designing</label>
-                                    <input class="me-2 ms-2 mb-3" type="checkbox" /><label class="mt-1">Search Engine Optimization</label>
-                                    <input class="me-2 ms-2 mb-3" type="checkbox" /><label class="mt-1">Digital Marketing</label>
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <input class="me-2 mb-3" type="checkbox" /><label class="mt-1">Corporate Training</label>
-                                    <input class="me-2 ms-2 mb-3" type="checkbox" /><label class="mt-1">Outsourcing</label>
-                                    <input class="me-2 ms-2 mb-3" type="checkbox" /><label class="mt-1">Video Production</label>
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <input class="me-2 mb-3" type="checkbox" /><label class="mt-1">E-Commerce Web Design</label>
-                                    <input class="me-2 ms-2 mb-3" type="checkbox" /><label class="mt-1">CMS Website</label>
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <input class="me-2  mb-3" type="checkbox" /><label class="mt-1">Payment Gateway Integration </label></div>
-                                <h3>HOW DID YOU FIND US</h3>
-
-                                <select style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }}>
-                                    <option>Select</option>
-                                    <option>Friend or Business Refferel</option>
-                                    <option>Google</option>
-                                    <option>Facebook</option>
-                                    <option>Press Article</option>
-                                    <option>Advertisement</option>
-                                </select>
-
-                                <input type="text" placeholder="YOUR MESSAGE" style={{ marginBottom: '10px', padding: 10, border: '1px solid #DFDFDF' }} />
-
-                                <button style={{ width: '20%', backgroundColor: '#5CB85C', color: 'white', padding: 5, border: '1px solid #DFDFDF' }}>SUBMIT</button>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-
                 <div style={{ height: '20vh' }}>
 
                 </div>

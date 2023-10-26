@@ -65,7 +65,7 @@ function TopBarComponent() {
                 >
                   <NavDropdown.Item href="/AboutCompany">ABOUT COMPANY</NavDropdown.Item>
                   <NavDropdown.Item href="/AdvisoryBoard">ADVISORY BOARD</NavDropdown.Item>
-                  <NavDropdown.Item href="#">TEAM MEMBERS</NavDropdown.Item>
+                  <NavDropdown.Item href="/TeamMembers">TEAM MEMBERS</NavDropdown.Item>
                 </NavDropdown>
 
 
@@ -105,10 +105,10 @@ function TopBarComponent() {
                           }}
                         >
                           <li>
-                            <Nav.Link href='#' className='addition'>SAP CX OUTSOURCING</Nav.Link>
+                            <Nav.Link href='/SapCxOutsourcing' className='addition'>SAP CX OUTSOURCING</Nav.Link>
                           </li>
                           <li>
-                            <Nav.Link href='#' className='addition'>JAVA OUTSOURCING</Nav.Link>
+                            <Nav.Link href='/JavaOutsourcing' className='addition'>JAVA OUTSOURCING</Nav.Link>
                           </li>
                         </ul>
                       )}
@@ -140,13 +140,13 @@ function TopBarComponent() {
                           }}
                         >
                           <li>
-                            <Nav.Link href='#'className='addition' >E-COMMERCE + CMS</Nav.Link>
+                            <Nav.Link href='/ECommerce' className='addition' >E-COMMERCE + CMS</Nav.Link>
                           </li>
                           <li>
-                            <Nav.Link href='#' className='addition'>CMS WEB DEVELOPMENT</Nav.Link>
+                            <Nav.Link href='/WebDevelopment' className='addition'>CMS WEB DEVELOPMENT</Nav.Link>
                           </li>
                           <li>
-                            <Nav.Link href='#'className='addition' >CMS + PAYMENT GATEWAY</Nav.Link>
+                            <Nav.Link href='/CMSPayment'className='addition' >CMS + PAYMENT GATEWAY</Nav.Link>
                           </li>
                         </ul>
                       )}
@@ -172,7 +172,7 @@ function TopBarComponent() {
                           }}
                         >
                           <li>
-                            <Nav.Link href='#' className='addition'>CORPORATE TRANING</Nav.Link>
+                            <Nav.Link href='/CorporateTraining' className='addition'>CORPORATE TRANING</Nav.Link>
                           </li>
             
                         </ul>
@@ -200,20 +200,20 @@ function TopBarComponent() {
                           }}
                         >
                           <li>
-                            <Nav.Link href='#' className='addition'>DIGITAL MARGETING SERVICES</Nav.Link>
+                            <Nav.Link href='/DigitalMarketing' className='addition'>DIGITAL MARGETING SERVICES</Nav.Link>
                           </li>
             
                         </ul>
                       )}
                     </li>
 
-                    <NavDropdown.Item href="#video-production">VIDEO PRODUCTION</NavDropdown.Item>
+                    <NavDropdown.Item href="/VideoProduction">VIDEO PRODUCTION</NavDropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
 
 
 
-                <Nav.Link href="/Contactus"><label className={fix ? 'navbarColorChange ' : 'navbarColor'}>BLOGS</label></Nav.Link>
+                <Nav.Link href="/Blogs"><label className={fix ? 'navbarColorChange ' : 'navbarColor'}>BLOGS</label></Nav.Link>
                 <Nav.Link href="/News"><label className={fix ? 'navbarColorChange ' : 'navbarColor'}>NEWS</label></Nav.Link>
                 <NavDropdown
                   show={isDropdownOpen}

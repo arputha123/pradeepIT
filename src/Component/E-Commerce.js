@@ -6,10 +6,12 @@ import FourthPage from '../Pages/E-Commerce/FourthPage';
 import FifthPage from '../Pages/E-Commerce/FifthPage';
 import SixthPage from '../Pages/E-Commerce/SixthPage';
 import SeventhPage from '../Pages/E-Commerce/SeventhPage';
+import TopBarComponent from './topbar';
 
 function ECommerce() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 ,fontFamily:''}}>
           <FirstPage />

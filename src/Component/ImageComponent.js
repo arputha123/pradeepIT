@@ -5,7 +5,7 @@ import officeStaff from '../Assets/officeStaff.png';
 
 function ImageComponent() {
     return (
-        <div class="container-fluid d-flex justify-content-center container" style={{ paddingTop: 60, paddingLeft: 50, paddingBottom: 40 }}>
+        <div class="container-fluid d-flex justify-content-center container w3-animate-zoom" style={{ paddingTop: 60, paddingLeft: 50, paddingBottom: 40 }}>
             <div class="row ">
                 <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
                     <img src={Office1} style={{ height: 130, width: 130, borderRadius: 65, marginLeft: '30%', marginBottom: 20 }} />
