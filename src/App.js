@@ -22,6 +22,8 @@ import TeamMembers from './Component/TeamMembers/TeamMembers';
 import Ecommerce from "./Component/LatestWork/E-Commerce";
 import Magento from "./Component/LatestWork/Magento";
 import WebDesign from "./Component/LatestWork/WebDesign";
+import LatestWorkCarousel from './Component/LatestWorkCarousel';
+
 
 
 function App() {
@@ -49,6 +51,7 @@ function App() {
           <Route path="/E-commerce" element={<Ecommerce />}></Route>
           <Route path="/Magento" element={<Magento />}></Route>
           <Route path="/WebDesign" element={<WebDesign />}></Route>
+          <Route path="/LatestWorkCarousel" element={<LatestWorkCarousel />}></Route>
         </Routes>
       </BrowserRouter>
     </>
