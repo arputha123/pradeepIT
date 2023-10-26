@@ -19,9 +19,9 @@ import CorporateTraining from './Component/CorporateTraining';
 import DigitalMarketing from "./Component/DigitalMarketting";
 import VideoProduction from './Component/VideoProduction';
 import TeamMembers from './Component/TeamMembers/TeamMembers';
-
-
-
+import Ecommerce from "./Component/LatestWork/E-Commerce";
+import Magento from "./Component/LatestWork/Magento";
+import WebDesign from "./Component/LatestWork/WebDesign";
 
 
 function App() {
@@ -46,7 +46,9 @@ function App() {
           <Route path="/DigitalMarketing" element={<DigitalMarketing />}></Route>
           <Route path="/VideoProduction" element={<VideoProduction />}></Route>
           <Route path="/TeamMembers" element={<TeamMembers />}></Route>
-
+          <Route path="/E-commerce" element={<Ecommerce />}></Route>
+          <Route path="/Magento" element={<Magento />}></Route>
+          <Route path="/WebDesign" element={<WebDesign />}></Route>
         </Routes>
       </BrowserRouter>
     </>

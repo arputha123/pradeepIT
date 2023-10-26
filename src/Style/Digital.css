@@ -333,6 +333,11 @@
     cursor: cell;
 }
 
+.CardContent{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Lateast Work */
 
 @media only screen and (max-width: 570px) {
@@ -435,6 +440,10 @@
         border: 2px solid black;
 
     }
+    .CardContent{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 570px)and (max-width:900px) {
@@ -470,5 +479,10 @@
         padding-right: 5px;
         border: 2px solid black;
 
+    }
+    .CardContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
