@@ -6,10 +6,12 @@ import FourthPage from '../Pages/JavaOutsourcing/FourthPage';
 import FifthPage from '../Pages/JavaOutsourcing/FifthPage';
 import SixthPage from '../Pages/JavaOutsourcing/SixthPage';
 import SeventhPage from '../Pages/JavaOutsourcing/SeventhPage';
+import TopBarComponent from './topbar';
 
 function JavaOutsourcing() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 ,fontFamily:''}}>
           <FirstPage />

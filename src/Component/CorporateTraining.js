@@ -6,10 +6,12 @@ import FourthPage from '../Pages/CorporateTraning/FourthPage';
 import FifthPage from '../Pages/CorporateTraning/FifthPage';
 import SixthPage from '../Pages/CorporateTraning/SixthPage';
 import SeventhPage from '../Pages/CorporateTraning/SeventhPage';
+import TopBarComponent from './topbar';
 
 function CorporateTraning() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 }}>
           <FirstPage />

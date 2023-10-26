@@ -6,10 +6,12 @@ import FourthPage from '../Pages/DigitalMarketting/FourthPage';
 import FifthPage from '../Pages/DigitalMarketting/FifthPage';
 import SixthPage from '../Pages/DigitalMarketting/SixthPage';
 import SeventhPage from '../Pages/DigitalMarketting/SeventhPage';
+import TopBarComponent from './topbar';
 
 function DigitalMarketting() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 ,fontFamily:''}}>
           <FirstPage />
