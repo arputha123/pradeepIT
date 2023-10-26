@@ -1,0 +1,38 @@
+.topbarcomponentMain {
+    background-color: #FFFFFF;
+    /* position: fixed !important; */
+    top: 0 !important;
+    border-bottom: 1px solid #e5e5e5;
+    height: 17vh;
+    margin-top: -20px;
+    padding-left: 4%;
+    width: 100%;
+    color: black;
+  
+  }
+  .topbarComponentnav {
+    padding-left: 30%;
+    font-size: 11px;
+  }
+  .topbarComponentColor{
+    color: black !important;
+
+  }
+  .topbarCommonSubmenu{
+    color: darkgray;
+  }
+  .topbarCommonSubmenu:hover{
+    color: white;
+  }
+  @media only screen and (min-width:0px) and (max-width: 1000px) {
+  
+    .topbarComponentnav {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        padding-left: 1%;
+      }
+      .topbarComponentColor{
+        color: white !important;
+      }
+}

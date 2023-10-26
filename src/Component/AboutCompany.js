@@ -26,11 +26,11 @@ function AboutCompany() {
     setShowTabs(e.target.name);
   }
   return (
-    <>
+    <div style={{paddingTop:'17vh'}}>
       <TopBarCommon/>
-      <div style={{ borderTop: "1px solid #e5e5e5" }} />
+      {/* <div style={{ borderTop: "1px solid #e5e5e5" }} /> */}
       <div className="container col2-layout">
-        <div style={{ paddingTop: 40, paddingLeft: 13, paddingRight: 13 }} className="row Fadein_animation">
+        <div style={{ paddingTop: 0, paddingLeft: 13, paddingRight: 13 }} className="row Fadein_animation">
           <div className="col-lg-8 col-md-7 col-sm-4 animated fadeInUp">
             <p style={{ fontSize: 20, letterSpacing: 4, fontWeight: 600 }}>ABOUT COMPANY</p>
           </div>
@@ -165,7 +165,7 @@ function AboutCompany() {
           </div>
         </div>
       </div>
-    </>
+    </div>
 
   );
 }
