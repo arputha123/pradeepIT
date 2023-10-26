@@ -1,0 +1,157 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 2px;
+}
+.contact{
+    
+font-Weight:600;
+    font-Family:sans-serif;
+    color: white;
+    letter-Spacing: 4px;
+    height: 10vh;
+    font-Size: 18px;
+    padding-Left:6%;
+    padding-top: 4%;
+  }
+  .line{
+      margin-Left:6%;
+     border: 3px solid white;
+      width:3%;
+      margin-Top:2%;
+  }
+  .line:hover{
+    margin-Left:6%;
+    border: 3px solid white;
+    width:7%;
+    margin-Top:2%;
+  }
+  .img-thumbnail{
+    width: 80%;
+  }
+.in{
+    margin-top: 2%;
+   padding: 3%;
+   font-size:17px;
+   background: transparent url('./Images/search.jpg');
+  background-position:95%;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 60%;
+  border-radius: 8px;
+}
+.Recent{
+    margin-top: 9%;
+}
+.line1{
+    border: 2px solid black;
+    width:7%;
+    margin-Top:4%;
+}
+.img{
+    margin-top: 5%;
+    height: 10vh;
+    width: 55%;
+}
+.kannada{
+    margin-top: 5%;
+    font-size: 18px;
+   margin-left: -22%;
+}
+.img1{
+    margin-top: 5%;
+    height: 10vh;
+    width: 60%;
+}
+.Cross{
+    font-size: 18px;
+    margin-left: -21%;
+}
+.lists{
+    margin-top: 7%;
+    font-size: 18px;
+    background-color: #f7f7f7;
+    padding: 2%;
+    width: 100%;
+}
+ul,li{
+    list-style-type: circle;
+    line-height: 40px;
+}
+.para{
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+}
+.grayfoot{
+    background: #E6E6E6;
+    height:17vh;
+    padding-Top:4%;
+    margin-Top:13%;
+  }
+  .footer{
+    height:17vh;
+    background-color: black;
+  }
+  .PVT{
+    font-size: 10px;
+    font-family:'Open Sans', sans-serif;;
+    color: gray;
+    padding-Top:6%;
+    text-Align:start;
+  }
+  .logos{
+    display:flex;
+    text-Align:center;
+    justify-Content:space-evenly;
+}
+.facebook{
+    font-Size:35px;
+    color:black;
+}
+.facebook :hover{
+    /* margin-top: 15%; */
+    font-Size:35px;
+    background-color: blueviolet;
+    color: white;
+}
+.twitter{
+    font-size: 35px;
+    color:black;
+}
+.twitter :hover{
+    font-size: 35px;
+    color:white;
+    background-color: aqua;
+}
+.google{
+    color:black;
+    font-Size:35px;
+  
+}
+.google :hover{
+    color:white;
+    margin-Top: 5%;
+    font-Size:42px;
+    background-color: red;
+}
+.linked{
+    color:black;
+    font-Size:30px;
+}
+.linked :hover{
+    color:white;
+    font-Size:27px;
+    background-color: blueviolet;
+}
+.pintrest{
+    color:black;
+    font-Size:33px;
+}
+.pintrest :hover{
+    color:white;
+    font-Size:30px;
+    background-color: red;
+}

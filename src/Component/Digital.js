@@ -10,6 +10,7 @@ import HomeNumber from "./HomeNumber";
 import OurService from "./HomeOurService";
 import MobileCarosel from "./MobileCarosel";
 import ImageComponent from "./ImageComponent";
+import KeyPerson from "./KeyPerson";
 import WhyChooseUs from "./whyChooseUS";
 import Latestworks from "./LatestWork";
 import Message from '../Assets/open-message.png';
@@ -213,9 +214,10 @@ const Digital = () => {
 
                     <div class="carousel-inner" >
                         <div class="item active Image1">
-                            <img src={wethink} class='Carrosel' alt="Los Angeles" style={{ width: '100%', height: '100vh' }} />
+                            <img src={wethink} class='Carrosel' alt="Los Angeles" style={{ width: '100%', height: '100vh', position: 'relative' }} />
+                            
                             <div class="Backround">
-                                <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#81858955' }}>
+                                <div class="Top" style={{ width: '100%', height: '100vh',  backgroundColor: '#00000032' }}>
                                     <h2 class="Top1">Outsourcing Service for Sap Hypris</h2>
                                     <p class="Top2"> We know it's hards to find a reliable sap hypris expert when you need
                                         one which is why we have set on a miison to bring them all to one place
@@ -226,7 +228,7 @@ const Digital = () => {
 
                         <div class="item Image1">
                             <img src={seo} class='Carrosel' alt="Chicago" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#55555564' }}>
                                 <h2 class="Top1">Outsourcing Service for Java Development</h2>
                                 <p class="Top2"> WE WILL PROVIDE JAVA INDUSTRY JAVA PROFESSIONALS TO SOFTWERE INDUSTRY
                                 </p>
@@ -235,18 +237,21 @@ const Digital = () => {
                         </div>
 
                         <div class="item Image1">
-                            <img src={mobile3} class='Carrosel' alt="New york" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
+                            <div className="Carrosel" style={{width: '100%', height: '100vh'}}>
+                            <img src={mobile3} style={{width: '100%'}}  />
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor:'#0000001A' }}>
                                 <h2 class="Topp" >Give Wings To Your Business, Develop a Mobile App</h2>
                                 <p class="Top2"> Our Mobile App Solutions will make your business a touch away on iPhone, Android or iPad. We develop creative and customer centric mobile apps to give your users and customers a ceaseless friendly experience.
                                 </p>
                             </div>
+                            </div>
+                           
 
                         </div>
 
                         <div class="item Image1">
                             <img src={business} class='Carrosel' alt="New york" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor:'#00000032' }}>
                                 <h2 class="Top1" >We Develop Ideas Into Pioneering Websites</h2>
                                 <p class="Top2">Our services such as corporate Website Design & Development, Search Engine Optimization(SEO), logo design, Magento web development, digital marketing approaches, Google Adwords, WordPress website development at a single place.
                                 </p>
@@ -255,7 +260,7 @@ const Digital = () => {
 
                         <div class="item Image1">
                             <img src={buy} class='Carrosel' alt="Chicago" style={{ width: '100%', height: '100vh' }} />
-                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#00000099' }}>
+                            <div class="Top" style={{ width: '100%', height: '100vh', backgroundColor: '#332a10B3' }}>
                                 <h2 class="Top1">E commerce Development: Sell Your Products in Online Bazar</h2>
                                 <p class="Top2"> PradeepIT delivers efficient <b>custom eCommerce store development services</b>
                                     <b>eCommerce development solutions </b> along with a huge list of offerings including extensions development, theme customization and maintenance services.
@@ -306,11 +311,15 @@ const Digital = () => {
                     </div>
                 </div>
                 {/* tab design */}
-                <Latestworks />
-                <HomeNumber />
-                <OurService />
-                <MobileCarosel />
-                <ImageComponent />
+<Latestworks/>
+
+
+                <HomeNumber/>
+                <OurService/>
+                <KeyPerson />
+
+                <MobileCarosel/>
+                <ImageComponent/>
 
                 <hr style={{ width: '100%', marginBottom: 100, marginTop: 50 }}></hr>
 

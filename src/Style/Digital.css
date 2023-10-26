@@ -473,6 +473,11 @@ img.hover-zoom:hover {
     cursor: cell;
 }
 
+.CardContent{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Lateast Work */
 
 /* @media only screen and (max-width: 570px) {
@@ -513,5 +518,117 @@ img.hover-zoom:hover {
         height: 100vh;
     }
 
+    .Digital {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 15px;
+        bottom: 0px;
+        background-color: #00000089;
+    }
 
-} */
+    .ourService {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Tablet {
+        width: 100%;
+        height: 500px;
+        flex: 1
+    }
+
+    .Read1 {
+        width: 100%;
+        flex: 1;
+        padding: 5%;
+        border: 5px solid #7e7e7e;
+        margin-top: 40px;
+    }
+
+    .Laptop1 {
+        position: relative;
+        width: 100%;
+    }
+
+    .ourserviceWant {
+        height: fit-content;
+        background-color: #FDD947;
+        padding-top: 18px;
+        margin-top: 180px;
+    }
+
+    .Btn1 {
+        background-color: #000000;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        margin-left: 2%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .Btn2 {
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #FDD947;
+        color: rgb(20, 20, 20);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        /* margin-right: 10px; */
+        border: 2px solid black;
+
+    }
+    .CardContent{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 570px)and (max-width:900px) {
+    .ourserviceWant {
+        height: fit-content;
+        background-color: #FDD947;
+        padding: 18px;
+        width: 100%;
+    }
+
+    .Btn1 {
+
+        background-color: #000000;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 10px;
+        margin-left: 2%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .Btn2 {
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #FDD947;
+        color: rgb(20, 20, 20);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 2px solid black;
+
+    }
+    .CardContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
