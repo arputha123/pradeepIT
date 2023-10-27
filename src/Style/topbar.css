@@ -47,6 +47,7 @@ overflow-x: hidden;
   background-color: black;
   min-width: 200px;
   border-radius: 0px;
+  line-height: 30px;
 }
 .dropdown-menu:before {
   display: none !important;
