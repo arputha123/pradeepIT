@@ -7,7 +7,8 @@ import Profile2 from '../../Assets/Profile2.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { AiOutlineLine } from "react-icons/ai";
-import './TeamMembers.css'
+import './TeamMembers.css';
+import TopBarCommon from "../Topbarcommon";
 
 function TeamMembers() {
     useEffect(() => {
@@ -34,7 +35,8 @@ function TeamMembers() {
    
 
     return (
-
+<div style={{paddingTop:'17vh'}}>
+<TopBarCommon/>
         <div style={{marginBottom:80}}>
 
             <div style={{ paddingTop: "30px" }}>
@@ -42,7 +44,7 @@ function TeamMembers() {
                     <Row className="fade-in">
                         <Col > <p style={{ textransform: "uppercase", paddingLeft: "30px", fontZize: "18px", fontWeight: " 600", letterSpacing: "4px" }}>TEAM<span style={{ paddingLeft: "7px" }}>  MEMBERS </span>  </p></Col>
                         <Col className="d-none d-md-block" md="auto" style={{ fontSize: "11px", color: "#575757", fontFamily: 'Open Sans, sans-serif', letterSpacing: "2px",fontWeight:400 }}>
-                            HOME <span style={{ paddingLeft: "15px" }}>|</span>
+                        <a href="/" style={{ textDecoration: 'none', color: 'gray' }}>HOME</a>   <span style={{ paddingLeft: "15px" }}>|</span>
                         </Col>
                         <Col className="d-none d-md-block" xs lg="2" style={{ fontSize: "11px", color: "#575757", fontFamily: 'Open Sans, sans-serif', letterSpacing: "2px",fontWeight:400 }}>
                             TEAM MEMBERS
@@ -427,7 +429,7 @@ function TeamMembers() {
 
 
         </div>
-
+        </div>
 
     )
 }

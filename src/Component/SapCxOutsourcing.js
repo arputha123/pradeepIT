@@ -6,10 +6,12 @@ import FourthPage from '../Pages/SapCxOutsourcing/FourthPage';
 import FifthPage from '../Pages/SapCxOutsourcing/FifthPage';
 import SixthPage from '../Pages/SapCxOutsourcing/SixthPage';
 import SeventhPage from '../Pages/SapCxOutsourcing/SeventhPage';
+import TopBarComponent from './topbar';
 
 function SapCxOutsourcing() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 ,fontFamily:''}}>
           <FirstPage />

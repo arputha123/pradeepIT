@@ -1,48 +1,50 @@
 import React, { useState } from "react";
-import img from '../Assets/news1.jpg'
-import line from '../Assets/line2.png'
-import fund from '../Assets/investment.jpg';
+import img from '../../Images/adobemagento.png'
+import line from '../../Images/line2.png'
+import fund from '../../Images/orangemagento.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiHeart } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
 import { useNavigate, Link } from 'react-router-dom';
-import TopBarCommon from "./Topbarcommon";
+// import TopBarCommon from "./Topbarcommon";
 
 
-function News() {
+function Magento () {
+
   const [data, setData] = useState([
     {
       Img: img,
       Admin: "POSTED BY ADMIN ",
-      Date: " SEPTEMBAR 24,2018",
-      Heading: "100 + KARNATAKA ENGINEERING COLLEGES SIGNED MOU WITH PRADEEPIT",
-      BodyData: "PRADEEPIT is the foremost ISO certified 9001:2015 IT Company,which has marked its flagship in 3 + countries with 300+ projects sccessfully Accomplished and its core focus on in-house open...",
-      Likes: "177 LIKES"
+      Date: "FEBRUARY 24, 2016",
+      Heading: "MAGENTO ACQUISITION: WILL IT TAKES MAGENTO COMMERCE INTO NEW HEIGHT",
+      BodyData: "Last month, IT industry had got big surprise aabout magento acquisition by adobe industry. This made not only a surprise but shocked to leading ecommerce companies. The acquisition has made..",
+      Likes: "191 LIKES"
     },
     {
       Img: fund,
       Admin: "POSTED BY ADMIN",
-      Date: " SEPTEMBAR 24,2018",
-      Heading: "KOUCHAN JOINT VENTURE WITH PRADEEPIT RAISED FUNDS OF 3 LAKHS AND UPCOMING MONTHS RAISES FUNDS OF 3 CRORES",
-      BodyData: "Kou-Chan Joint venture with PRADEEPIT raised funds of 30 lakhs and upcoming months raises funds of 10 crores. PradeepIT had a very successful Joint Venture with Kou-Chan for 10 years...",
-      Likes: "179 LIKES"
-    }
+      Date: "FEBRUARY 24, 2016",
+      Heading: "HOW TO OPTIMIZE THE MAGENTO STORE FROM SITE OWNER SIDE",
+      BodyData: "Developing a magento store is now become quite ease for magento developers, and other side the optimization of magento site also have quite impressive results if the site owners has...",
+      Likes: "247 LIKES"
+    },
+   
   ])
 
   const navigate = useNavigate();
   
   return (
-    <div style={{paddingTop:'17vh'}}>
-      <TopBarCommon/>
+    <>
+      {/* <TopBarCommon/> */}
       <div style={{ backgroundColor: "#f6f6f6" }}>
         <div className="container col2-layout">
-          <div style={{ paddingTop: 0, paddingLeft: 13, paddingRight: 13 }} className="row">
+          <div style={{ paddingTop: 40, paddingLeft: 13, paddingRight: 13 }} className="row">
             <div className="col-lg-8 col-md-7 col-sm-4 animated fadeInUp">
               <p style={{ fontSize: 20, letterSpacing: 4, fontWeight: 600 }}>NEWS</p>
             </div>
             <div className="col-lg-4 col-md-5 col-sm-12 breadcrumb text-uppercase wow fadeInUp xs-display-none animated">
              
-              <p className="animate_content animated" style={{ fontWeight: "lighter", color: "gray", fontSize: "14px" }}> <a href="/" style={{ textDecoration: 'none', color: 'gray' }}>HOME</a> <span>|</span> NEWS</p>
+              <p className="animate_content animated" style={{ fontWeight: "lighter", color: "gray", fontSize: "14px" }}> <a href="/" style={{ textDecoration: 'none', color: 'gray' }}>HOME</a> <span>|</span> MAGENTO</p>
             </div>
           </div>
         </div>
@@ -105,7 +107,7 @@ function News() {
         </div>
       </div>
 
-    </div>
+    </>
   )
 }
-export default News;
+export default Magento;

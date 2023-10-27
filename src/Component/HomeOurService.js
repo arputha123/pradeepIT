@@ -1,12 +1,13 @@
-import { useEffect, useState } from 'react';
+import React,{useState,useEffect} from 'react';
 import Box from '../Assets/suitcaseBlack.png'
 import Announce from '../Assets/marketing.png'
 import Cart from '../Assets/trolley.png'
 import Tablet from '../Assets/tablet.jpg';
 import Mobile from '../Assets/smartphone.png';
-import ecommerce from '../Assets/ecommerce-2607114_960_720.jpg'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+import ecommerce from '../Assets/corporate.jpg'
+import Arrow from "../Assets/right-arrow.png"
+import "../Style/HomeOurService.css";
+
 
 function OurService() {
     const digit = 'DIGITAL MARKETING';
@@ -14,6 +15,7 @@ function OurService() {
     const web = 'WEB DEVELOPMENT';
     const [showTabs, setShowTabs] = useState(digit)
 
+    
     useEffect(() => {
         const appearOptions = {
             threshold: 0
@@ -34,40 +36,21 @@ function OurService() {
             appearOnScrool.observe(fader);
         })
     });
-
-    const changeShowTab = (e) => {
-        console.log("e.target.value", e.target);
-        // setShowTabs
-    }
-
     return (
         <>
-            <div class="ourserviceWant fade-in d-flex row justify-content-center align-items-center flex-wrap">
+            <div class="container-fluid "
+            >
 
-                {/* <div class="row justify-content-center align-items-center flex-wrap"> */}
-                    {/* <div */}
-                    {/* className='col-md-4 col-sm-8 col-xs-3' 
-                     class="col-md-6 col-sm-6 col-xs-12" 
-                     style={{ display: 'flex', flexDirection: 'row',marginLeft:-20}}> */}
-                        <img src={Box}
-                        // className='me-3'
-                         className='col-md-4 col-sm-6 col-xs-10 flex-1'
-                          style={{ width: 60, height: 50 }}/>
-                        <h5
-                         className='col-md-3 col-sm-6 col-xs-10'
-                          style={{ fontSize: 14, paddingTop: 20, marginLeft: 5,fontWeight:300,textAlign:'center' }}>WANT TO SEE MORE AMAZING WORKS?</h5>
-                  {/* </div> */}
-                    {/*   <div class="col-md-6 col-sm-6 col-xs-12"> */}
-                        <button type="button" 
-                        className='col-md-3 col-sm-6 col-xs-10 Btn1'
-                        // class="Btn1"
-                        ><b>VIEW PORTFOLIO</b></button>
-                        <button type="button"
-                        className='col-md-3 col-sm-6 col-xs-10 Btn2'
-                        //  class="Btn2"
-                         ><b>SUBSCRIBE US</b></button>
-                    {/* </div> */}
-                {/* </div> */}
+                <div class="row ourserviceWant justify-content-center">
+                    <div class="col-md-6 col-sm-6 col-xs-12 ps-5" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                        <img className='imgour ' src={Box}   />
+                        <h5 style={{ fontSize: 14, paddingTop: 20, marginLeft: 5 }}>WANT TO SEE MORE AMAZING WORKS?</h5>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 ps-5">
+                        <button type="button" class="Btn1"><b>VIEW PORTFOLIO</b></button>
+                        <button type="button" class="Btn2"><b>SUBSCRIBE US</b></button>
+                    </div>
+                </div>
 
             </div>
 
@@ -81,88 +64,61 @@ function OurService() {
 
 
             <div class="container" style={{ marginTop: 50 }}>
-                <div class="row" style={{ paddingLeft: 70 }}>
+                <div class=" iconsmark" style={{ paddingLeft: 70 }}>
                     <div class="col-md-4 col-sm-4 col-xs-6" value="DIGITAL MARKETING" onClick={()=>{setShowTabs(digit)}} style={{ cursor: 'pointer' }}>
-                        <img src={Announce} style={{ width: 55, height: 55, marginLeft: 55 }} />
-                        <p>DIGITAL MARKETING</p></div>
+                        <img className='annou' src={Announce}  />
+                        <p className='ppann'>DIGITAL MARKETING</p></div>
+<div className='vlccode1' >
 
-                    <div class="col-md-4 col-sm-4 col-xs-6" value="E-COMMERCE SOLUTIONS" onClick={()=>{setShowTabs(eCom)}} style={{ cursor: 'pointer' }}
-                    >
-                        <img src={Cart} style={{ width: 55, height: 55, marginLeft: 55 }} />
-                        <p>E-COMMERCE SOLUTIONS</p></div>
+</div>
+                    <div class="col-md-4 col-sm-4 col-xs-6   carrrrrt" value="E-COMMERCE SOLUTIONS" onClick={()=>{setShowTabs(eCom)}} style={{ cursor: 'pointer' }} >
+                        <img src={Cart} className='cartt'  />
+                        <p className='ppann'>E-COMMERCE SOLUTIONS</p>
+                        </div>
+                        <div className='vlccode' >
 
-                    <div class="col-md-4 col-sm-4 col-xs-6" value="WEB DEVELOPMENT" onClick={()=>{setShowTabs(web)}} style={{ cursor: 'pointer' }}
-                    >
-                        <img src={Mobile} style={{ width: 55, height: 55, marginLeft: 55 }} />
-                        <p>WEB DEVELOPMENT</p></div>
+</div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-6 mobiii" value="WEB DEVELOPMENT" onClick={()=>{setShowTabs(web)}} style={{ cursor: 'pointer' }} >
+                        <img src={Mobile} className='mobbi'  />
+                        <p className='ppann'>WEB DEVELOPMENT</p></div>
                 </div>
             </div>
 
 
-            {/* <Container>
-        <Nav fill variant="tabs" >
-          <Nav.Item 
-        //   className='tab'
-          >
-            <Nav.Link name="DIGITAL MARKETING" 
-            // className='aboutNav' 
-            style={{ textDecoration: 'none' }} 
-            onClick={(e) => changeShowTab(e)} active={showTabs == "DIGITAL MARKETING" ? true : false}> KOU CHAN</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className='tab' >
-            <Nav.Link name="STANDARD TOUCH"
-            //  className='aboutNav'
-              style={{ textDecoration: 'none' }}
-            //  onClick={(e) => Tabonclick(e)} active={shoeTabs == "STANDARD TOUCH" ? true : false}
-             >E-COMMERCE SOLUTIONS</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className='tab' >
-            <Nav.Link name="CONVISTA AG"
-            //  className='aboutNav' 
-             style={{ textDecoration: 'none' }}
-            //  onClick={(e) => Tabonclick(e)} active={shoeTabs == "CONVISTA AG" ? true : false}
-             >WEB DEVELOPMENT</Nav.Link>
-          </Nav.Item>
-          
-
-        </Nav>
-      </Container> */}
-
-
             <div class="container-fluid pt-5">
-
-                {
+            {
                     showTabs == digit &&
-                        <div class="ourService">
-                            <div
-                                class="col-md-6 col-sm-10 col-xs-10 Laptop1">
-                                <img src={Tablet} class="img-fluid Tablet"
-                                />
-                                <div
-                                    className='Digital'>
-                                    <div class="Laptop"
-                                        style={{ fontSize: 22 }}
-                                    >
-                                        <h1 style={{ marginLeft: 30, color: '#FDD947', fontSize: 30 }}>01</h1>
-                                        <p>D I G I T A L   M A R K E T I N G</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-10 col-xs-10 d-flex  justify-content-center flex-column align-items-center Read1" >
-                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <img src={Announce} style={{ width: 55, height: 55, marginLeft: 25, flex: 1 }} />
-                                    <h2 style={{ fontSize: 28, fontWeight: 700, flex: 1, marginTop: 30 }}>DIGITAL MARKETING</h2>
-                                </div>
-                                <div style={{ padding: 30, backgroundColor: '#EFEFEF', marginTop: 30 }}>
-                                    <p style={{ fontSize: 14, lineHeight: 2, wordSpacing: 1, textAlign: 'center', width: '100%' }} class="col-md-6 col-sm-6 col-xs-10">We ensure organizations reach their full potential in the online space through marketing strategies based on deep analytics and customer journeys.</p>
-                                </div>
-                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <button class="Read">READ MORE <i class="bi bi-arrow-right"></i></button>
-                                </div>
-
+                <div class="ourService">
+                    <div
+                        class="col-md-6 col-sm-10 col-xs-10 Laptop1">
+                        <img src={Tablet} class="img-fluid Tablet"
+                        />
+                        <div
+                            className='Digital'>
+                            <div class="Laptop"
+                                style={{ fontSize: 22 }}
+                            >
+                                <h1 style={{ marginLeft: 30, color: '#FDD947', fontSize: 30 }}>01</h1>
+                                <p>D I G I T A L   M A R K E T I N G</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-xs-10 d-flex  justify-content-center flex-column align-items-center Read1" >
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <img src={Announce} style={{ width: 55, height: 55, marginLeft: 25, flex: 1 }} />
+                            <h2 style={{ fontSize: 28, fontWeight: 700, flex: 1, marginTop: 30 }}>DIGITAL MARKETING</h2>
+                        </div>
+                        <div style={{ padding: 30, backgroundColor: '#EFEFEF', marginTop: 30 }}>
+                            <p style={{ fontSize: 14, lineHeight: 2, wordSpacing: 1, textAlign: 'center', width: '100%' }} class="col-md-6 col-sm-6 col-xs-10">We ensure organizations reach their full potential in the online space through marketing strategies based on deep analytics and customer journeys.</p>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <button class="Read">READ MORE <img src={Arrow}/></button>
+                        </div>
+
+                    </div>
+                </div>
 }
 {
                         showTabs == eCom &&
@@ -191,12 +147,13 @@ function OurService() {
                                         <p style={{ fontSize: 14, lineHeight: 2, wordSpacing: 1, textAlign: 'center', width: '100%' }} class="col-md-6 col-sm-6 col-xs-10">We offer Ecommerce services for designing, developing, hosting, marketing and analytics, across industry verticals around the globe.</p>
                                     </div>
                                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                        <button class="Read">READ MORE <i class="bi bi-arrow-right"></i></button>
+                                        <button class="Read">READ MORE  <img src={Arrow}/></button>
                                     </div>
 
                                 </div>
                             </div>
 }
+
 {
                             showTabs == web ?
                                 <div class="ourService">
@@ -224,46 +181,15 @@ function OurService() {
                                             <p style={{ fontSize: 14, lineHeight: 2, wordSpacing: 1, textAlign: 'center', width: '100%' }} class="col-md-6 col-sm-6 col-xs-10">We Make affordable & quality websites, which can offer you the best return for your investment. Create a successful online presence through good and extraordinary design according to your business.</p>
                                         </div>
                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                            <button class="Read">READ MORE <i class="bi bi-arrow-right"></i></button>
+                                            <button class="Read">READ MORE  <img src={Arrow}/></button>
                                         </div>
 
                                     </div>
                                 </div>
                                 : ''
                 }
-
-
-                {/* <div class="ourService">
-                    <div
-                        class="col-md-6 col-sm-10 col-xs-10 Laptop1">
-                        <img src={Tablet} class="img-fluid Tablet"
-                        />
-                        <div
-                            className='Digital'>
-                            <div class="Laptop"
-                                style={{ fontSize: 22 }}
-                            >
-                                <h1 style={{ marginLeft: 30, color: '#FDD947', fontSize: 30 }}>01</h1>
-                                <p>D I G I T A L   M A R K E T I N G</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-10 col-xs-10 d-flex  justify-content-center flex-column align-items-center Read1" >
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={Announce} style={{ width: 55, height: 55, marginLeft: 25, flex: 1 }} />
-                            <h2 style={{ fontSize: 28, fontWeight: 700, flex: 1, marginTop: 30 }}>DIGITAL MARKETING</h2>
-                        </div>
-                        <div style={{ padding: 30, backgroundColor: '#EFEFEF', marginTop: 30 }}>
-                            <p style={{ fontSize: 14, lineHeight: 2, wordSpacing: 1, textAlign: 'center', width: '100%' }} class="col-md-6 col-sm-6 col-xs-10">We ensure organizations reach their full potential in the online space through marketing strategies based on deep analytics and customer journeys.</p>
-                        </div>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <button class="Read">READ MORE <i class="bi bi-arrow-right"></i></button>
-                        </div>
-
-                    </div>
-                </div> */}
             </div>
+
 
         </>
     )

@@ -1,9 +1,9 @@
-import Spy from '../Assets/spy.png';
-import Desktop from '../Assets/desktop.png';
-import Airbaloon from '../Assets/hot-air-balloon.png';
-import Camera from '../Assets/camera.png';
-import Trophy from '../Assets/trophy.png';
-import Cloud from '../Assets/cloud.png';
+import Spy_grey from '../Assets/spy (1).png'
+import Desktop_grey from '../Assets/desktop (1).png'
+import Airbaloon_grey from '../Assets/hot-air-balloon-grey.png'
+import Camera_grey from '../Assets/camara_grey.png';
+import Cloud_grey from '../Assets/cloud_grey.png'
+import trophy_grey from '../Assets/trophy (1).png';
 
 function WhyChooseUs () {
     return(
@@ -12,9 +12,9 @@ function WhyChooseUs () {
         <div class="row animated animatedFadeInUp fadeInUp fade-in" style={{ marginTop: 60, textAlign: "start", fontSize: 12 }}>
             <h2 style={{ textAlign: 'center', wordSpacing: 5 }}><b>WHY CHOOSE US?</b></h2>
             <div 
-            class="col-md-4 col-sm-6" 
+           class="col-md-6 col-lg-4 col-sm-12 col-xs-12"
             style={{ display: "flex", flexDirection: "row" }}>
-                <img src={Spy} style={{ height: 50, width: 80, marginTop: 40 }} />
+                <img src={Spy_grey} style={{ height: 50, width: 80, marginTop: 40 }} />
                 <p>
 
                     <div class="separator-line bg-yellow no-margin-lr"></div>
@@ -33,8 +33,8 @@ function WhyChooseUs () {
 
                 </p>
             </div>
-            <div class="col-md-4 col-sm-6" style={{ display: "flex", flexDirection: "row" }}>
-                <img src={Desktop} style={{ height: 50, width: 80, marginTop: 40 }} />
+            <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12" style={{ display: "flex", flexDirection: "row" }}>
+                <img src={Desktop_grey} style={{ height: 50, width: 80, marginTop: 40 }} />
                 <p>
                     <div class="separator-line bg-yellow no-margin-lr"></div>
 
@@ -56,8 +56,8 @@ function WhyChooseUs () {
 
                 </p>
             </div>
-            <div class="col-md-4 col-sm-6" style={{ display: "flex", flexDirection: "row" }}>
-                <img src={Airbaloon} style={{ height: 50, width: 80, marginTop: 40 }} />
+            <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12" style={{ display: "flex", flexDirection: "row" }}>
+                <img src={Airbaloon_grey} style={{ height: 50, width: 80, marginTop: 40 }} />
                 <p>
 
                     <div class="separator-line bg-yellow no-margin-lr"></div>
@@ -80,8 +80,8 @@ function WhyChooseUs () {
             </div>
         {/* </div>
         <div class="row animated animatedFadeInUp fadeInUp fade-in" style={{ marginTop: 30, textAlign: "start", fontSize: 12 }}> */}
-            <div class="col-md-4 col-sm-6" style={{ display: "flex", flexDirection: "row" }}>
-                <img src={Camera} style={{ height: 50, width: 80, marginTop: 40 }} />
+            <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12" style={{ display: "flex", flexDirection: "row" }}>
+                <img src={Camera_grey} style={{ height: 50, width: 80, marginTop: 40 }} />
 
                 <p>
 
@@ -103,8 +103,8 @@ function WhyChooseUs () {
 
                 </p>
             </div>
-            <div class="col-md-4 col-sm-6" style={{ display: "flex", flexDirection: "row" }}>
-                <img src={Trophy} style={{ height: 50, width: 80, marginTop: 40 }} />
+            <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12" style={{ display: "flex", flexDirection: "row" }}>
+                <img src={trophy_grey} style={{ height: 50, width: 80, marginTop: 40 }} />
                 <p>
 
                     <div class="separator-line bg-yellow no-margin-lr"></div>
@@ -124,8 +124,8 @@ function WhyChooseUs () {
 
                 </p>
             </div>
-            <div class="col-md-4 col-sm-6" style={{ display: "flex", flexDirection: "row" }}>
-                <img src={Cloud} style={{ height: 50, width: 80, marginTop: 40 }} />
+            <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12" style={{ display: "flex", flexDirection: "row" }}>
+                <img src={Cloud_grey} style={{ height: 50, width: 80, marginTop: 40 }} />
 
                 <p>
 
