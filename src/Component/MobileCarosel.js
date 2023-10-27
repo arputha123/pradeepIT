@@ -14,14 +14,14 @@ function MobileCarosel () {
     <div class="carousel-inner">
         <div class="item active">
             <div class="container-fluid ">
-                <div class="row d-flex align-items-center ps-5 Phone" >
-                    <div class="col-md-6 col-sm-6 col-xs-10">
-                        <div style={{ paddingLeft: '70px' }}>
+                <div class="row align-items-center ps-5 Phone" >
+                    <div class="col-md-6 ">
+                        <div style={{ paddingLeft: 70 }}>
                         </div>
 
                         <img src={Phone} style={{ paddingLeft: '15%' }}></img>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-10" style={{ display: 'flex', flexDirection: 'row', lineHeight: 2 }}>
+                    <div class="col-md-6 phone1" style={{ display: 'flex', flexDirection: 'row', lineHeight: 2 }}>
                         <div
                             style={{ marginRight: 30 }}
                         >

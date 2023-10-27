@@ -6,10 +6,12 @@ import FourthPage from '../Pages/VideoProduction/FourthPage';
 import FifthPage from '../Pages/VideoProduction/FifthPage';
 import SixthPage from '../Pages/VideoProduction/SixthPage';
 import SeventhPage from '../Pages/VideoProduction/SeventhPage';
+import TopBarComponent from './topbar';
 
 function VideoProduction() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 ,fontFamily:''}}>
           <FirstPage />

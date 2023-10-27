@@ -6,10 +6,12 @@ import FourthPage from '../Pages/Webdevelopment/FourthPage';
 import FifthPage from '../Pages/Webdevelopment/FifthPage';
 import SixthPage from '../Pages/Webdevelopment/SixthPage';
 import SeventhPage from '../Pages/Webdevelopment/SeventhPage';
+import TopBarComponent from './topbar';
 
 function Webdevelopment() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80 ,fontFamily:''}}>
           <FirstPage />

@@ -1,20 +1,283 @@
+/* imageComponent */
+.w3-animate-zoom {
+    animation:animatezoom 0.6s
+}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+/* imageComponent */
+
+/* form */
+.Growth{
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+.Check{
+    display: flex;
+    flex-direction: row;
+}
+.Check2{
+    display: flex;
+    flex-direction: row;
+}
+.Check1{
+    display: flex;
+    flex-direction: row;
+}
+.Check3{
+    display: flex;
+    flex-direction: row;
+}
+.Input2{
+    margin-left: 10px;
+}
+.Input3{
+    margin-left: 10px;
+}
+.Input4{
+    margin-left: 10px;
+}
+.submit{
+    width: 20%;
+    background-color: #5CB85C;
+    color: white;
+    padding: 6px;
+    border: 1px solid #DFDFDF;
+}
+
+
+
+
+@media only screen and (max-width: 570px) {
+    .CardContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .ImageMove {
+        position: relative;
+        background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ImageMoveContent {
+        position: absolute;
+        bottom: 0px;
+        background-color: #00000099;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .Top1 {
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .Top2 {
+        font-size: 20px;
+        color: white;
+    }
+
+   
+    .Phone {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .Growth{
+        padding-left: 0;
+        padding-top: 10;
+        font-size: 25;
+        text-align: center;
+    }
+    .Check{
+        font-size: 6;
+    }
+    .Check2{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 6;
+        flex-wrap: wrap;
+    }
+    .Check1{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 6;
+        flex-wrap: wrap;
+    }
+    .Check3{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 6;
+        flex-wrap: wrap;
+    }
+    .Input2{
+        margin-left: 0;
+    }
+    .Input3{
+        margin-left: 0;
+    }
+    .Input4{
+        margin-left: 0;
+    }
+    .submit{
+        width: 35%;
+        background-color: #5CB85C;
+        color: white;
+        padding: 3px;
+        border: 1px solid #DFDFDF;
+    }
+   
+
+}
+@media only screen and (max-width: 900px) {
+
+    .Growth{
+        padding-left: 0;
+        padding-top: 10;
+        font-size: 25;
+        text-align: center;
+    }
+    .Check{
+        font-size: 10;
+    }
+    .Check2{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 10;
+        flex-wrap: wrap;
+    }
+    .Check1{
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 10;
+        flex-wrap: wrap;
+    }
+   
+    .Input2{
+        margin-left: 0;
+    }
+    .Input3{
+        margin-left: 0;
+    }
+    .Input4{
+        margin-left: 0;
+    }
+  
+}
+@media only screen and (min-width:900px) and (max-width: 1100px) {
+
+    .Check{
+        font-size: 9px;
+    }
+    .Check2{
+       
+        font-size: 9px;
+        flex-wrap: wrap;
+    }
+    .Check1{
+        
+        font-size: 9px;
+        flex-wrap: wrap;
+    }
+    .Check3{
+        font-size: 9px;
+    }
+
+}
+
+/* form */
 .Image1 {
     position: relative;
 }
 
-/* .Top{
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    bottom: 15%;
-
-} */
-/* .Backround{
-    background-color: #efefef55;
-    height: 80vh;
+.ImageMove {
+    position: relative;
     width: 100%;
+    height: 60vh;
+    background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
+}
+
+.ImageMoveContent {
     position: absolute;
+    bottom: 0px;
+    background-color: #00000099;
+    left: 0px;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* react-slick */
+.slick-dots {
+bottom: 30px !important;
+color: #7e7e7e !important;
+}
+.slick-dots li button:before{
+font-size: 10px !important;
+/* color: #7e7e7e !important; */
+}
+/* .slick-dots li.slick-active button:before{
+    border-color: white !important;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    margin-top:5px;
 } */
+
+
+/* Latest Blogs */
+.img-wrapper {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+img.hover-zoom {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+img.hover-zoom:hover {
+    transform: scale(1.25);
+
+}
+
+.hover-zoom {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.img-wrapper .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 214, 214, 0.5);
+    /* Light color overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-wrapper:hover .hover-zoom {
+    transform: scale(1.25);
+}
+
+.img-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+  /* Latest Blogs */
+
+
 .Topp {
     font-size: 35px;
     color: white;
@@ -32,14 +295,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
-    /* top: 50%;
-    left: 17%;
-    bottom: 15%;
-    right: 10%; */
-    /* background-color: #efefef55; */
-    /* width: 100%;
-    height: 100vh; */
 }
 
 .Top1 {
@@ -56,21 +311,7 @@
     text-align: center;
     line-height: 30px;
 }
-
-.Laptop1 {
-    position: relative;
-    width: 50%;
-    /* flex:1; */
-}
-
-.Laptop {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 300px;
-}
+/*  */
 
 .separator-line {
     height: 2px;
@@ -148,46 +389,6 @@
 }
 
 
-.Btn1 {
-
-    background-color: #000000;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* padding-left: 5px;
-    padding-right: 5px; */
-    margin-right: 20px;
-    margin-left: 15%;
-    font-size: 14px;
-    width: 15%;
-}
-
-.Btn1:hover {
-    background-color: #FDD947;
-    border: 2px solid black;
-    color: black;
-}
-
-
-.Btn2 {
-    font-size: 14px;
-    background-color: #FDD947;
-    color: rgb(20, 20, 20);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* padding-left: 5px;
-    padding-right: 5px; */
-    /* margin-right: 10px; */
-    border: 2px solid black;
-    width: 15%;
-
-}
-
-.Btn2:hover {
-    background-color: black;
-    border: 2px solid black;
-    color: white;
-}
 
 .Blog {
     background-color: #000000;
@@ -212,33 +413,6 @@
     opacity: 0.5;
 }
 
-.Read {
-    font-size: 12px;
-    background-color: #E75E50;
-    color: white;
-    width: 120px;
-    border-style: none;
-    margin-top: 30px;
-}
-
-.Read:hover {
-    background-color: #000000;
-    color: white;
-}
-
-.Read1 {
-    width: 45%;
-    /* flex: 1; */
-    padding: 5%;
-    border: 5px solid #7e7e7e;
-}
-
-.ourService {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
 
 .Phone {
     display: flex;
@@ -270,6 +444,7 @@
 .overlay {
     position: absolute;
     bottom: 0;
+    left: 30%;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -294,30 +469,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
-.Tablet {
-    width: 100%;
-    height: 500px;
-}
-
-.Digital {
-    width: 98%;
-    height: 100%;
-    position: absolute;
-    left: 7px;
-    bottom: 0px;
-    top: 0px;
-    right: 0px;
-    background-color: #00000089;
-}
-
-.ourserviceWant {
-    height: 20vh;
-    background-color: #FDD947;
-
-    /* padding-top: 18px; */
-}
-
 /* Lateast Work */
 .Lerbs1 {
     position: relative;
@@ -340,11 +491,25 @@
 
 /* Lateast Work */
 
-@media only screen and (max-width: 570px) {
-    /* .container {
-        display: flex;
-        flex-direction: column;
-    } */
+/* @media only screen and (max-width: 570px) {
+    .ImageMove {
+        position: relative;
+        background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ImageMoveContent {
+        position: absolute;
+        bottom: 0px;
+        background-color: #00000099;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
 
     .Top1 {
         font-size: 20px;
@@ -357,15 +522,7 @@
         color: white;
     }
 
-    .Read {
-        margin-left: 10px;
-        margin-bottom: 30px;
-    }
-
-    .Read1 {
-        padding-left: 30px;
-    }
-
+   
     .Phone {
         display: flex;
         flex-direction: column;
@@ -437,14 +594,11 @@
         padding-left: 5px;
         padding-right: 5px;
         /* margin-right: 10px; */
-        border: 2px solid black;
+        /* border: 2px solid black; */
 
-    }
-    .CardContent{
-        display: flex;
-        flex-direction: column;
-    }
-}
+    /* } */
+   
+/* } */
 
 @media only screen and (min-width: 570px)and (max-width:900px) {
     .ourserviceWant {

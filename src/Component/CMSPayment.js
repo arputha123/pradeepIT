@@ -6,10 +6,12 @@ import FourthPage from '../Pages/CMSPayment/FourthPage';
 import FifthPage from '../Pages/CMSPayment/FifthPage';
 import SixthPage from '../Pages/CMSPayment/SixthPage';
 import SeventhPage from '../Pages/CMSPayment/SeventhPage';
+import TopBarComponent from './topbar';
 
 function CMSPayment() {
   return (
     <>
+    <TopBarComponent/>
       <div style={{ overflowX: "hidden" }}>
         <div style={{ paddingBottom: 80}}>
           <FirstPage />
