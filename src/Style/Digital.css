@@ -480,9 +480,17 @@
         border: 2px solid black;
 
     }
+    /* .CardContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+}
+
+/* @media only screen and (min-width: 900px)and (max-width:1200px) {
     .CardContent{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-}
+} */

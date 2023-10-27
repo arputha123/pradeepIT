@@ -85,7 +85,7 @@ const handleMouseLeave7 = () =>{
             <div class="tab-pane active" id="1b">
                 <div class="row pb-5" style={{ width: "100%",height:"auto" }}>
                     <div class="CardContent">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card1}  style={{position:"relative"}} height={180} width={320}/>
@@ -110,7 +110,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card2}  style={{position:"relative"}} height={180} width={320}/>
@@ -135,7 +135,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center"  onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} style={{cursor:'cell'}}>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-center"  onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} style={{cursor:'cell'}}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card3}  style={{position:"relative"}} height={180} width={320}/>
@@ -160,7 +160,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
                       
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card4}  style={{position:"relative"}} height={180} width={320}/>
@@ -192,7 +192,7 @@ const handleMouseLeave7 = () =>{
 
                 <div class="row mt-5" style={{ width: "100%",height:"auto" }}>
                     <div class="CardContent">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card5}  style={{position:"relative"}} height={180} width={320}/>
@@ -217,7 +217,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 me-3 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter6} onMouseLeave={handleMouseLeave6}>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 me-3 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter6} onMouseLeave={handleMouseLeave6}>
                         <div class="card " style={{ height:"100%", border: "none"}}>
                             <div>
                             <img src={Card6}  style={{position:"relative"}} height={180} width={320}/>
@@ -242,7 +242,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter7} onMouseLeave={handleMouseLeave7}>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter7} onMouseLeave={handleMouseLeave7}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card7}  style={{position:"relative"}} height={180} width={320}/>
@@ -334,7 +334,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3}>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card3}  style={{position:"relative"}} height={180} width={320}/>
@@ -359,7 +359,7 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
                       
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card4}  style={{position:"relative"}} height={180} width={320}/>
