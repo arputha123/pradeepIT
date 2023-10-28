@@ -23,12 +23,15 @@ import Ecommerce from "./Component/LatestWork/E-Commerce";
 import Magento from "./Component/LatestWork/Magento";
 import WebDesign from "./Component/LatestWork/WebDesign";
 import LatestWorkCarousel from './Component/LatestWorkCarousel';
-
+import Topbar from './Component/topbar'
 
 
 function App() {
   return (
     <>
+    <div style={{width:"100%",overflow:"hidden"}}>
+      
+   
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Digital/>}></Route>
@@ -54,6 +57,8 @@ function App() {
           <Route path="/LatestWorkCarousel" element={<LatestWorkCarousel/>}></Route>
         </Routes>
       </BrowserRouter>
+
+      </div>
     </>
   );
 }

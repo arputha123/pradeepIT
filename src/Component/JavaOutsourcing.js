@@ -7,6 +7,8 @@ import FifthPage from '../Pages/JavaOutsourcing/FifthPage';
 import SixthPage from '../Pages/JavaOutsourcing/SixthPage';
 import SeventhPage from '../Pages/JavaOutsourcing/SeventhPage';
 import TopBarComponent from './topbar';
+import Footer from '../Component/Footer';
+
 
 function JavaOutsourcing() {
   return (
@@ -34,6 +36,9 @@ function JavaOutsourcing() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
+        <div>
+          <Footer />
+          </div>
       </div>
     </>
   )

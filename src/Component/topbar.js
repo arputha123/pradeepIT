@@ -1,244 +1,245 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown,  Dropdown } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
-import "react-bootstrap-submenu/dist/index.css";
-import '../Style/topbar.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, NavDropdown, Dropdown } from 'react-bootstrap';
+import '../Style/topbar.css'
+import { BiChevronRight } from "react-icons/bi";
+import { BsChevronDown } from "react-icons/bs";
 
-function TopBarComponent() {
-
-  const [isCompanyDropdownOpen, setIsCompanyDropdownOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-  const [fix, setFix] = useState(false);
-  const [isOutsourcingMenuOpen, setIsOutsourcingMenuOpen] = useState(false);
-  const [isWebdevelopmentMenuOpen, setIsWebdevelopmentMenuOpen] = useState(false);
-  const [isTraningMenuOpen, setIsTraningMenuOpen] = useState(false);
-  const [isDigitalMenuOpen, setIsDigitalMenuOpen] = useState(false);
-
-  const setFixed = () => {
-    if (window.scrollY >= 1) {
-      setFix(true);
+const PradeepTopbar = () => {
+    const [showCompanyDropdown, setShowCompanyDropdown] = useState(false);
+    const [showServiceDropdown, setShowServiceDropdown] = useState(false);
+    const [showRecruitDropdown, setShowRecruitDropdown] = useState(false);
+    const [showOutsorcingSubmenu, setShowOutsorcingSubmenu] = useState(false);
+    const [showWebSubmenu, setshowWebSubmenu] = useState(false);
+    const [showTraningSubmenu, setshowTraningSubmenu] = useState(false);
+    const [showDigitalSubmenu, setshowDigitalSubmenu] = useState(false);
+    const [blog, setBlog] = useState(false)
+    const [news, setNews] = useState(false)
+    const [contact, setContact] = useState(false)
+    const [fix, setFix] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const setFixed = () => {
+        if (window.scrollY >= 1) {
+            setFix(true);
+        }
+        else {
+            setFix(false);
+        }
     }
-    else {
-      setFix(false);
+    window.addEventListener("scroll", setFixed);
+
+
+    const handleMouseEnter1 = () => {
+        setBlog(true)
     }
-  }
-  window.addEventListener("scroll", setFixed);
- 
-  console.log('fix',fix);
-  return (
-    <>
-      <div>
-        <Navbar expand="lg" variant=""
-          className={fix ? 'main_bgcolor ' : 'main'}
-          fixed='top'>
-         
+    const handleMouseLeave1 = () => {
+        setBlog(false)
+    }
 
-            <Navbar.Brand href="#home">
+    const handleMouseEnter2 = () => {
+        setNews(true)
+    }
+    const handleMouseLeave2 = () => {
+        setNews(false)
+    }
 
-              {
-                fix ?
-                  <div className='logonormal'>
-
-                  </div>
-                  :
-                  <div className='logowhite'>
-
-                  </div>
-              }
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse className='navbar-collapse collapse active' id="basic-navbar-nav">
-
-
-              <Nav className="topbarnav mx-auto gap-4">
-               
-                <NavDropdown show={isCompanyDropdownOpen}
-                  onMouseEnter={() => setIsCompanyDropdownOpen(true)}
-                  onMouseLeave={() => setIsCompanyDropdownOpen(false)}
-                  title={<label
-                    //  style={{zIndex:2}} 
-                    className={fix ? 'navbarColorChange ' : 'navbarColor'}
-                    >COMPANY</label>}
-                  // menuVariant="dark"
-                >
-                  <NavDropdown.Item href="/AboutCompany">ABOUT COMPANY</NavDropdown.Item>
-                  <NavDropdown.Item href="/AdvisoryBoard">ADVISORY BOARD</NavDropdown.Item>
-                  <NavDropdown.Item href="/TeamMembers">TEAM MEMBERS</NavDropdown.Item>
-                </NavDropdown>
-
-
-
-
-                <Dropdown
-                  show={isServicesDropdownOpen}
-                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                >
-                  <Dropdown.Toggle as={Nav.Link} style={{ textDecoration: "none" }} ><label className={fix ? 'navbarColorChange ' : 'navbarColor'} >SERVICES</label></Dropdown.Toggle>
-                  <Dropdown.Menu
-                    as='ul'
-                    className='dropdown-menu'
-                    style={{padding:"5px",margin:"0px"}}
-                  >
-                    <li
-                      onMouseEnter={() => setIsOutsourcingMenuOpen(true)}
-                      onMouseLeave={() => setIsOutsourcingMenuOpen(false)}
-                      className='submenu-item' style={{padding:"5px 5px"}}
-                    >
-                      <Nav.Link 
-                      style={{backgroundColor:"black",fontSize:11,border:"none",color:"#595959"}}
-                       class=" ms-0 ps-0"> <label className='menu'>OUTSOURCING</label><span style={{color:"white",fontSize:'11px',paddingLeft:108}} class="arrow-right">❯</span></Nav.Link>
-                      {isOutsourcingMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 0,
-                            backgroundColor: 'black',
-                         
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
-                          <li>
-                            <Nav.Link href='/SapCxOutsourcing' className='addition'>SAP CX OUTSOURCING</Nav.Link>
-                          </li>
-                          <li>
-                            <Nav.Link href='/JavaOutsourcing' className='addition'>JAVA OUTSOURCING</Nav.Link>
-                          </li>
-                        </ul>
-                      )}
-                    </li>
-  
-
-                  
-                    
-                    <li
-                      onMouseEnter={() => setIsWebdevelopmentMenuOpen(true)}
-                      onMouseLeave={() => setIsWebdevelopmentMenuOpen(false)}
-                      className='submenu-item' style={{padding:"5px 5px"}}
-                    >
-                      <Nav.Link
-                       style={{backgroundColor:"black",color:"white",fontSize:11,border:"none"}} 
-                       class="ms-0 ps-0"> <label className='menu' >WEB DEVELOPMENT</label><span style={{color:"white",fontSize:'11px',paddingLeft:70}} class="arrow-right">❯</span> </Nav.Link>
-                      {isWebdevelopmentMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 35,
-                            backgroundColor: 'black',
-                          
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
-                          <li>
-                            <Nav.Link href='/ECommerce' className='addition' >E-COMMERCE + CMS</Nav.Link>
-                          </li>
-                          <li>
-                            <Nav.Link href='/WebDevelopment' className='addition'>CMS WEB DEVELOPMENT</Nav.Link>
-                          </li>
-                          <li>
-                            <Nav.Link href='/CMSPayment'className='addition' >CMS + PAYMENT GATEWAY</Nav.Link>
-                          </li>
-                        </ul>
-                      )}
-                    </li>
-                    <li
-                      onMouseEnter={() => setIsTraningMenuOpen(true)}
-                      onMouseLeave={() => setIsTraningMenuOpen(false)}
-                      className='submenu-item' style={{padding:"5px 5px"}}
-                    >
-                      <Nav.Link style={{backgroundColor:"black",fontSize:11,border:"none"}} class="ms-0 ps-0"> <label className='menu'  >TRANING</label><span style={{color:"white",fontSize:'11px',paddingLeft:132}} class="arrow-right">❯</span> </Nav.Link>
-                      {isTraningMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 65,
-                            backgroundColor: 'black',
-                        
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
-                          <li>
-                            <Nav.Link href='/CorporateTraining' className='addition'>CORPORATE TRANING</Nav.Link>
-                          </li>
-            
-                        </ul>
-                      )}
-                    </li>
-
-                    <li
-                      onMouseEnter={() => setIsDigitalMenuOpen(true)}
-                      onMouseLeave={() => setIsDigitalMenuOpen(false)}
-                      className='submenu-item' style={{padding:"5px 5px"}}
-                    >
-                      <Nav.Link   style={{backgroundColor:"black",fontSize:11,border:"none"}} class="ms-0 ps-0"> <label className='menu'  >DIGITAL MARGETING</label><span style={{color:"white",fontSize:'11px',paddingLeft:70}} class="arrow-right">❯</span> </Nav.Link>
-                      {isDigitalMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 95,
-                            backgroundColor: 'black',
-                          
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
-                          <li>
-                            <Nav.Link href='/DigitalMarketing' className='addition'>DIGITAL MARGETING SERVICES</Nav.Link>
-                          </li>
-            
-                        </ul>
-                      )}
-                    </li>
-
-                    <NavDropdown.Item href="/VideoProduction">VIDEO PRODUCTION</NavDropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-
-
-
-                <Nav.Link href="/Blogs"><label className={fix ? 'navbarColorChange ' : 'navbarColor'}>BLOGS</label></Nav.Link>
-                <Nav.Link href="/News"><label className={fix ? 'navbarColorChange ' : 'navbarColor'}>NEWS</label></Nav.Link>
-                <NavDropdown
-                  show={isDropdownOpen}
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                  title={<label className={fix ? 'navbarColorChange ' : 'navbarColor'}>RECRUIT</label>}
-                  menuVariant="dark"
-
-                >
-                  <NavDropdown.Item href="#">CAREERS</NavDropdown.Item>
-                  <NavDropdown.Item href="#">PROCESS</NavDropdown.Item>
-                  <NavDropdown.Item href="#">OUTING</NavDropdown.Item>
-
-                </NavDropdown>
-                <Nav.Link href="/Contactus"><label className={fix ? 'navbarColorChange ' : 'navbarColor'}>CONTACT US</label></Nav.Link>
-
-              </Nav>
-
-            </Navbar.Collapse>
+    const handleMouseEnter3 = () => {
+        setContact(true)
+    }
+    const handleMouseLeave3 = () => {
+        setContact(false)
+    }
+    useEffect(() => {
+        const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
       
-        </Navbar>
-      </div>
-    </>
-  );
-}
+       
+        window.addEventListener("resize", handleResize);
+      
+       
+        
+      }, []); 
+      
+    
+      const navbarBackground = windowWidth < 991 ? "black" : "transparent";
+      
 
-export default TopBarComponent;
+    return (
+
+        <Navbar collapseOnSelect fixed='top' expand='lg' className={fix ? "WhiteNavbar" : "TransparentNavbar"} style={{width:"100%"}} transparent>
+            <Navbar.Brand href="#" >
+                {fix ? <div className="NormalLogo"></div> : <div className="TransparentLogo"></div>}
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ background: "white", borderRadius: 0, margin: 10 }} />
+            <Navbar.Collapse id="responsive-navbar-nav" style={{ backgroundColor: navbarBackground }}>
+                <Nav className="d-flex justify-content-end gap-4" style={{ width: "100%", fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif' }}>
+
+
+                    <NavDropdown
+                        title={
+                            <>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <span>COMPANY</span>
+                                    <span className={`arrow-down ${window.innerWidth < 991 ? 'visible' : ''}`}><BsChevronDown style={{fontSize:15}} className="me-3"/></span>
+                                </div>
+
+                            </>
+                        }
+
+                        id="nav-dropdown"
+                        show={showCompanyDropdown}
+                        onMouseEnter={() => {
+                            setShowCompanyDropdown(true);
+
+                        }}
+                        onMouseLeave={() => {
+                            setShowCompanyDropdown(false);
+
+                        }}
+                     style={{position:"relative"}}
+                        className={`custom-nav-dropdown ${(fix && showCompanyDropdown) ? 'black-border' : (showCompanyDropdown ? 'white-border' : 'transparent-border')}`}>
+
+                        <div className="dropdown-menu-container" style={{fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif' }}>
+                            <Dropdown.Item id="hover-dropdown" href="#ABOUT COMPANY" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>ABOUT COMPANY</Dropdown.Item>
+
+                            <Dropdown.Item href="#ADVISORY BOARD" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)" ,textDecoration:"none"}}>ADVISORY BOARD</Dropdown.Item>
+
+                            <Dropdown.Item href="#TEAM MEMBERS" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8" ,textDecoration:"none"}}>TEAM MEMBERS</Dropdown.Item>
+                        </div>
+
+                    </NavDropdown>
+
+                    <NavDropdown
+                                              title={
+                            <>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <span>SERVICES</span>
+                                    <span className={`arrow-down ${window.innerWidth < 991 ? 'visible' : ''}`}><BsChevronDown  style={{fontSize:15}} className="me-3"/></span>
+                                </div>
+
+                            </>
+                        }
+                        id="nav-dropdown"
+                        show={showServiceDropdown}
+                        onMouseEnter={() => setShowServiceDropdown(true)}
+                        onMouseLeave={() => setShowServiceDropdown(false)}
+                        className={`custom-nav-dropdown ${(fix && showServiceDropdown) ? 'black-border' : (showServiceDropdown ? 'white-border' : 'transparent-border')}`}>
+
+
+                        <Dropdown.Item
+                            onMouseEnter={() => setShowOutsorcingSubmenu(true)}
+                            onMouseLeave={() => setShowOutsorcingSubmenu(false)}
+                            style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 10, fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'relative', color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)", display: "flex", justifyContent: "space-between",textDecoration:"none" }}
+
+                        >
+                            <label> OUTSOURCING</label>
+
+
+                            <BiChevronRight style={{ width: "15px", height: "15px" }} />
+
+                            {showOutsorcingSubmenu && (
+
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: "-30%" ,textDecoration:"none"}}>
+                                    <Dropdown.Item href="#SAP-CX OUTSOURCING" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2) ",textDecoration:"none" }}>SAP-CX OUTSOURCING</Dropdown.Item>
+
+                                    <Dropdown.Item href="#JAVA OUTSOURCING" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: "600", color: "#C8C8C8",textDecoration:"none" }}>JAVA OUTSOURCING</Dropdown.Item>
+
+                                </Dropdown.Menu>
+                            )}
+                        </Dropdown.Item>
+
+
+                        <Dropdown.Item
+                            onMouseEnter={() => setshowWebSubmenu(true)}
+                            onMouseLeave={() => setshowWebSubmenu(false)}
+                            style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)", display: "flex", justifyContent: "space-between" ,textDecoration:"none"}}
+                        >
+                            WEB DEVELOPMENT
+                            <BiChevronRight style={{ width: "15px", height: "15px" }} />
+                            {showWebSubmenu && (
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: '20%' }}>
+                                    <Dropdown.Item href="#E-COMMERCE" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }} >E-COMMERCE</Dropdown.Item>
+
+                                    <Dropdown.Item href="#CMS WEB DEVELOPMENT " style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}> WEB DEVELOPMENT</Dropdown.Item>
+
+                                    <Dropdown.Item href="#CMS WITH PAYMENT GATEWAY" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8",textDecoration:"none" }}>CMS WITH PAYMENT GATEWAY</Dropdown.Item>
+                                </Dropdown.Menu>
+                            )}
+                        </Dropdown.Item>
+
+                        <Dropdown.Item
+                            onMouseEnter={() => setshowTraningSubmenu(true)}
+                            onMouseLeave={() => setshowTraningSubmenu(false)}
+                            style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)", display: "flex", justifyContent: "space-between",textDecoration:"none" }}
+                        >
+                            TRANING
+                            <BiChevronRight style={{ width: "15px", height: "15px" }} />
+                            {showTraningSubmenu && (
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: '40%' }}>
+                                    <Dropdown.Item href="#CORPORATE TRAINING" style={{ paddingTop: 3, paddingLeft: 10, fontWeight: "600" ,textDecoration:"none"}}>CORPORATE TRAINING</Dropdown.Item>
+
+                                </Dropdown.Menu>
+                            )}
+                        </Dropdown.Item>
+
+                        <Dropdown.Item
+                            onMouseEnter={() => setshowDigitalSubmenu(true)}
+                            onMouseLeave={() => setshowDigitalSubmenu(false)}
+                            style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)", display: "flex", justifyContent: "space-between",textDecoration:"none" }}
+                        >
+                            DIGITAL MARKETING
+                            <BiChevronRight style={{ width: "15px", height: "15px" }} />
+                            {showDigitalSubmenu && (
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: '60%' }}>
+                                    <Dropdown.Item href="#DIGITAL MARKETING SERVICES" style={{ paddingTop: 3, paddingLeft: 10, fontWeight: 600, color: "#C8C8C8",textDecoration:"none" }}>DIGITAL MARKETING  SERVICES</Dropdown.Item>
+
+                                </Dropdown.Menu>
+                            )}
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#VIDEO PRODUCTION" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 2, fontSize: "11px", margin: 0, fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', color: "#C8C8C8",textDecoration:"none" }}>VIDIO PRODUCTION</Dropdown.Item>
+                    </NavDropdown>
+
+
+
+                    <Nav.Link href="#features"  className={`custom-nav-dropdown ${(fix && blog) ? 'black-border' : (blog ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} >BLOGS</Nav.Link>
+                    <Nav.Link href="#features" className={`custom-nav-dropdown ${(fix && news) ? 'black-border' : (news ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>NEWS</Nav.Link>
+                  
+                  
+                  
+                    <NavDropdown
+                        title={
+                            <>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>RECRUIT</span>
+                                    <span className={`arrow-down ${window.innerWidth < 991 ? 'visible' : ''}`}><BsChevronDown style={{fontSize:15}}  className="me-3"/></span>
+                                </div>
+
+                            </>
+                        }
+                        id="nav-dropdown"
+                        show={showRecruitDropdown}
+                        onMouseEnter={() => setShowRecruitDropdown(true)}
+                        onMouseLeave={() => setShowRecruitDropdown(false)}
+                        className={`custom-nav-dropdown ${(fix && showRecruitDropdown) ? 'black-border' : (showRecruitDropdown ? 'white-border' : 'transparent-border')}`}>
+                        <div style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif' }}>
+                            <Dropdown.Item href="#CAREERS" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: 600, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>CAREERS</Dropdown.Item>
+
+                            <Dropdown.Item href="#PROCESS" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: 600, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>PROCESS</Dropdown.Item>
+
+                            <Dropdown.Item href="#OUTING" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: 600, color: "#C8C8C8" ,textDecoration:"none"}}>OUTING</Dropdown.Item>
+                        </div>
+                    </NavDropdown>
+
+
+                    <Nav.Link href="#features" style={{ marginRight: "50px", color: "" }} className={`custom-nav-dropdown ${(fix && contact) ? 'black-border' : (contact ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} >CONTACT US</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    );
+};
+
+export default PradeepTopbar;
+
+
 

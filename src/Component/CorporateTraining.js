@@ -7,6 +7,7 @@ import FifthPage from '../Pages/CorporateTraning/FifthPage';
 import SixthPage from '../Pages/CorporateTraning/SixthPage';
 import SeventhPage from '../Pages/CorporateTraning/SeventhPage';
 import TopBarComponent from './topbar';
+import Footer from './Footer';
 
 function CorporateTraning() {
   return (
@@ -34,6 +35,9 @@ function CorporateTraning() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
+        <div>
+          <Footer />
+          </div>
       </div>
     </>
   )

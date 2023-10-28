@@ -16,7 +16,7 @@ import { ImGooglePlus } from "react-icons/im";
 import { ImLinkedin2 } from "react-icons/im";
 import { BiLogoPinterest } from "react-icons/bi";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Footer from './Footer';
 
 const MyCarousel = () => {
 
@@ -382,7 +382,9 @@ const MyCarousel = () => {
         </a>
       </div>
 
-
+      <div>
+          <Footer />
+          </div>
 
 
     </>
