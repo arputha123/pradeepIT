@@ -51,6 +51,7 @@ function News() {
       <div className="container" style={{ marginBottom: 100 }}>
         {
           data && data.map((val, ind) => {
+            console.log("ind",ind);
             return (
               <>
                 <div style={{ marginTop: 90 }}>

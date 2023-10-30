@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React,{useState} from "react";
 import Card1 from '../Assets/card1.png';
 import Card2 from '../Assets/card2.png';
 import Card3 from '../Assets/card3.png';
@@ -6,7 +6,7 @@ import Card4 from '../Assets/card4.png';
 import Card5 from '../Assets/card5.png';
 import Card6 from '../Assets/card6.png';
 import Card7 from '../Assets/card7.png';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
    const Latestworks = () =>    {
@@ -81,12 +81,12 @@ const handleMouseLeave7 = () =>{
 
         <div class="tab-content clearfix">
             <div class="tab-pane active" id="1b">
-                <div class="row pb-5" style={{ width: "100%",height:"auto" }}>
-                    <div class="CardContent">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
-                        <div class="card " style={{height:"100%", border: "none"}}>
+                <div class="row row-gap-5 g-5" style={{ width: "100%",height:"auto",backgroundColor:"" }}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell',backgroundColor:""}}  onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
+                        <div class="card" style={{height:"100%", border: "none",backgroundColor:""}}>
                             <div>
-                            <img src={Card1}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card1}  style={{position:"relative"}} className="img-fluid"
+                            />
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card1?"#f6f6f688":"transparent",position:"absolute",top:card1?0:100}} >
@@ -108,10 +108,10 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell',backgroundColor:""}}  onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card2}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card2}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card2?"#f6f6f688":"transparent",position:"absolute",top:card2?0:100}} >
@@ -136,7 +136,7 @@ const handleMouseLeave7 = () =>{
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center"  onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} style={{cursor:'cell'}}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card3}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card3}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card3?"#f6f6f688":"transparent",position:"absolute",top:card3?0:100}} >
@@ -161,7 +161,7 @@ const handleMouseLeave7 = () =>{
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card4}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card4}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card4?"#f6f6f688":"transparent",position:"absolute",top:card4?0:100}} >
@@ -182,18 +182,11 @@ const handleMouseLeave7 = () =>{
                             </div>
                             </div>
                         </div>
-
-                       
-                    </div>
-                </div>
-
-
-                <div class="row mt-5" style={{ width: "100%",height:"auto" }}>
-                    <div class="CardContent">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
+                 
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card5}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card5}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card5?"#f6f6f688":"transparent",position:"absolute",top:card5?0:100}} >
@@ -218,7 +211,7 @@ const handleMouseLeave7 = () =>{
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 me-3 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter6} onMouseLeave={handleMouseLeave6}>
                         <div class="card " style={{ height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card6}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card6}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card6?"#f6f6f688":"transparent",position:"absolute",top:card6?0:100}} >
@@ -243,7 +236,7 @@ const handleMouseLeave7 = () =>{
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter7} onMouseLeave={handleMouseLeave7}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card7}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card7}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card7?"#f6f6f688":"transparent",position:"absolute",top:card7?0:100}} >
@@ -269,7 +262,7 @@ const handleMouseLeave7 = () =>{
 
                        
                     </div>
-                </div>
+                
 
                 
 
@@ -278,14 +271,16 @@ const handleMouseLeave7 = () =>{
             </div>
 
 
-            <div class="tab-pane" id="2b">
-                
-            <div class="row pb-5" style={{ width: "100%",height:"auto" }}>
-                    <div class="CardContent">
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
-                        <div class="card " style={{height:"100%", border: "none"}}>
+
+
+{/* sap */}
+<div class="tab-pane active" id="2b">
+                <div class="row row-gap-5 g-5" style={{ width: "100%",height:"auto",backgroundColor:"" }}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell',backgroundColor:""}}  onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
+                        <div class="card" style={{height:"100%", border: "none",backgroundColor:""}}>
                             <div>
-                            <img src={Card1}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card1}  style={{position:"relative"}} className="img-fluid"
+                            />
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card1?"#f6f6f688":"transparent",position:"absolute",top:card1?0:100}} >
@@ -294,12 +289,12 @@ const handleMouseLeave7 = () =>{
                             <div
                             style={{position:"absolute",top:card1? 100:160,transition:"ease-in-out 0.2s",backgroundColor:card1 ? "white":"transparent",width:"320px",height:'50%'}}
                             >
-                             <div class="card-body" >
+                             <div class="card-body" style={{height:'auto'}} >
                              <div class="d-flex justify-content-center align-items-center mt-3">
                                     <label style={{ fontSize: "13px", color: "#626262", fontWeight: 400 }}>LERBS-GERMANY,HAMBURG</label>
                                 </div>
                                 <div className="d-flex justify-content-center align-items-center mt-1 mb-3" style={{ width: "100%" }}>
-                                    <div style={{ borderBottom: "2px solid #e6af2a", height: "1", width: "30px" }}></div>
+                                    <div style={{ borderBottom: "2px solid #e6af2a", height: 1, width: "30px" }}></div>
                                 </div>
                           
                             </div>
@@ -307,10 +302,10 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell',backgroundColor:""}}  onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card2}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card2}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card2?"#f6f6f688":"transparent",position:"absolute",top:card2?0:100}} >
@@ -332,10 +327,10 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center"  onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} style={{cursor:'cell'}}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card3}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card3}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card3?"#f6f6f688":"transparent",position:"absolute",top:card3?0:100}} >
@@ -346,7 +341,7 @@ const handleMouseLeave7 = () =>{
                             >
                              <div class="card-body" >
                              <div class="d-flex justify-content-center align-items-center mt-3">
-                                    <label style={{ fontSize: "9px", color: "#626262", fontWeight: 400 }}>DIGITAL MEDIA CENTRE- STUTTGART,GERMANY</label>
+                                    <label style={{ fontSize: "10px", color: "#626262", fontWeight: 400 }}>DIGITAL MEDIA CENTRE- STUTTGART,GERMANY</label>
                                 </div>
                                 <div className="d-flex justify-content-center align-items-center mt-1 mb-3" style={{ width: "100%" }}>
                                     <div style={{ borderBottom: "2px solid #e6af2a", height: "1", width: "30px" }}></div>
@@ -357,10 +352,10 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
                       
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card4}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card4}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card4?"#f6f6f688":"transparent",position:"absolute",top:card4?0:100}} >
@@ -381,19 +376,11 @@ const handleMouseLeave7 = () =>{
                             </div>
                             </div>
                         </div>
-
-                       
-                    </div>
-                </div>
-
-
-                <div class="row mt-5" style={{ width: "100%",height:"auto" }}>
-                    <div class="CardContent">
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
+                 
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card5}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card5}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card5?"#f6f6f688":"transparent",position:"absolute",top:card5?0:100}} >
@@ -415,21 +402,34 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        </div>
-                        </div>
-             
-            </div>
-
-            <div class="tab-pane" id="3b">
-             
-            <div class="row mt-5" style={{ width: "100%",height:"auto" }}>
-                    <div class="CardContent">
+                                           
+                      
                        
 
+                       
+                    </div>
+                
+
+                
+
+
+
+            </div>
+
+
+
+
+
+{/* webdesign */}
+
+
+     <div class="tab-pane active" id="3b">
+                <div class="row row-gap-5 g-5" style={{ width: "100%",height:"auto",backgroundColor:"" }}>
+                  
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 me-3 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter6} onMouseLeave={handleMouseLeave6}>
                         <div class="card " style={{ height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card6}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card6}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card6?"#f6f6f688":"transparent",position:"absolute",top:card6?0:100}} >
@@ -451,10 +451,10 @@ const handleMouseLeave7 = () =>{
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}}  onMouseEnter={handleMouseEnter7} onMouseLeave={handleMouseLeave7}>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center" style={{cursor:'cell'}} onMouseEnter={handleMouseEnter7} onMouseLeave={handleMouseLeave7}>
                         <div class="card " style={{height:"100%", border: "none"}}>
                             <div>
-                            <img src={Card7}  style={{position:"relative"}} height={180} width={320}/>
+                            <img src={Card7}  style={{position:"relative"}} className="img-fluid"/>
                             </div>
                             <div class="d-flex"  >
                             <div style={{height:"180px",width:"320px",backgroundColor:card7?"#f6f6f688":"transparent",position:"absolute",top:card7?0:100}} >
@@ -480,7 +480,11 @@ const handleMouseLeave7 = () =>{
 
                        
                     </div>
-                </div>
+                
+
+                
+
+
 
             </div>
         </div>
