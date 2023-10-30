@@ -9,6 +9,7 @@ import { faFacebook, faTwitter, faGoogle } from "@fortawesome/free-brands-svg-ic
 import { AiOutlineLine } from "react-icons/ai";
 import './TeamMembers.css';
 import TopBarCommon from "../Topbarcommon";
+import FooterComponent from "../Footer";
 
 function TeamMembers() {
     useEffect(() => {
@@ -429,6 +430,9 @@ function TeamMembers() {
 
 
         </div>
+        <div>
+        <FooterComponent/>
+      </div>
         </div>
 
     )

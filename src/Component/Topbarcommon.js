@@ -19,12 +19,12 @@ function TopBarCommon() {
     <>
       <div>
         <Navbar expand="lg" variant=""
-        className='topbarcomponentMain'
+          className='topbarcomponentMain'
           fixed='top'
-          >
+        >
 
           <Navbar.Brand href="#home">
-            <img src={logo2} width={230} height={60}/>
+            <img src={logo2} width={230} height={60} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className='navbar-collapse collapse' id="basic-navbar-nav">
@@ -38,9 +38,9 @@ function TopBarCommon() {
                 title={<label className='topbarComponentColor'>COMPANY</label>}
                 menuVariant="dark"
               >
-                <NavDropdown.Item href="/AboutCompany">ABOUT COMPANY</NavDropdown.Item>
-                <NavDropdown.Item href="/AdvisoryBoard">ADVISORY BOARD</NavDropdown.Item>
-                <NavDropdown.Item href="#">TEAM MEMBERS</NavDropdown.Item>
+                <NavDropdown.Item href="/AboutCompany" style={{ fontSize: 11 }}>ABOUT COMPANY</NavDropdown.Item>
+                <NavDropdown.Item href="/AdvisoryBoard" style={{ fontSize: 11 }}>ADVISORY BOARD</NavDropdown.Item>
+                <NavDropdown.Item href="/TeamMembers" style={{ fontSize: 11 }}>TEAM MEMBERS</NavDropdown.Item>
               </NavDropdown>
 
 
@@ -62,27 +62,27 @@ function TopBarCommon() {
                     onMouseLeave={() => setIsOutsourcingMenuOpen(false)}
                     className='submenu-item' style={{ padding: "5px 5px" }}
                   >
-                     <Nav.Link 
-                      style={{backgroundColor:"black",fontSize:11,border:"none",color:"#595959"}}
-                       class=" ms-0 ps-0"> <label className='menu'>OUTSOURCING</label><span style={{color:"white",fontSize:'11px',paddingLeft:108}} class="arrow-right">❯</span></Nav.Link>
-                      {isOutsourcingMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 0,
-                            backgroundColor: 'black',                         
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
+                    <Nav.Link
+                      style={{ backgroundColor: "black", fontSize: 11, border: "none", color: "#595959" }}
+                      class=" ms-0 ps-0"> <label className='topbarCommonSubmenu'>OUTSOURCING</label><span style={{ color: "white", fontSize: '11px', paddingLeft: 108 }} class="arrow-right">❯</span></Nav.Link>
+                    {isOutsourcingMenuOpen && (
+                      <ul
+                        className='submenu'
+                        style={{
+                          position: 'absolute',
+                          left: '100%',
+                          top: 0,
+                          backgroundColor: 'black',
+                          padding: '0px',
+                          margin: '0px',
+                          width: '100%'
+                        }}
+                      >
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>SAP CX OUTSOURCING</Nav.Link>
+                          <Nav.Link href='/SapCxOutsourcing' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>SAP CX OUTSOURCING</Nav.Link>
                         </li>
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>JAVA OUTSOURCING</Nav.Link>
+                          <Nav.Link href='/JavaOutsourcing' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>JAVA OUTSOURCING</Nav.Link>
                         </li>
                       </ul>
                     )}
@@ -96,29 +96,29 @@ function TopBarCommon() {
                     onMouseLeave={() => setIsWebdevelopmentMenuOpen(false)}
                     className='submenu-item' style={{ padding: "5px 5px" }}
                   >
-                    <Nav.Link style={{backgroundColor:"black",color:"white",fontSize:11,border:"none"}} class="ms-0 ps-0"> <label className='menu' >WEB DEVELOPMENT</label><span style={{color:"white",fontSize:'11px',paddingLeft:70}} class="arrow-right">❯</span> </Nav.Link>
-                      {isWebdevelopmentMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 35,
-                            backgroundColor: 'black',
-                          
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
+                    <Nav.Link style={{ backgroundColor: "black", color: "white", fontSize: 11, border: "none" }} class="ms-0 ps-0"> <label className='topbarCommonSubmenu'>WEB DEVELOPMENT</label><span style={{ color: "white", fontSize: '11px', paddingLeft: 70 }} class="arrow-right">❯</span> </Nav.Link>
+                    {isWebdevelopmentMenuOpen && (
+                      <ul
+                        className='submenu'
+                        style={{
+                          position: 'absolute',
+                          left: '100%',
+                          top: 35,
+                          backgroundColor: 'black',
+
+                          padding: '0px',
+                          margin: '0px',
+                          width: '100%'
+                        }}
+                      >
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>E-COMMERCE + CMS</Nav.Link>
+                          <Nav.Link href='/ECommerce' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>E-COMMERCE + CMS</Nav.Link>
                         </li>
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>CMS WEB DEVELOPMENT</Nav.Link>
+                          <Nav.Link href='/WebDevelopment' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>CMS WEB DEVELOPMENT</Nav.Link>
                         </li>
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>CMS + PAYMENT GATEWAY</Nav.Link>
+                          <Nav.Link href='/CMSPayment' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>CMS + PAYMENT GATEWAY</Nav.Link>
                         </li>
                       </ul>
                     )}
@@ -128,23 +128,23 @@ function TopBarCommon() {
                     onMouseLeave={() => setIsTraningMenuOpen(false)}
                     className='submenu-item' style={{ padding: "5px 5px" }}
                   >
-                    <Nav.Link style={{backgroundColor:"black",fontSize:11,border:"none"}} class="ms-0 ps-0"> <label className='menu'  >TRANING</label><span style={{color:"white",fontSize:'11px',paddingLeft:132}} class="arrow-right">❯</span> </Nav.Link>
-                      {isTraningMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 65,
-                            backgroundColor: 'black',
-                        
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
+                    <Nav.Link style={{ backgroundColor: "black", fontSize: 11, border: "none" }} class="ms-0 ps-0"> <label className='topbarCommonSubmenu'>TRANING</label><span style={{ color: "white", fontSize: '11px', paddingLeft: 132 }} class="arrow-right">❯</span> </Nav.Link>
+                    {isTraningMenuOpen && (
+                      <ul
+                        className='submenu'
+                        style={{
+                          position: 'absolute',
+                          left: '100%',
+                          top: 65,
+                          backgroundColor: 'black',
+
+                          padding: '0px',
+                          margin: '0px',
+                          width: '100%'
+                        }}
+                      >
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>CORPORATE TRANING</Nav.Link>
+                          <Nav.Link href='/CorporateTraining' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>CORPORATE TRANING</Nav.Link>
                         </li>
 
                       </ul>
@@ -156,36 +156,35 @@ function TopBarCommon() {
                     onMouseLeave={() => setIsDigitalMenuOpen(false)}
                     className='submenu-item' style={{ padding: "5px 5px" }}
                   >
-                     <Nav.Link   style={{backgroundColor:"black",fontSize:11,border:"none"}} class="ms-0 ps-0"> <label className='menu'  >DIGITAL MARGETING</label><span style={{color:"white",fontSize:'11px',paddingLeft:70}} class="arrow-right">❯</span> </Nav.Link>
-                      {isDigitalMenuOpen && (
-                        <ul
-                          className='submenu'
-                          style={{
-                            position: 'absolute',
-                            left: '100%', 
-                            top: 95,
-                            backgroundColor: 'black',
-                          
-                            padding:'0px',
-                            margin:'0px',
-                            width:'100%'
-                          }}
-                        >
+                    <Nav.Link style={{ backgroundColor: "black", fontSize: 11, border: "none" }} class="ms-0 ps-0"> <label className='topbarCommonSubmenu'>DIGITAL MARGETING</label><span style={{ color: "white", fontSize: '11px', paddingLeft: 70 }} class="arrow-right">❯</span> </Nav.Link>
+                    {isDigitalMenuOpen && (
+                      <ul
+                        className='submenu'
+                        style={{
+                          position: 'absolute',
+                          left: '100%',
+                          top: 95,
+                          backgroundColor: 'black',
+                          padding: '0px',
+                          margin: '0px',
+                          width: '100%'
+                        }}
+                      >
                         <li>
-                          <Nav.Link href='#' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>DIGITAL MARGETING SERVICES</Nav.Link>
+                          <Nav.Link href='/DigitalMarketing' style={{ color: "white", fontSize: 11, textDecoration: "none" }}>DIGITAL MARGETING SERVICES</Nav.Link>
                         </li>
 
                       </ul>
                     )}
                   </li>
 
-                  <NavDropdown.Item href="#video-production" className='topbarCommonSubmenu'>VIDEO PRODUCTION</NavDropdown.Item>
+                  <NavDropdown.Item href="/VideoProduction" className='topbarCommonSubmenu' style={{ textDecoration: 'none' }}>VIDEO PRODUCTION</NavDropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
 
 
 
-              <Nav.Link href="/Contactus"><label className='topbarComponentColor'>BLOGS</label></Nav.Link>
+              <Nav.Link href="/Blogs"><label className='topbarComponentColor'>BLOGS</label></Nav.Link>
               <Nav.Link href="/NewsView"><label className='topbarComponentColor'>NEWS</label></Nav.Link>
               <NavDropdown
                 show={isDropdownOpen}
@@ -195,9 +194,9 @@ function TopBarCommon() {
                 menuVariant="dark"
 
               >
-                <NavDropdown.Item href="#">CAREERS</NavDropdown.Item>
-                <NavDropdown.Item href="#">PROCESS</NavDropdown.Item>
-                <NavDropdown.Item href="#">OUTING</NavDropdown.Item>
+                <NavDropdown.Item href="/MainPage" className='topbarCommonSubmenu' style={{ textDecoration: 'none', fontSize: 11 }}>CAREERS</NavDropdown.Item>
+                <NavDropdown.Item href="#" className='topbarCommonSubmenu' style={{ textDecoration: 'none', fontSize: 11 }}>PROCESS</NavDropdown.Item>
+                <NavDropdown.Item href="#" className='topbarCommonSubmenu' style={{ textDecoration: 'none', fontSize: 11 }}>OUTING</NavDropdown.Item>
 
               </NavDropdown>
               <Nav.Link href="/Contactus"><label className='topbarComponentColor'>CONTACT US</label></Nav.Link>

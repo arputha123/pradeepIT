@@ -7,6 +7,7 @@ import FifthPage from '../Pages/Webdevelopment/FifthPage';
 import SixthPage from '../Pages/Webdevelopment/SixthPage';
 import SeventhPage from '../Pages/Webdevelopment/SeventhPage';
 import TopBarComponent from './topbar';
+import FooterComponent from './Footer';
 
 function Webdevelopment() {
   return (
@@ -34,6 +35,9 @@ function Webdevelopment() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
+      </div>
+      <div>
+        <FooterComponent/>
       </div>
     </>
   )

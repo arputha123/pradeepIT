@@ -57,7 +57,7 @@
         position: relative;
         background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
         width: 100%;
-        height: 100vh;
+        height: 100vh !important;
     }
 
     .ImageMoveContent {
@@ -66,7 +66,7 @@
         background-color: #00000099;
         left: 0px;
         width: 100%;
-        height: 100vh;
+        height: 100vh !important;
         align-items: center;
         text-align: center;
         color: #FFFFFF;
@@ -214,25 +214,6 @@
     text-align: center;
     color: #FFFFFF;
 }
-/* react-slick */
-.slick-dots {
-bottom: 30px !important;
-color: #7e7e7e !important;
-}
-.slick-dots li button:before{
-font-size: 10px !important;
-/* color: #7e7e7e !important; */
-}
-/* .slick-dots li.slick-active button:before{
-    border-color: white !important;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    width: 10px;
-    height: 10px;
-    margin-top:5px;
-} */
-
 
 /* Latest Blogs */
 .img-wrapper {
@@ -489,117 +470,6 @@ img.hover-zoom:hover {
     display: flex;
     flex-direction: row;
 }
-
-/* Lateast Work */
-
-/* @media only screen and (max-width: 570px) {
-    .ImageMove {
-        position: relative;
-        background: url('../Assets/slider-img.jpg') center/cover fixed no-repeat;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .ImageMoveContent {
-        position: absolute;
-        bottom: 0px;
-        background-color: #00000099;
-        left: 0px;
-        width: 100%;
-        height: 100vh;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .Top1 {
-        font-size: 20px;
-        color: white;
-        font-weight: 700;
-    }
-
-    .Top2 {
-        font-size: 20px;
-        color: white;
-    }
-
-   
-    .Phone {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    .Digital {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 15px;
-        bottom: 0px;
-        background-color: #00000089;
-    }
-
-    .ourService {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .Tablet {
-        width: 100%;
-        height: 500px;
-        flex: 1
-    }
-
-    .Read1 {
-        width: 100%;
-        flex: 1;
-        padding: 5%;
-        border: 5px solid #7e7e7e;
-        margin-top: 40px;
-    }
-
-    .Laptop1 {
-        position: relative;
-        width: 100%;
-    }
-
-    .ourserviceWant {
-        height: fit-content;
-        background-color: #FDD947;
-        padding-top: 18px;
-        margin-top: 180px;
-    }
-
-    .Btn1 {
-        background-color: #000000;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: 10px;
-        margin-left: 2%;
-        font-weight: 700;
-        font-size: 14px;
-    }
-
-    .Btn2 {
-        font-weight: 700;
-        font-size: 14px;
-        background-color: #FDD947;
-        color: rgb(20, 20, 20);
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        /* margin-right: 10px; */
-        /* border: 2px solid black; */
-
-    /* } */
-   
-/* } */
 
 @media only screen and (min-width: 570px)and (max-width:900px) {
     .ourserviceWant {
