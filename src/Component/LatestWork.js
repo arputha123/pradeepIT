@@ -134,7 +134,7 @@ const handleMouseLeave7 = () =>{
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center"  onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} style={{cursor:'cell'}}>
-                        <div class="card " style={{height:"100%", border: "none"}}>
+                        <div class="card" style={{height:"100%", border: "none"}}>
                             <div>
                             <img src={Card3}  style={{position:"relative"}} className="img-fluid"/>
                             </div>

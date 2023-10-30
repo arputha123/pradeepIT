@@ -325,11 +325,12 @@ img.hover-zoom:hover {
 /* ......> */
 .Listitems li {
     font-size: 14px;
-    padding-left: 8%;
+    padding-left: 8px;
     line-height: 27px;
     display: list-item;
     list-style-type: square;
     color: #7e7e7e;
+    margin-left: 35px;
 }
 
 .nav-pills>li.active>a,
