@@ -35,6 +35,7 @@ function CorporateTraning() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
+       
       </div>
       <div>
         <FooterComponent/>

@@ -8,7 +8,6 @@ import SixthPage from '../Pages/JavaOutsourcing/SixthPage';
 import SeventhPage from '../Pages/JavaOutsourcing/SeventhPage';
 import TopBarComponent from './topbar';
 import FooterComponent from './Footer';
-
 function JavaOutsourcing() {
   return (
     <>

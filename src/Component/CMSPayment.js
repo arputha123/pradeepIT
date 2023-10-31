@@ -7,7 +7,9 @@ import FifthPage from '../Pages/CMSPayment/FifthPage';
 import SixthPage from '../Pages/CMSPayment/SixthPage';
 import SeventhPage from '../Pages/CMSPayment/SeventhPage';
 import TopBarComponent from './topbar';
+
 import FooterComponent from './Footer';
+
 
 function CMSPayment() {
   return (
@@ -35,7 +37,7 @@ function CMSPayment() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
-      </div>
+        </div>
       <div>
         <FooterComponent/>
       </div>

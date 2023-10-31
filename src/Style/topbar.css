@@ -13,6 +13,7 @@
   height:17vh;
   text-decoration: unset !important;
   
+
 }
 
 .NormalLogo{
@@ -48,6 +49,7 @@
 .black-text{
   color:black !important;
 } */
+
  
 
   .custom-nav-dropdown .dropdown-toggle::after {
@@ -128,6 +130,7 @@
   margin-top: 5px !important; 
 text-decoration: none !important;
  
+
 
 }
  
@@ -225,9 +228,11 @@ text-decoration: none !important;
     color:white;
   }
   
+
 }
 @media (min-width:0px) and (max-width:390px){
   .navbar-collapse.collapse{
     color:white;
   }
+
 }

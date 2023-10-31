@@ -9,6 +9,7 @@ import SeventhPage from '../Pages/DigitalMarketting/SeventhPage';
 import TopBarComponent from './topbar';
 import FooterComponent from './Footer';
 
+
 function DigitalMarketting() {
   return (
     <>

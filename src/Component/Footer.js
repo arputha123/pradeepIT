@@ -1,6 +1,7 @@
 import React from 'react'
 
 function FooterComponent() {
+
   return (
 
 <>
@@ -15,3 +16,4 @@ function FooterComponent() {
 }
 
 export default FooterComponent;
+

@@ -449,12 +449,12 @@ const Digital = () => {
                     <div
                     //  class="flex-row d-flex"
                     >
-                        <div class="col-md-6 col-sm-10 col-xs-10">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
                             <h1 class="text-white Growth">WE PROVIDE INNOVATIVE IT <br></br>
                                 SOLUTIONS FOR YOUR <br></br>
                                 BUSINESS GROWTH</h1>
                         </div>
-                        <div class="col-md-6 col-sm-10 col-xs-10" style={{ padding: 50 }}>
+                        <div class="col-md-6 col-sm-12 col-xs-12" style={{ padding: 50 }}>
                             <div class="d-flex  justify-content-center flex-column" style={{ padding: 20, border: '1px solid white', backgroundColor: '#F6F6F6' }} >
                                 <h3 style={{ fontSize: '22px' }}>Reach us for all web design service you need</h3><br></br>
 
