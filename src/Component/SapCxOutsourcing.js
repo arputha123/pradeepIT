@@ -7,7 +7,7 @@ import FifthPage from '../Pages/SapCxOutsourcing/FifthPage';
 import SixthPage from '../Pages/SapCxOutsourcing/SixthPage';
 import SeventhPage from '../Pages/SapCxOutsourcing/SeventhPage';
 import TopBarComponent from './topbar';
-import Footer from '../Component/Footer';
+import FooterComponent from './Footer';
 
 function SapCxOutsourcing() {
   return (
@@ -35,9 +35,9 @@ function SapCxOutsourcing() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
-        <div>
-          <Footer />
-          </div>
+      </div>
+      <div>
+        <FooterComponent/>
       </div>
     </>
   )

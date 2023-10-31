@@ -13,6 +13,7 @@
   height:17vh;
   text-decoration: unset !important;
   
+
 }
 
 .NormalLogo{
@@ -41,13 +42,14 @@
     text-decoration: unset !important;
   
   }
-
+/* 
   .white-text{
   color: white !important;
 }
 .black-text{
   color:black !important;
-}
+} */
+
  
 
   .custom-nav-dropdown .dropdown-toggle::after {
@@ -124,9 +126,12 @@
   background-color:black;
   min-width: 200px;
   border-radius: 0px;
+
   margin-top: 5px !important; 
 text-decoration: none !important;
  
+
+
 }
  
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -223,4 +228,11 @@ text-decoration: none !important;
     color:white;
   }
   
+
+}
+@media (min-width:0px) and (max-width:390px){
+  .navbar-collapse.collapse{
+    color:white;
+  }
+
 }

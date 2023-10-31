@@ -7,7 +7,7 @@ import FifthPage from '../Pages/VideoProduction/FifthPage';
 import SixthPage from '../Pages/VideoProduction/SixthPage';
 import SeventhPage from '../Pages/VideoProduction/SeventhPage';
 import TopBarComponent from './topbar';
-import Footer from './Footer';
+import FooterComponent from './Footer';
 
 function VideoProduction() {
   return (
@@ -35,9 +35,9 @@ function VideoProduction() {
         <div style={{ marginBottom: 50, marginTop: "0px",padding:0 }}>
           <SeventhPage />
         </div>
-        <div>
-          <Footer />
-          </div>
+      </div>
+      <div>
+        <FooterComponent/>
       </div>
     </>
   )

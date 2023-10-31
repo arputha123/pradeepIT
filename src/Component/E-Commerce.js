@@ -7,9 +7,7 @@ import FifthPage from '../Pages/E-Commerce/FifthPage';
 import SixthPage from '../Pages/E-Commerce/SixthPage';
 import SeventhPage from '../Pages/E-Commerce/SeventhPage';
 import TopBarComponent from './topbar';
-import Footer from '../Component/Footer';
-
-
+import FooterComponent from './Footer';
 
 function ECommerce() {
   return (
@@ -37,10 +35,9 @@ function ECommerce() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
-        <div>
-          <Footer />
-          </div>
-
+      </div>
+      <div>
+        <FooterComponent/>
       </div>
     </>
   )

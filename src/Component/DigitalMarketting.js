@@ -7,8 +7,7 @@ import FifthPage from '../Pages/DigitalMarketting/FifthPage';
 import SixthPage from '../Pages/DigitalMarketting/SixthPage';
 import SeventhPage from '../Pages/DigitalMarketting/SeventhPage';
 import TopBarComponent from './topbar';
-import Footer from './Footer';
-
+import FooterComponent from './Footer';
 
 
 function DigitalMarketting() {
@@ -37,9 +36,9 @@ function DigitalMarketting() {
         <div style={{ marginBottom: 50, marginTop: "30px" }}>
           <SeventhPage />
         </div>
-        <div>
-          <Footer />
-          </div>
+      </div>
+      <div>
+        <FooterComponent/>
       </div>
     </>
   )

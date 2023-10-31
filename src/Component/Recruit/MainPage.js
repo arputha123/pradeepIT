@@ -1,17 +1,20 @@
 import React from "react";
 import Recruit from "./Recruit";
 import Candidates from "./Candidates";
-import Footer from "../Footer";
+import FooterComponent from "../Footer";
 
-function MainPage(){
-    return(
+function MainPage() {
+    return (
         <div >
-          <Recruit style={{height:"80vh"}}/>
-          <Candidates style={{height:"auto"}}/>
+            <Recruit style={{ height: "80vh" }} />
+            <Candidates style={{ height: "auto" }} />
 
-          <div>
-          <Footer />
-          </div> 
+
+            <div>
+                <FooterComponent />
+            </div>
+        </div>
+
  
 </div>
 
@@ -23,6 +26,7 @@ function MainPage(){
 
 
        
+
     )
 }
 export default MainPage

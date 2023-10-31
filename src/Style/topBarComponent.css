@@ -1,6 +1,6 @@
 .topbarcomponentMain {
     background-color: #FFFFFF;
-    /* position: fixed !important; */
+    position: fixed !important;
     top: 0 !important;
     border-bottom: 1px solid #e5e5e5;
     height: 17vh;
@@ -11,8 +11,9 @@
   
   }
   .topbarComponentnav {
-    padding-left: 30%;
+    /* padding-left: 38% !important; */
     font-size: 11px;
+    float: right !important;
   }
   .topbarComponentColor{
     color: black !important;
@@ -31,6 +32,7 @@
         width: 100%;
         height: auto;
         padding-left: 1%;
+        margin-left: 35% !important;
       }
       .topbarComponentColor{
         color: white !important;

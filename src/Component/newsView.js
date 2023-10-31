@@ -10,6 +10,7 @@ import '../Style/newsview.css'
 const ViewNews = () => {
     const location = useLocation()
     const stateParamVal = location.state
+    console.log("location",location);
     const [dataIndex, detDataIndex] = useState(stateParamVal.id);
 
 

@@ -101,11 +101,13 @@ const PradeepTopbar = () => {
                         className={`custom-nav-dropdown ${(fix && showCompanyDropdown) ? 'black-border' : (showCompanyDropdown ? 'white-border' : 'transparent-border')}`}>
 
                         <div className="dropdown-menu-container" style={{fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif' }}>
-                            <Dropdown.Item id="hover-dropdown" href="#ABOUT COMPANY" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>ABOUT COMPANY</Dropdown.Item>
 
-                            <Dropdown.Item href="#ADVISORY BOARD" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)" ,textDecoration:"none"}}>ADVISORY BOARD</Dropdown.Item>
+                            <Dropdown.Item id="hover-dropdown" href="/AboutCompany" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>ABOUT COMPANY</Dropdown.Item>
 
-                            <Dropdown.Item href="#TEAM MEMBERS" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8" ,textDecoration:"none"}}>TEAM MEMBERS</Dropdown.Item>
+                            <Dropdown.Item href="/AdvisoryBoard" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)" ,textDecoration:"none"}}>ADVISORY BOARD</Dropdown.Item>
+
+                            <Dropdown.Item href="/TeamMembers" style={{ fontWeight: 600, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, color: "#C8C8C8" ,textDecoration:"none"}}>TEAM MEMBERS</Dropdown.Item>
+
                         </div>
 
                     </NavDropdown>
@@ -141,9 +143,11 @@ const PradeepTopbar = () => {
                             {showOutsorcingSubmenu && (
 
                                 <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: "-30%" ,textDecoration:"none"}}>
-                                    <Dropdown.Item href="#SAP-CX OUTSOURCING" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2) ",textDecoration:"none" }}>SAP-CX OUTSOURCING</Dropdown.Item>
 
-                                    <Dropdown.Item href="#JAVA OUTSOURCING" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: "600", color: "#C8C8C8",textDecoration:"none" }}>JAVA OUTSOURCING</Dropdown.Item>
+                                    <Dropdown.Item href="/SapCxOutsourcing" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2) ",textDecoration:"none" }}>SAP-CX OUTSOURCING</Dropdown.Item>
+
+                                    <Dropdown.Item href="/JavaOutsourcing" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: "600", color: "#C8C8C8",textDecoration:"none" }}>JAVA OUTSOURCING</Dropdown.Item>
+
 
                                 </Dropdown.Menu>
                             )}
@@ -158,12 +162,13 @@ const PradeepTopbar = () => {
                             WEB DEVELOPMENT
                             <BiChevronRight style={{ width: "15px", height: "15px" }} />
                             {showWebSubmenu && (
-                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: '20%' }}>
-                                    <Dropdown.Item href="#E-COMMERCE" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }} >E-COMMERCE</Dropdown.Item>
 
-                                    <Dropdown.Item href="#CMS WEB DEVELOPMENT " style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}> WEB DEVELOPMENT</Dropdown.Item>
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: window.innerWidth < 991 ? '55%' : '100%', top: '20%' }}>
+                                    <Dropdown.Item href="/ECommerce" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }} >E-COMMERCE</Dropdown.Item>
 
-                                    <Dropdown.Item href="#CMS WITH PAYMENT GATEWAY" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8",textDecoration:"none" }}>CMS WITH PAYMENT GATEWAY</Dropdown.Item>
+                                    <Dropdown.Item href="/WebDevelopment" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}> WEB DEVELOPMENT</Dropdown.Item>
+
+                                    <Dropdown.Item href="/CMSPayment" style={{ paddingTop: 5, paddingLeft: 10, paddingBottom: 8, fontWeight: "600", color: "#C8C8C8",textDecoration:"none" }}>CMS WITH PAYMENT GATEWAY</Dropdown.Item>
                                 </Dropdown.Menu>
                             )}
                         </Dropdown.Item>
@@ -176,8 +181,10 @@ const PradeepTopbar = () => {
                             TRANING
                             <BiChevronRight style={{ width: "15px", height: "15px" }} />
                             {showTraningSubmenu && (
-                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: '40%' }}>
-                                    <Dropdown.Item href="#CORPORATE TRAINING" style={{ paddingTop: 3, paddingLeft: 10, fontWeight: "600" ,textDecoration:"none"}}>CORPORATE TRAINING</Dropdown.Item>
+
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: window.innerWidth < 991 ? '55%' : '100%', top:window.innerWidth < 991 ? '50%':'40%' }}>
+                                    <Dropdown.Item href="/CorporateTraining" style={{ paddingTop: 3, paddingLeft: 10, fontWeight: "600" ,textDecoration:"none"}}>CORPORATE TRAINING</Dropdown.Item>
+
 
                                 </Dropdown.Menu>
                             )}
@@ -191,19 +198,24 @@ const PradeepTopbar = () => {
                             DIGITAL MARKETING
                             <BiChevronRight style={{ width: "15px", height: "15px" }} />
                             {showDigitalSubmenu && (
-                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: '100%', top: '60%' }}>
-                                    <Dropdown.Item href="#DIGITAL MARKETING SERVICES" style={{ paddingTop: 3, paddingLeft: 10, fontWeight: 600, color: "#C8C8C8",textDecoration:"none" }}>DIGITAL MARKETING  SERVICES</Dropdown.Item>
+
+                                <Dropdown.Menu style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', position: 'absolute', left: window.innerWidth < 991 ? '55%' : '100%', top:window.innerWidth < 991 ? '65%':'60%'}}>
+                                    <Dropdown.Item href="/DigitalMarketing" style={{ paddingTop: 3, paddingLeft: 10, fontWeight: 600, color: "#C8C8C8",textDecoration:"none" }}>DIGITAL MARKETING  SERVICES</Dropdown.Item>
 
                                 </Dropdown.Menu>
                             )}
                         </Dropdown.Item>
-                        <Dropdown.Item href="#VIDEO PRODUCTION" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 2, fontSize: "11px", margin: 0, fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', color: "#C8C8C8",textDecoration:"none" }}>VIDIO PRODUCTION</Dropdown.Item>
+
+                        <Dropdown.Item href="/VideoProduction" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 2, fontSize: "11px", margin: 0, fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif', color: "#C8C8C8",textDecoration:"none" }}>VIDIO PRODUCTION</Dropdown.Item>
+
                     </NavDropdown>
 
 
 
-                    <Nav.Link href="#features"  className={`custom-nav-dropdown ${(fix && blog) ? 'black-border' : (blog ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} >BLOGS</Nav.Link>
-                    <Nav.Link href="#features" className={`custom-nav-dropdown ${(fix && news) ? 'black-border' : (news ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>NEWS</Nav.Link>
+
+                    <Nav.Link href="/Blogs"  className={`custom-nav-dropdown ${(fix && blog) ? 'black-border' : (blog ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} >BLOGS</Nav.Link>
+                    <Nav.Link href="/News" className={`custom-nav-dropdown ${(fix && news) ? 'black-border' : (news ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>NEWS</Nav.Link>
+
                   
                   
                   
@@ -223,7 +235,8 @@ const PradeepTopbar = () => {
                         onMouseLeave={() => setShowRecruitDropdown(false)}
                         className={`custom-nav-dropdown ${(fix && showRecruitDropdown) ? 'black-border' : (showRecruitDropdown ? 'white-border' : 'transparent-border')}`}>
                         <div style={{ fontSize: "11px", fontWeight: "600", letterSpacing: "1px", fontFamily: 'Open Sans, sans-serif' }}>
-                            <Dropdown.Item href="#CAREERS" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: 600, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>CAREERS</Dropdown.Item>
+
+                            <Dropdown.Item href="/MainPage" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: 600, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>CAREERS</Dropdown.Item>
 
                             <Dropdown.Item href="#PROCESS" style={{ paddingTop: 10, paddingLeft: 10, paddingBottom: 10, fontWeight: 600, color: "#C8C8C8", borderBottom: "1px solid rgba(255, 255, 255,0.2)",textDecoration:"none" }}>PROCESS</Dropdown.Item>
 
@@ -232,7 +245,9 @@ const PradeepTopbar = () => {
                     </NavDropdown>
 
 
-                    <Nav.Link href="#features" style={{ marginRight: "50px", color: "" }} className={`custom-nav-dropdown ${(fix && contact) ? 'black-border' : (contact ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} >CONTACT US</Nav.Link>
+
+                    <Nav.Link href="/Contactus" style={{ marginRight: "50px", color: "" }} className={`custom-nav-dropdown ${(fix && contact) ? 'black-border' : (contact ? 'white-border' : 'transparent-border')}`} onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} >CONTACT US</Nav.Link>
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
